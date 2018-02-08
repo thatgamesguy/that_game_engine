@@ -14,11 +14,12 @@
 		E1686768202B3CCB0099B64D /* WorkingDirectory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1686767202B3CCB0099B64D /* WorkingDirectory.cpp */; };
 		E168676B202B56EB0099B64D /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1686769202B56EB0099B64D /* Window.cpp */; };
 		E168676E202B64C80099B64D /* viking.png in Resources */ = {isa = PBXBuildFile; fileRef = E168676D202B64C80099B64D /* viking.png */; };
+		E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1712FAF202CC85E0087F4B1 /* Input.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E16867402028AA620099B64D /* that_platform_game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = that_platform_game.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E16867442028AA620099B64D /* that_platform_game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "that_platform_game-Info.plist"; sourceTree = "<group>"; };
+		E16867402028AA620099B64D /* that platform game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "that platform game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16867442028AA620099B64D /* that platform game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "that platform game-Info.plist"; sourceTree = "<group>"; };
 		E16867472028AA620099B64D /* WorkingDirectory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WorkingDirectory.hpp; sourceTree = "<group>"; };
 		E16867582028AB910099B64D /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
 		E168675A2028AC9C0099B64D /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
@@ -28,6 +29,8 @@
 		E1686769202B56EB0099B64D /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
 		E168676A202B56EB0099B64D /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
 		E168676D202B64C80099B64D /* viking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viking.png; sourceTree = "<group>"; };
+		E1712FAF202CC85E0087F4B1 /* Input.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
+		E1712FB0202CC85E0087F4B1 /* Input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +57,7 @@
 		E16867412028AA620099B64D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E16867402028AA620099B64D /* that_platform_game.app */,
+				E16867402028AA620099B64D /* that platform game.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +71,8 @@
 				E168675B2028AC9C0099B64D /* Game.hpp */,
 				E1686769202B56EB0099B64D /* Window.cpp */,
 				E168676A202B56EB0099B64D /* Window.hpp */,
+				E1712FAF202CC85E0087F4B1 /* Input.cpp */,
+				E1712FB0202CC85E0087F4B1 /* Input.hpp */,
 				E16867582028AB910099B64D /* Main.cpp */,
 				E168674A2028AA620099B64D /* Resources */,
 				E16867432028AA620099B64D /* Supporting Files */,
@@ -78,7 +83,7 @@
 		E16867432028AA620099B64D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E16867442028AA620099B64D /* that_platform_game-Info.plist */,
+				E16867442028AA620099B64D /* that platform game-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E168673F2028AA620099B64D /* that_platform_game */ = {
+		E168673F2028AA620099B64D /* that platform game */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E16867552028AA620099B64D /* Build configuration list for PBXNativeTarget "that_platform_game" */;
+			buildConfigurationList = E16867552028AA620099B64D /* Build configuration list for PBXNativeTarget "that platform game" */;
 			buildPhases = (
 				E168673B2028AA620099B64D /* Sources */,
 				E168673C2028AA620099B64D /* Frameworks */,
@@ -123,9 +128,9 @@
 			);
 			dependencies = (
 			);
-			name = that_platform_game;
+			name = "that platform game";
 			productName = that_platform_game;
-			productReference = E16867402028AA620099B64D /* that_platform_game.app */;
+			productReference = E16867402028AA620099B64D /* that platform game.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E168673A2028AA620099B64D /* Build configuration list for PBXProject "that_platform_game" */;
+			buildConfigurationList = E168673A2028AA620099B64D /* Build configuration list for PBXProject "that platform game" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -155,7 +160,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E168673F2028AA620099B64D /* that_platform_game */,
+				E168673F2028AA620099B64D /* that platform game */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */,
 				E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */,
 				E168676B202B56EB0099B64D /* Window.cpp in Sources */,
 				E168675C2028AC9C0099B64D /* Game.cpp in Sources */,
@@ -297,13 +303,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSVX5LD945;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = "that_platform_game/that_platform_game-Info.plist";
+				INFOPLIST_FILE = "that_platform_game/that platform game-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D",
 					_MACOS,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thatgamesguy.that-platform-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -314,13 +321,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSVX5LD945;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = "that_platform_game/that_platform_game-Info.plist";
+				INFOPLIST_FILE = "that_platform_game/that platform game-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D",
 					_MACOS,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thatgamesguy.that-platform-game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -328,7 +336,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E168673A2028AA620099B64D /* Build configuration list for PBXProject "that_platform_game" */ = {
+		E168673A2028AA620099B64D /* Build configuration list for PBXProject "that platform game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E16867532028AA620099B64D /* Debug */,
@@ -337,7 +345,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E16867552028AA620099B64D /* Build configuration list for PBXNativeTarget "that_platform_game" */ = {
+		E16867552028AA620099B64D /* Build configuration list for PBXNativeTarget "that platform game" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E16867562028AA620099B64D /* Debug */,
