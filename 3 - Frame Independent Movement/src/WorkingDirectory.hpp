@@ -15,20 +15,8 @@ class WorkingDirectory
 public:
     WorkingDirectory();
     
-    inline std::string Get()
+    inline const std::string& Get()
     {
-        if(path.length() > 0)
-        {
-            return path;
-        }
-
-        char cwd[1024];
-        if(getcwd(cwd, sizeof(cwd)) != nullptr)
-        {
-            path = std::string(cwd) + std::string("/");
-        }
-        
-
         return path;
     }
     

@@ -2,6 +2,8 @@
 
 WorkingDirectory::WorkingDirectory()
 {
+    path = "./";
+    
 #ifdef _MACOS
     
     // Change the default working directory to that of the XCode resource path on MacOS.

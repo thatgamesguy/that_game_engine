@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E16867402028AA620099B64D /* that platform game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "that platform game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E16867442028AA620099B64D /* that platform game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "that platform game-Info.plist"; sourceTree = "<group>"; };
+		E16867402028AA620099B64D /* that game engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "that game engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E16867442028AA620099B64D /* that game engine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "that game engine-Info.plist"; sourceTree = "<group>"; };
 		E16867472028AA620099B64D /* WorkingDirectory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WorkingDirectory.hpp; sourceTree = "<group>"; };
 		E16867582028AB910099B64D /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
 		E168675A2028AC9C0099B64D /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		E16867362028AA620099B64D = {
 			isa = PBXGroup;
 			children = (
-				E16867422028AA620099B64D /* that_platform_game */,
+				E16867422028AA620099B64D /* that_game_engine */,
 				E16867412028AA620099B64D /* Products */,
 				E1686764202B39510099B64D /* Frameworks */,
 			);
@@ -57,12 +57,12 @@
 		E16867412028AA620099B64D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E16867402028AA620099B64D /* that platform game.app */,
+				E16867402028AA620099B64D /* that game engine.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E16867422028AA620099B64D /* that_platform_game */ = {
+		E16867422028AA620099B64D /* that_game_engine */ = {
 			isa = PBXGroup;
 			children = (
 				E16867472028AA620099B64D /* WorkingDirectory.hpp */,
@@ -77,13 +77,13 @@
 				E168674A2028AA620099B64D /* Resources */,
 				E16867432028AA620099B64D /* Supporting Files */,
 			);
-			path = that_platform_game;
+			path = that_game_engine;
 			sourceTree = "<group>";
 		};
 		E16867432028AA620099B64D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E16867442028AA620099B64D /* that platform game-Info.plist */,
+				E16867442028AA620099B64D /* that game engine-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E168673F2028AA620099B64D /* that platform game */ = {
+		E168673F2028AA620099B64D /* that game engine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E16867552028AA620099B64D /* Build configuration list for PBXNativeTarget "that platform game" */;
+			buildConfigurationList = E16867552028AA620099B64D /* Build configuration list for PBXNativeTarget "that game engine" */;
 			buildPhases = (
 				E168673B2028AA620099B64D /* Sources */,
 				E168673C2028AA620099B64D /* Frameworks */,
@@ -128,9 +128,9 @@
 			);
 			dependencies = (
 			);
-			name = "that platform game";
+			name = "that game engine";
 			productName = that_platform_game;
-			productReference = E16867402028AA620099B64D /* that platform game.app */;
+			productReference = E16867402028AA620099B64D /* that game engine.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -148,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E168673A2028AA620099B64D /* Build configuration list for PBXProject "that platform game" */;
+			buildConfigurationList = E168673A2028AA620099B64D /* Build configuration list for PBXProject "that game engine" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -160,7 +160,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E168673F2028AA620099B64D /* that platform game */,
+				E168673F2028AA620099B64D /* that game engine */,
 			);
 		};
 /* End PBXProject section */
@@ -303,14 +303,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSVX5LD945;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = "that_platform_game/that platform game-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/that_game_engine/that game engine-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D",
 					_MACOS,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.thatgamesguy.that-platform-game";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thatgamesguy.that-game-engine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -321,14 +321,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSVX5LD945;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				INFOPLIST_FILE = "that_platform_game/that platform game-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/that_game_engine/that game engine-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D",
 					_MACOS,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.thatgamesguy.that-platform-game";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.thatgamesguy.that-game-engine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -336,7 +336,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E168673A2028AA620099B64D /* Build configuration list for PBXProject "that platform game" */ = {
+		E168673A2028AA620099B64D /* Build configuration list for PBXProject "that game engine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E16867532028AA620099B64D /* Debug */,
@@ -345,7 +345,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E16867552028AA620099B64D /* Build configuration list for PBXNativeTarget "that platform game" */ = {
+		E16867552028AA620099B64D /* Build configuration list for PBXNativeTarget "that game engine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E16867562028AA620099B64D /* Debug */,
