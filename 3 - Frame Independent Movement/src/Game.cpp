@@ -1,6 +1,6 @@
 #include "Game.hpp"
 
-Game::Game() : window("that platform game")
+Game::Game() : window("that game engine")
 {
     vikingTexture.loadFromFile(workingDir.Get() + "viking.png");
     vikingSprite.setTexture(vikingTexture);
