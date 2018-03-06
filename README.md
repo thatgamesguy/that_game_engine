@@ -1,2 +1,3 @@
-# that_platform_game
-Contains the source code for the SFML game tutorial series, hosted on thatgamesguy.co.uk
+# that game engine
+
+Contains the source code for the SFML game engine tutorial series, hosted on thatgamesguy.co.uk. Find the first tutorial at http://thatgamesguy.co.uk/2018/03/06/game-engine-dev-0/
