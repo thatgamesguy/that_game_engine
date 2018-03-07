@@ -3,11 +3,8 @@
 
 #include <string>
 
-#ifdef _MACOS
+#ifdef MACOS
 #include "CoreFoundation/CoreFoundation.h"
-#elif _WIN32
-#include <windows.h>
-#include <Shlwapi.h>
 #endif
 
 class WorkingDirectory

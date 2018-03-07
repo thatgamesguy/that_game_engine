@@ -2,7 +2,9 @@
 
 WorkingDirectory::WorkingDirectory()
 {
-#ifdef _MACOS
+    path = "./";
+    
+#ifdef MACOS
     
     // Change the default working directory to that of the XCode resource path on MacOS.
     CFBundleRef mainBundle = CFBundleGetMainBundle();

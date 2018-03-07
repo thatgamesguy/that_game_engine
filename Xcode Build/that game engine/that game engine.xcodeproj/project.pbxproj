@@ -308,7 +308,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D",
-					_MACOS,
+					MACOS,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thatgamesguy.that-game-engine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -326,7 +326,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = (
 					"-D",
-					_MACOS,
+					MACOS,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thatgamesguy.that-game-engine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
