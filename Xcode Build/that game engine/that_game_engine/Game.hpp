@@ -15,6 +15,7 @@ public:
     void Update();
     void LateUpdate();
     void Draw();
+    void CalculateDeltaTime();
     bool IsRunning() const;
     
 private:

@@ -44,7 +44,7 @@ void Game::Update()
 
 void Game::LateUpdate()
 {
-    deltaTime = clock.restart().asSeconds();
+
 }
 
 void Game::Draw()
@@ -54,6 +54,11 @@ void Game::Draw()
     window.Draw(vikingSprite);
     
     window.EndDraw();
+}
+
+void Game::CalculateDeltaTime()
+{
+    deltaTime = clock.restart().asSeconds();
 }
 
 bool Game::IsRunning() const
