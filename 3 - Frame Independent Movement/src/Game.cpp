@@ -13,8 +13,8 @@ void Game::Update()
     window.Update();
     
     const sf::Vector2f& spritePos = vikingSprite.getPosition();
-    int pixelsToMovePerSec = 100;
-    float frameMovement = pixelsToMovePerSec * deltaTime;
+    const int pixelsToMovePerSec = 100;
+    const float frameMovement = pixelsToMovePerSec * deltaTime;
     vikingSprite.setPosition(spritePos.x + frameMovement, spritePos.y);
 }
 
