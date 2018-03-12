@@ -14,8 +14,6 @@ public:
     void Draw(const sf::Drawable& drawable);
     void EndDraw();
     
-    sf::Vector2u GetCentre() const;
-    
     bool IsOpen() const;
     
 private:

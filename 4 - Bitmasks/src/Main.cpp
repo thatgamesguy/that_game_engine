@@ -6,7 +6,6 @@ int main()
     
     while (game.IsRunning())
     {
-        game.ProcessInput();
         game.Update();
         game.LateUpdate();
         game.Draw();

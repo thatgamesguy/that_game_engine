@@ -6,16 +6,12 @@
 #include "WorkingDirectory.hpp"
 #include "Window.hpp"
 #include "Input.hpp"
-#include "SceneManager.hpp"
-#include "SceneSplashScreen.hpp"
-#include "SceneGame.hpp"
 
 class Game
 {
 public:
     Game();
     
-    void ProcessInput();
     void Update();
     void LateUpdate();
     void Draw();
@@ -26,11 +22,13 @@ private:
     Window window;
     WorkingDirectory workingDir;
     
+    sf::Texture vikingTexture;
+    sf::Sprite vikingSprite;
+
     sf::Clock clock;
     float deltaTime;
     
     Input input;
-    SceneManager sceneManager;
 };
 
 #endif /* Game_hpp */
