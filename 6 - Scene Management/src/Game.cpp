@@ -6,7 +6,7 @@ Game::Game() : window("that game engine")
     
     sceneManager.Add(SceneType::SplashScreen, splashScreen);
     
-    std::shared_ptr<SceneGame> gameScene = std::make_shared<SceneGame>(input, workingDir);
+    std::shared_ptr<SceneGame> gameScene = std::make_shared<SceneGame>(workingDir);
     
     sceneManager.Add(SceneType::Game, gameScene);
     
@@ -17,7 +17,7 @@ Game::Game() : window("that game engine")
 
 void Game::ProcessInput()
 {
-    input.Update();
+    sceneManager.ProcessInput();
 }
 
 void Game::Update()

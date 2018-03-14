@@ -1,5 +1,5 @@
-#ifndef SceneManager_hpp
-#define SceneManager_hpp
+#ifndef SceneStateMachine_hpp
+#define SceneStateMachine_hpp
 
 #include <memory>
 #include <unordered_map>
@@ -8,11 +8,12 @@
 #include "Window.hpp"
 #include "EnumHash.hpp"
 
-class SceneManager
+class SceneStateMachine
 {
 public:
-    SceneManager();
+    SceneStateMachine();
     
+    void ProcessInput();
     void Update(float deltaTime);
     void LateUpdate(float deltaTime);
     void Draw(Window& window);
@@ -26,4 +27,4 @@ private:
     std::shared_ptr<Scene> curScene;
 };
 
-#endif /* SceneManager_hpp */
+#endif /* SceneStateMachine_hpp */

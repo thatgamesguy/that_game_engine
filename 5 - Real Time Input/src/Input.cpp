@@ -4,42 +4,38 @@ void Input::Update()
 {
     lastFrameKeys.SetMask(thisFrameKeys);
 
-    thisFrameKeys.SetBit((int)KEY::LEFT,
+    thisFrameKeys.SetBit((int)Key::Left,
                          (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) || (sf::Keyboard::isKeyPressed(sf::Keyboard::A)));
     
-    thisFrameKeys.SetBit((int)KEY::RIGHT,
+    thisFrameKeys.SetBit((int)Key::Right,
                          (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) || (sf::Keyboard::isKeyPressed(sf::Keyboard::D)));
     
-    thisFrameKeys.SetBit((int)KEY::UP,
+    thisFrameKeys.SetBit((int)Key::Up,
                          (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) || (sf::Keyboard::isKeyPressed(sf::Keyboard::W)));
   
-    thisFrameKeys.SetBit((int)KEY::DOWN,
+    thisFrameKeys.SetBit((int)Key::Down,
                          (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) || (sf::Keyboard::isKeyPressed(sf::Keyboard::S)));
   
-    thisFrameKeys.SetBit((int)KEY::ESC), sf::Keyboard::isKeyPressed(sf::Keyboard::Escape);
+    thisFrameKeys.SetBit((int)Key::Esc), sf::Keyboard::isKeyPressed(sf::Keyboard::Escape);
 }
 
-bool Input::IsKeyDown(KEY keycode)
+bool Input::IsKeyDown(Key keycode)
 {
-    if (!IsKeyPressed(keycode))
-    {
-        return false;
-    }
+    bool lastFrame = lastFrameKeys.GetBit((int)keycode);
+    bool thisFrame = thisFrameKeys.GetBit((int)keycode);
     
-    return !lastFrameKeys.GetBit((int)keycode);
+    return thisFrame && !lastFrame;
 }
 
-bool Input::IsKeyPressed(KEY keycode)
+bool Input::IsKeyPressed(Key keycode)
 {
     return thisFrameKeys.GetBit((int)keycode);
 }
 
-bool Input::IsKeyUp(KEY keycode)
+bool Input::IsKeyUp(Key keycode)
 {
-    if (IsKeyPressed(keycode))
-    {
-        return false;
-    }
+    bool lastFrame = lastFrameKeys.GetBit((int)keycode);
+    bool thisFrame = thisFrameKeys.GetBit((int)keycode);
     
-    return lastFrameKeys.GetBit((int) keycode);
+    return !thisFrame && lastFrame;
 }

@@ -6,7 +6,7 @@
 #include "WorkingDirectory.hpp"
 #include "Window.hpp"
 #include "Input.hpp"
-#include "SceneManager.hpp"
+#include "SceneStateMachine.hpp"
 #include "SceneSplashScreen.hpp"
 #include "SceneGame.hpp"
 
@@ -29,8 +29,7 @@ private:
     sf::Clock clock;
     float deltaTime;
     
-    Input input;
-    SceneManager sceneManager;
+    SceneStateMachine sceneManager;
 };
 
 #endif /* Game_hpp */

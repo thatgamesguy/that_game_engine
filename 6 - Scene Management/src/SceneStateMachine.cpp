@@ -1,8 +1,16 @@
-#include "SceneManager.hpp"
+#include "SceneStateMachine.hpp"
 
-SceneManager::SceneManager() : scenes(0), curScene(0) { }
+SceneStateMachine::SceneStateMachine() : scenes(0), curScene(0) { }
 
-void SceneManager::Update(float deltaTime)
+void SceneStateMachine::ProcessInput()
+{
+    if(curScene)
+    {
+        curScene->ProcessInput();
+    }
+}
+
+void SceneStateMachine::Update(float deltaTime)
 {
     if(curScene)    
     {
@@ -10,7 +18,7 @@ void SceneManager::Update(float deltaTime)
     }
 }
 
-void SceneManager::LateUpdate(float deltaTime)
+void SceneStateMachine::LateUpdate(float deltaTime)
 {
     if(curScene)
     {
@@ -18,7 +26,7 @@ void SceneManager::LateUpdate(float deltaTime)
     }
 }
 
-void SceneManager::Draw(Window& window)
+void SceneStateMachine::Draw(Window& window)
 {
     if(curScene)
     {
@@ -26,7 +34,7 @@ void SceneManager::Draw(Window& window)
     }
 }
 
-bool SceneManager::Add(SceneType type, std::shared_ptr<Scene> scene)
+bool SceneStateMachine::Add(SceneType type, std::shared_ptr<Scene> scene)
 {
     auto inserted = scenes.insert(std::make_pair(type, scene));
     
@@ -38,7 +46,7 @@ bool SceneManager::Add(SceneType type, std::shared_ptr<Scene> scene)
     return inserted.second;
 }
 
-void SceneManager::SwitchTo(const SceneType& type)
+void SceneStateMachine::SwitchTo(const SceneType& type)
 {
     auto it = scenes.find(type);
     if(it != scenes.end())
@@ -54,7 +62,7 @@ void SceneManager::SwitchTo(const SceneType& type)
     }
 }
 
-void SceneManager::Remove(const SceneType& type)
+void SceneStateMachine::Remove(const SceneType& type)
 {
     auto it = scenes.find(type);
     if(it != scenes.end())

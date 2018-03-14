@@ -14,6 +14,7 @@ public:
     virtual void OnActivate() {}; // Called whenever a scene is activated.
     virtual void OnDeactivate() {}; // Called whenever a scene is deactivated.
     
+    virtual void ProcessInput() {};
     virtual void Update(float deltaTime) {};
     virtual void LateUpdate(float deltaTime) {};
     virtual void Draw(Window& window) {};

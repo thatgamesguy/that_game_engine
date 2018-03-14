@@ -1,6 +1,6 @@
 #include "SceneSplashScreen.hpp"
 
-SceneSplashScreen::SceneSplashScreen(WorkingDirectory& workingDir, SceneManager& sceneManager, Window& window, SceneType switchToState) : sceneManager(sceneManager), workingDir(workingDir), window(window), switchToState(switchToState), currentSeconds(0.f), showForSeconds(3.f)
+SceneSplashScreen::SceneSplashScreen(WorkingDirectory& workingDir, SceneStateMachine& sceneStateMachine, Window& window) : sceneStateMachine(sceneStateMachine), workingDir(workingDir), window(window), switchToState(0), currentSeconds(0.f), showForSeconds(3.f)
 {
     
 }
@@ -20,10 +20,15 @@ void SceneSplashScreen::OnCreate()
 
 void SceneSplashScreen::OnActivate()
 {
-        currentSeconds = 0.f;
+    currentSeconds = 0.f;
 }
 
 void SceneSplashScreen::OnDestroy() { }
+
+void SceneSplashScreen::SetSwitchToScene(unsigned int id)
+{
+    switchToState = id;
+}
 
 void SceneSplashScreen::Update(float deltaTime)
 {
@@ -31,7 +36,7 @@ void SceneSplashScreen::Update(float deltaTime)
     
     if(currentSeconds >= showForSeconds)
     {
-        sceneManager.SwitchTo(switchToState);
+        sceneStateMachine.SwitchTo(switchToState);
     }
 }
 

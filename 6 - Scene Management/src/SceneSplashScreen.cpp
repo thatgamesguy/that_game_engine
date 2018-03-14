@@ -1,6 +1,6 @@
 #include "SceneSplashScreen.hpp"
 
-SceneSplashScreen::SceneSplashScreen(WorkingDirectory& workingDir, SceneManager& sceneManager, Window& window, SceneType switchToState) : sceneManager(sceneManager), workingDir(workingDir), window(window), switchToState(switchToState), currentSeconds(0.f), showForSeconds(3.f)
+SceneSplashScreen::SceneSplashScreen(WorkingDirectory& workingDir, SceneStateMachine& sceneManager, Window& window, SceneType switchToState) : sceneManager(sceneManager), workingDir(workingDir), window(window), switchToState(switchToState), currentSeconds(0.f), showForSeconds(3.f)
 {
     
 }

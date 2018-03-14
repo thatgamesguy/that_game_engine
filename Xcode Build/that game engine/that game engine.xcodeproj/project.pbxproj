@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E103661220568D7900F3C0C9 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E103661020568D7900F3C0C9 /* SceneManager.cpp */; };
+		E103661220568D7900F3C0C9 /* SceneStateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E103661020568D7900F3C0C9 /* SceneStateMachine.cpp */; };
 		E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10BAA7F2052BB7900532801 /* Bitmask.cpp */; };
 		E16867592028AB910099B64D /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16867582028AB910099B64D /* Main.cpp */; };
 		E168675C2028AC9C0099B64D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E168675A2028AC9C0099B64D /* Game.cpp */; };
@@ -24,8 +24,8 @@
 
 /* Begin PBXFileReference section */
 		E103660E20568CD900F3C0C9 /* Scene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
-		E103661020568D7900F3C0C9 /* SceneManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
-		E103661120568D7900F3C0C9 /* SceneManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneManager.hpp; sourceTree = "<group>"; };
+		E103661020568D7900F3C0C9 /* SceneStateMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneStateMachine.cpp; sourceTree = "<group>"; };
+		E103661120568D7900F3C0C9 /* SceneStateMachine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneStateMachine.hpp; sourceTree = "<group>"; };
 		E10BAA7F2052BB7900532801 /* Bitmask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bitmask.cpp; sourceTree = "<group>"; };
 		E10BAA802052BB7900532801 /* Bitmask.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bitmask.hpp; sourceTree = "<group>"; };
 		E16867402028AA620099B64D /* that game engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "that game engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +41,6 @@
 		E168676D202B64C80099B64D /* viking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viking.png; sourceTree = "<group>"; };
 		E1712FAF202CC85E0087F4B1 /* Input.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
 		E1712FB0202CC85E0087F4B1 /* Input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
-		E1DD50062056C76600B96459 /* EnumHash.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EnumHash.hpp; sourceTree = "<group>"; };
 		E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneSplashScreen.cpp; sourceTree = "<group>"; };
 		E1DD50092056CDB700B96459 /* SceneSplashScreen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneSplashScreen.hpp; sourceTree = "<group>"; };
 		E1DD500D2056D4A200B96459 /* SceneGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneGame.cpp; sourceTree = "<group>"; };
@@ -65,8 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				E103660E20568CD900F3C0C9 /* Scene.hpp */,
-				E103661020568D7900F3C0C9 /* SceneManager.cpp */,
-				E103661120568D7900F3C0C9 /* SceneManager.hpp */,
+				E103661020568D7900F3C0C9 /* SceneStateMachine.cpp */,
+				E103661120568D7900F3C0C9 /* SceneStateMachine.hpp */,
 				E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */,
 				E1DD50092056CDB700B96459 /* SceneSplashScreen.hpp */,
 				E1DD500D2056D4A200B96459 /* SceneGame.cpp */,
@@ -98,7 +97,6 @@
 				E103660C20568CC600F3C0C9 /* Scenes */,
 				E10BAA7F2052BB7900532801 /* Bitmask.cpp */,
 				E10BAA802052BB7900532801 /* Bitmask.hpp */,
-				E1DD50062056C76600B96459 /* EnumHash.hpp */,
 				E16867472028AA620099B64D /* WorkingDirectory.hpp */,
 				E1686767202B3CCB0099B64D /* WorkingDirectory.cpp */,
 				E168675A2028AC9C0099B64D /* Game.cpp */,
@@ -235,7 +233,7 @@
 			files = (
 				E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */,
 				E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */,
-				E103661220568D7900F3C0C9 /* SceneManager.cpp in Sources */,
+				E103661220568D7900F3C0C9 /* SceneStateMachine.cpp in Sources */,
 				E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */,
 				E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */,
 				E168676B202B56EB0099B64D /* Window.cpp in Sources */,

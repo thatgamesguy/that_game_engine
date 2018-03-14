@@ -7,20 +7,20 @@
 class Input
 {
 public:
-    enum class KEY
+    enum class Key
     {
-        LEFT = 1,
-        RIGHT = 2,
-        UP = 3,
-        DOWN = 4,
-        ESC = 5
+        Left = 1,
+        Right = 2,
+        Up = 3,
+        Down = 4,
+        Esc = 5
     };
     
     void Update();
     
-    bool IsKeyPressed(KEY keycode); // Returns true if the key is pressed.
-    bool IsKeyDown(KEY keycode); // Returns true if the key was just pressed.
-    bool IsKeyUp(KEY keycode); // Returns true if the key was just released.
+    bool IsKeyPressed(Key keycode); // Returns true if the key is pressed.
+    bool IsKeyDown(Key keycode); // Returns true if the key was just pressed.
+    bool IsKeyUp(Key keycode); // Returns true if the key was just released.
     
 private:
     Bitmask thisFrameKeys;

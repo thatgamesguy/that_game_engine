@@ -1,6 +1,6 @@
 #include "SceneGame.hpp"
 
-SceneGame::SceneGame(Input& input, WorkingDirectory& workingDir) : input(input), workingDir(workingDir)
+SceneGame::SceneGame(WorkingDirectory& workingDir) : workingDir(workingDir)
 {
     
 }
@@ -16,27 +16,32 @@ void SceneGame::OnDestroy()
     
 }
 
+void SceneGame::ProcessInput()
+{
+    input.Update();
+}
+
 void SceneGame::Update(float deltaTime)
 {
     const sf::Vector2f& spritePos = vikingSprite.getPosition();
     const int moveSpeed = 100;
     
     int xMove = 0;
-    if(input.IsKeyPressed(Input::KEY::LEFT))
+    if(input.IsKeyPressed(Input::Key::Left))
     {
         xMove = -moveSpeed;
     }
-    else if(input.IsKeyPressed(Input::KEY::RIGHT))
+    else if(input.IsKeyPressed(Input::Key::Right))
     {
         xMove = moveSpeed;
     }
     
     int yMove = 0;
-    if(input.IsKeyPressed(Input::KEY::UP))
+    if(input.IsKeyPressed(Input::Key::Up))
     {
         yMove = -moveSpeed;
     }
-    else if(input.IsKeyPressed(Input::KEY::DOWN))
+    else if(input.IsKeyPressed(Input::Key::Down))
     {
         yMove = moveSpeed;
     }

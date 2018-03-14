@@ -3,13 +3,13 @@
 
 #include <SFML/Graphics.hpp>
 
-#include "SceneManager.hpp"
+#include "SceneStateMachine.hpp"
 #include "WorkingDirectory.hpp"
 
 class SceneSplashScreen : public Scene
 {
 public:
-    SceneSplashScreen(WorkingDirectory& workingDir, SceneManager& sceneManager, Window& window, SceneType switchToState);
+    SceneSplashScreen(WorkingDirectory& workingDir, SceneStateMachine& sceneManager, Window& window, SceneType switchToState);
     
     void OnCreate() override;
     void OnDestroy() override;
@@ -24,7 +24,7 @@ private:
     sf::Sprite splashSprite;
     
     WorkingDirectory& workingDir;
-    SceneManager& sceneManager;
+    SceneStateMachine& sceneManager;
     Window& window;
     
     float currentSeconds;

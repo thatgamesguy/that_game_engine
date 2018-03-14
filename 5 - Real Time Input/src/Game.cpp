@@ -21,21 +21,21 @@ void Game::Update()
     const int moveSpeed = 100;
     
     int xMove = 0;
-    if(input.IsKeyPressed(Input::KEY::LEFT))
+    if(input.IsKeyPressed(Input::Key::Left))
     {
         xMove = -moveSpeed;
     }
-    else if(input.IsKeyPressed(Input::KEY::RIGHT))
+    else if(input.IsKeyPressed(Input::Key::Right))
     {
         xMove = moveSpeed;
     }
     
     int yMove = 0;
-    if(input.IsKeyPressed(Input::KEY::UP))
+    if(input.IsKeyPressed(Input::Key::Up))
     {
         yMove = -moveSpeed;
     }
-    else if(input.IsKeyPressed(Input::KEY::DOWN))
+    else if(input.IsKeyPressed(Input::Key::Down))
     {
         yMove = moveSpeed;
     }

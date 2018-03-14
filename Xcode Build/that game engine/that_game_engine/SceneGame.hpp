@@ -8,11 +8,12 @@
 class SceneGame : public Scene
 {
 public:
-    SceneGame(Input& input, WorkingDirectory& workingDir);
+    SceneGame(WorkingDirectory& workingDir);
     
     void OnCreate() override;
     void OnDestroy() override;
     
+    void ProcessInput() override;
     void Update(float deltaTime) override;
     void Draw(Window& window) override;
     
@@ -21,7 +22,7 @@ private:
     sf::Sprite vikingSprite;
     
     WorkingDirectory& workingDir;
-    Input& input;
+    Input input;
 };
 
 #endif /* SceneGame_hpp */

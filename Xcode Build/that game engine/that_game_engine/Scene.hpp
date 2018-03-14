@@ -3,8 +3,6 @@
 
 #include "Window.hpp"
 
-enum class SceneType { SplashScreen, MainMenu, Game, Paused, GameOver, Credits };
-
 class Scene
 {
 public:
@@ -14,6 +12,7 @@ public:
     virtual void OnActivate() {}; // Called whenever a scene is activated.
     virtual void OnDeactivate() {}; // Called whenever a scene is deactivated.
     
+    virtual void ProcessInput() {};
     virtual void Update(float deltaTime) {};
     virtual void LateUpdate(float deltaTime) {};
     virtual void Draw(Window& window) {};
