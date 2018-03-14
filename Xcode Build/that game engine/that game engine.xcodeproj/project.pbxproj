@@ -17,6 +17,10 @@
 		E168676B202B56EB0099B64D /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1686769202B56EB0099B64D /* Window.cpp */; };
 		E168676E202B64C80099B64D /* viking.png in Resources */ = {isa = PBXBuildFile; fileRef = E168676D202B64C80099B64D /* viking.png */; };
 		E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1712FAF202CC85E0087F4B1 /* Input.cpp */; };
+		E1911E4720593F9D000C8851 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4520593F9D000C8851 /* Object.cpp */; };
+		E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4D205958CB000C8851 /* C_Sprite.cpp */; };
+		E1911E5520595F2A000C8851 /* C_Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E5320595F2A000C8851 /* C_Transform.cpp */; };
+		E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */; };
 		E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */; };
 		E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD500D2056D4A200B96459 /* SceneGame.cpp */; };
 		E1DD50112056DA4D00B96459 /* that_games_guy_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DD50102056DA4D00B96459 /* that_games_guy_logo.png */; };
@@ -41,6 +45,16 @@
 		E168676D202B64C80099B64D /* viking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viking.png; sourceTree = "<group>"; };
 		E1712FAF202CC85E0087F4B1 /* Input.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
 		E1712FB0202CC85E0087F4B1 /* Input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
+		E1911E4520593F9D000C8851 /* Object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		E1911E4620593F9D000C8851 /* Object.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
+		E1911E492059424C000C8851 /* Component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
+		E1911E4D205958CB000C8851 /* C_Sprite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Sprite.cpp; sourceTree = "<group>"; };
+		E1911E4E205958CB000C8851 /* C_Sprite.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Sprite.hpp; sourceTree = "<group>"; };
+		E1911E5320595F2A000C8851 /* C_Transform.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Transform.cpp; sourceTree = "<group>"; };
+		E1911E5420595F2A000C8851 /* C_Transform.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Transform.hpp; sourceTree = "<group>"; };
+		E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_KeyboardMovement.cpp; sourceTree = "<group>"; };
+		E1911E57205966C1000C8851 /* C_KeyboardMovement.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_KeyboardMovement.hpp; sourceTree = "<group>"; };
+		E1A4CEE02059ABFD007C89F8 /* ResourceAllocator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceAllocator.hpp; sourceTree = "<group>"; };
 		E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneSplashScreen.cpp; sourceTree = "<group>"; };
 		E1DD50092056CDB700B96459 /* SceneSplashScreen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneSplashScreen.hpp; sourceTree = "<group>"; };
 		E1DD500D2056D4A200B96459 /* SceneGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneGame.cpp; sourceTree = "<group>"; };
@@ -94,6 +108,7 @@
 		E16867422028AA620099B64D /* that_game_engine */ = {
 			isa = PBXGroup;
 			children = (
+				E1911E4B20594600000C8851 /* ECS */,
 				E103660C20568CC600F3C0C9 /* Scenes */,
 				E10BAA7F2052BB7900532801 /* Bitmask.cpp */,
 				E10BAA802052BB7900532801 /* Bitmask.hpp */,
@@ -105,6 +120,7 @@
 				E168676A202B56EB0099B64D /* Window.hpp */,
 				E1712FAF202CC85E0087F4B1 /* Input.cpp */,
 				E1712FB0202CC85E0087F4B1 /* Input.hpp */,
+				E1A4CEE02059ABFD007C89F8 /* ResourceAllocator.hpp */,
 				E16867582028AB910099B64D /* Main.cpp */,
 				E168674A2028AA620099B64D /* Resources */,
 				E16867432028AA620099B64D /* Supporting Files */,
@@ -143,6 +159,30 @@
 				E168676D202B64C80099B64D /* viking.png */,
 			);
 			name = Textures;
+			sourceTree = "<group>";
+		};
+		E1911E4B20594600000C8851 /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+				E1911E4C205946AA000C8851 /* Components */,
+				E1911E4520593F9D000C8851 /* Object.cpp */,
+				E1911E4620593F9D000C8851 /* Object.hpp */,
+				E1911E492059424C000C8851 /* Component.hpp */,
+			);
+			name = ECS;
+			sourceTree = "<group>";
+		};
+		E1911E4C205946AA000C8851 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E1911E4D205958CB000C8851 /* C_Sprite.cpp */,
+				E1911E4E205958CB000C8851 /* C_Sprite.hpp */,
+				E1911E5320595F2A000C8851 /* C_Transform.cpp */,
+				E1911E5420595F2A000C8851 /* C_Transform.hpp */,
+				E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */,
+				E1911E57205966C1000C8851 /* C_KeyboardMovement.hpp */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,14 +273,18 @@
 			files = (
 				E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */,
 				E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */,
+				E1911E4720593F9D000C8851 /* Object.cpp in Sources */,
 				E103661220568D7900F3C0C9 /* SceneStateMachine.cpp in Sources */,
 				E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */,
 				E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */,
+				E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */,
+				E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */,
 				E168676B202B56EB0099B64D /* Window.cpp in Sources */,
 				E168675C2028AC9C0099B64D /* Game.cpp in Sources */,
 				E1686768202B3CCB0099B64D /* WorkingDirectory.cpp in Sources */,
 				E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */,
 				E16867592028AB910099B64D /* Main.cpp in Sources */,
+				E1911E5520595F2A000C8851 /* C_Transform.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

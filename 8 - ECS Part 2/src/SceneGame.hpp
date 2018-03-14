@@ -7,7 +7,6 @@
 #include "Object.hpp"
 #include "C_Sprite.hpp"
 #include "C_KeyboardMovement.hpp"
-#include "ResourceAllocator.hpp"
 
 class SceneGame : public Scene
 {
@@ -27,7 +26,6 @@ private:
     
     WorkingDirectory& workingDir;
     Input input;
-    ResourceAllocator<sf::Texture> textureAllocator;
 };
 
 #endif /* SceneGame_hpp */

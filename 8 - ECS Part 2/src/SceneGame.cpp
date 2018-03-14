@@ -10,7 +10,6 @@ void SceneGame::OnCreate()
     player = std::make_shared<Object>();
     
     auto sprite = player->AddComponent<C_Sprite>();
-    sprite->SetTextureAllocator(&textureAllocator);
     sprite->Load(workingDir.Get() + "viking.png");
     
     auto movement = player->AddComponent<C_KeyboardMovement>();
