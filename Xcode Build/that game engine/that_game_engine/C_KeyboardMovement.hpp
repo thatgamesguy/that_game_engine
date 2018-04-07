@@ -7,7 +7,7 @@
 class C_KeyboardMovement : public Component
 {
 public:
-    C_KeyboardMovement(Object * owner);
+    C_KeyboardMovement(Object* owner);
     
     void SetInput(Input* input);
     void SetMovementSpeed(int moveSpeed);

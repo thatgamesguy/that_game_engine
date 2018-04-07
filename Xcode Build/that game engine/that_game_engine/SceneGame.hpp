@@ -9,6 +9,7 @@
 #include "C_KeyboardMovement.hpp"
 #include "ResourceAllocator.hpp"
 #include "ObjectCollection.hpp"
+#include "C_Animation.hpp"
 
 class SceneGame : public Scene
 {

@@ -18,9 +18,13 @@ public:
     void LateUpdate(float deltaTime) override;
     void Draw(Window& window) override;
     
+    void SetTextureRect(int x, int y, int width, int height);
+    void SetTextureRect(const sf::IntRect& rect);
+    
 private:
     ResourceAllocator<sf::Texture>* allocator;
     sf::Sprite sprite;
+    int currentTextureID;
 };
 
 #endif /* C_Sprite_hpp */

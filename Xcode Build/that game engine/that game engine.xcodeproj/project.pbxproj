@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E103661220568D7900F3C0C9 /* SceneStateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E103661020568D7900F3C0C9 /* SceneStateMachine.cpp */; };
 		E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10BAA7F2052BB7900532801 /* Bitmask.cpp */; };
+		E1472D23207975B900CDA651 /* knight.png in Resources */ = {isa = PBXBuildFile; fileRef = E1472D22207975B800CDA651 /* knight.png */; };
 		E16867592028AB910099B64D /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16867582028AB910099B64D /* Main.cpp */; };
 		E168675C2028AC9C0099B64D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E168675A2028AC9C0099B64D /* Game.cpp */; };
 		E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E16867472028AA620099B64D /* WorkingDirectory.hpp */; };
@@ -25,6 +26,8 @@
 		E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */; };
 		E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD500D2056D4A200B96459 /* SceneGame.cpp */; };
 		E1DD50112056DA4D00B96459 /* that_games_guy_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DD50102056DA4D00B96459 /* that_games_guy_logo.png */; };
+		E1E8058F207952B600EF4B2A /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1E8058D207952B600EF4B2A /* Animation.cpp */; };
+		E1E8059220795ABB00EF4B2A /* C_Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1E8059020795ABB00EF4B2A /* C_Animation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,7 @@
 		E103661120568D7900F3C0C9 /* SceneStateMachine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneStateMachine.hpp; sourceTree = "<group>"; };
 		E10BAA7F2052BB7900532801 /* Bitmask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bitmask.cpp; sourceTree = "<group>"; };
 		E10BAA802052BB7900532801 /* Bitmask.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bitmask.hpp; sourceTree = "<group>"; };
+		E1472D22207975B800CDA651 /* knight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knight.png; sourceTree = "<group>"; };
 		E16867402028AA620099B64D /* that game engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "that game engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16867442028AA620099B64D /* that game engine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "that game engine-Info.plist"; sourceTree = "<group>"; };
 		E16867472028AA620099B64D /* WorkingDirectory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WorkingDirectory.hpp; sourceTree = "<group>"; };
@@ -63,6 +67,10 @@
 		E1DD500D2056D4A200B96459 /* SceneGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneGame.cpp; sourceTree = "<group>"; };
 		E1DD500E2056D4A200B96459 /* SceneGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneGame.hpp; sourceTree = "<group>"; };
 		E1DD50102056DA4D00B96459 /* that_games_guy_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = that_games_guy_logo.png; sourceTree = "<group>"; };
+		E1E8058D207952B600EF4B2A /* Animation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Animation.cpp; sourceTree = "<group>"; };
+		E1E8058E207952B600EF4B2A /* Animation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Animation.hpp; sourceTree = "<group>"; };
+		E1E8059020795ABB00EF4B2A /* C_Animation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Animation.cpp; sourceTree = "<group>"; };
+		E1E8059120795ABB00EF4B2A /* C_Animation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Animation.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,8 @@
 				E1A4CEE02059ABFD007C89F8 /* ResourceAllocator.hpp */,
 				E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */,
 				E1C9BC58205A5E8E0074A696 /* ObjectCollection.hpp */,
+				E1E8058D207952B600EF4B2A /* Animation.cpp */,
+				E1E8058E207952B600EF4B2A /* Animation.hpp */,
 				E16867582028AB910099B64D /* Main.cpp */,
 				E168674A2028AA620099B64D /* Resources */,
 				E16867432028AA620099B64D /* Supporting Files */,
@@ -160,6 +170,7 @@
 		E168676C202B5B1C0099B64D /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				E1472D22207975B800CDA651 /* knight.png */,
 				E1DD50102056DA4D00B96459 /* that_games_guy_logo.png */,
 				E168676D202B64C80099B64D /* viking.png */,
 			);
@@ -186,6 +197,8 @@
 				E1911E5420595F2A000C8851 /* C_Transform.hpp */,
 				E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */,
 				E1911E57205966C1000C8851 /* C_KeyboardMovement.hpp */,
+				E1E8059020795ABB00EF4B2A /* C_Animation.cpp */,
+				E1E8059120795ABB00EF4B2A /* C_Animation.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -250,6 +263,7 @@
 			files = (
 				E168676E202B64C80099B64D /* viking.png in Resources */,
 				E1DD50112056DA4D00B96459 /* that_games_guy_logo.png in Resources */,
+				E1472D23207975B900CDA651 /* knight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E8059220795ABB00EF4B2A /* C_Animation.cpp in Sources */,
 				E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */,
 				E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */,
 				E1911E4720593F9D000C8851 /* Object.cpp in Sources */,
@@ -290,6 +305,7 @@
 				E1686768202B3CCB0099B64D /* WorkingDirectory.cpp in Sources */,
 				E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */,
 				E16867592028AB910099B64D /* Main.cpp in Sources */,
+				E1E8058F207952B600EF4B2A /* Animation.cpp in Sources */,
 				E1911E5520595F2A000C8851 /* C_Transform.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
