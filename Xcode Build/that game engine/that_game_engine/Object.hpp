@@ -23,8 +23,6 @@ public:
     {
         static_assert(std::is_base_of<Component, T>::value, "T must derive from Component");
         
-        std::shared_ptr<T> newComponent = std::make_shared<T>(this);
-        
         // Check that we don't already have a component of this type.
         for (auto& exisitingComponent : components)
         {
@@ -34,6 +32,7 @@ public:
             }
         }
         
+        std::shared_ptr<T> newComponent = std::make_shared<T>(this);
         components.push_back(newComponent);
         
         return newComponent;
@@ -41,6 +40,8 @@ public:
     
     template <typename T> std::shared_ptr<T> GetComponent()
     {
+        static_assert(std::is_base_of<Component, T>::value, "T must derive from Component");
+        
         // Check that we don't already have a component of this type.
         for (auto& exisitingComponent : components)
         {
