@@ -15,7 +15,7 @@ class Game
 public:
     Game();
     
-    void ProcessInput();
+    void CaptureInput();
     void Update();
     void LateUpdate();
     void Draw();
@@ -30,6 +30,7 @@ private:
     float deltaTime;
     
     SceneStateMachine sceneStateMachine;
+    ResourceAllocator<sf::Texture> textureAllocator;
 };
 
 #endif /* Game_hpp */

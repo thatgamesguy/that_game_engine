@@ -2,40 +2,40 @@
 
 void Object::Awake()
 {
-    for (auto& c : components)
+    for(int i = components.size() - 1; i >= 0; i--)
     {
-        c->Awake();
+        components[i]->Awake();
     }
 }
 
 void Object::Start()
 {
-    for (auto& c : components)
+    for(int i = components.size() - 1; i >= 0; i--)
     {
-        c->Start();
+        components[i]->Start();
     }
 }
 
 void Object::Update(float timeDelta)
 {
-    for (const auto& component : components)
+    for(int i = components.size() - 1; i >= 0; i--)
     {
-        component->Update(timeDelta);
+        components[i]->Update(timeDelta);
     }
 }
 
 void Object::LateUpdate(float timeDelta)
 {
-    for (const auto& component : components)
+    for(int i = components.size() - 1; i >= 0; i--)
     {
-        component->LateUpdate(timeDelta);
+        components[i]->LateUpdate(timeDelta);
     }
 }
 
 void Object::Draw(Window& window)
 {
-    for (const auto& component : components)
+    for(int i = components.size() - 1; i >= 0; i--)
     {
-        component->Draw(window);
+        components[i]->Draw(window);
     }
 }

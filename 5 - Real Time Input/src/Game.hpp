@@ -12,7 +12,7 @@ class Game
 public:
     Game();
     
-    void ProcessInput();
+    void CaptureInput();
     void Update();
     void LateUpdate();
     void Draw();

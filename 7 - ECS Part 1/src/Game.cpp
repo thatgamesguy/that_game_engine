@@ -16,7 +16,7 @@ Game::Game() : window("that game engine")
     deltaTime = clock.restart().asSeconds();
 }
 
-void Game::ProcessInput()
+void Game::CaptureInput()
 {
     sceneStateMachine.ProcessInput();
 }

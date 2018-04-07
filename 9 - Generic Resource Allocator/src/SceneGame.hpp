@@ -12,7 +12,7 @@
 class SceneGame : public Scene
 {
 public:
-    SceneGame(WorkingDirectory& workingDir);
+    SceneGame(WorkingDirectory& workingDir, ResourceAllocator<sf::Texture>& textureAllocator);
     
     void OnCreate() override;
     void OnDestroy() override;
@@ -27,7 +27,7 @@ private:
     
     WorkingDirectory& workingDir;
     Input input;
-    ResourceAllocator<sf::Texture> textureAllocator;
+    ResourceAllocator<sf::Texture>& textureAllocator;
 };
 
 #endif /* SceneGame_hpp */

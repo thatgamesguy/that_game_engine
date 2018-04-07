@@ -53,21 +53,6 @@ public:
         return nullptr;
     };
     
-    template <typename T> std::vector<std::shared_ptr<T>> GetComponents()
-    {
-        std::vector<std::shared_ptr<T>> components;
-        
-        for (auto& exisitingComponent : components)
-        {
-            if (std::dynamic_pointer_cast<T>(exisitingComponent))
-            {
-                components.push_back(std::dynamic_pointer_cast<T>(exisitingComponent));
-            }
-        }
-        
-        return components;
-    };
-    
     bool IsQueuedForRemoval();
     void QueueForRemoval();
     

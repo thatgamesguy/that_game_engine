@@ -1,21 +1,26 @@
 #include "SceneSplashScreen.hpp"
 
-SceneSplashScreen::SceneSplashScreen(WorkingDirectory& workingDir, SceneStateMachine& sceneStateMachine, Window& window) : sceneStateMachine(sceneStateMachine), workingDir(workingDir), window(window), switchToState(0), currentSeconds(0.f), showForSeconds(3.f)
+SceneSplashScreen::SceneSplashScreen(WorkingDirectory& workingDir, SceneStateMachine& sceneStateMachine, Window& window, ResourceAllocator<sf::Texture>& textureAllocator) : sceneStateMachine(sceneStateMachine), workingDir(workingDir), window(window), switchToState(0), currentSeconds(0.f), showForSeconds(3.f), textureAllocator(textureAllocator)
 {
     
 }
 
 void SceneSplashScreen::OnCreate()
 {
-    splashTexture.loadFromFile(workingDir.Get() + "that_games_guy_logo.png");
-    splashSprite.setTexture(splashTexture);
+    int textureID = textureAllocator.Add(workingDir.Get() + "that_games_guy_logo.png");
     
-    sf::FloatRect spriteSize = splashSprite.getLocalBounds();
-    splashSprite.setOrigin(spriteSize.width * 0.5f, spriteSize.height * 0.5f);
-    splashSprite.setScale(0.5f, 0.5f);
-    
-    sf::Vector2u windowCentre = window.GetCentre();
-    splashSprite.setPosition(windowCentre.x, windowCentre.y);
+    if(textureID >= 0)
+    {
+        std::shared_ptr<sf::Texture> texture = textureAllocator.Get(textureID);
+        splashSprite.setTexture(*texture);
+        
+        sf::FloatRect spriteSize = splashSprite.getLocalBounds();
+        splashSprite.setOrigin(spriteSize.width * 0.5f, spriteSize.height * 0.5f);
+        splashSprite.setScale(0.5f, 0.5f);
+        
+        sf::Vector2u windowCentre = window.GetCentre();
+        splashSprite.setPosition(windowCentre.x, windowCentre.y);
+    }
 }
 
 void SceneSplashScreen::OnActivate()

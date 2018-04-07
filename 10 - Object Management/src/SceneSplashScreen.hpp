@@ -5,11 +5,12 @@
 
 #include "SceneStateMachine.hpp"
 #include "WorkingDirectory.hpp"
+#include "ResourceAllocator.hpp"
 
 class SceneSplashScreen : public Scene
 {
 public:
-    SceneSplashScreen(WorkingDirectory& workingDir, SceneStateMachine& sceneStateMachine, Window& window);
+    SceneSplashScreen(WorkingDirectory& workingDir, SceneStateMachine& sceneStateMachine, Window& window, ResourceAllocator<sf::Texture>& textureAllocator);
     
     void OnCreate() override;
     void OnDestroy() override;
@@ -33,6 +34,8 @@ private:
     float showForSeconds;
     
     unsigned int switchToState;
+    
+    ResourceAllocator<sf::Texture>& textureAllocator;
 };
 
 #endif /* SceneSplashScreen_hpp */
