@@ -16,7 +16,7 @@ void SceneGame::OnCreate()
     
     int knightTextureid = textureAllocator.Add(workingDir.Get() + "knight.png");
     
-    std::shared_ptr<Animation> idleAnimation = std::make_shared<Animation>(FacingDirection::Left);
+    std::shared_ptr<Animation> idleAnimation = std::make_shared<Animation>();
     const int idleStartX = 152;
     const int idleFrameY = 1998;
     const int idleFrameWidth = 126;
@@ -29,20 +29,6 @@ void SceneGame::OnCreate()
         idleAnimation->AddFrame(knightTextureid, idleStartX + idleXIncrement * i, idleFrameY, idleFrameWidth, idleFrameHeight, idleFrameTime);
     }
     animation->AddAnimation(AnimationState::Idle, idleAnimation);
-    
-    std::shared_ptr<Animation> walkAnimation = std::make_shared<Animation>(FacingDirection::Left);
-    const int walkStartX = 148;
-    const int walkFrameY = 1350;
-    const int walkFrameHeight = 158;
-    const int walkFrameWidth = 149;
-    const float walkFrameTime = 0.1f;
-    const int walkFrameCount = 10;
-    const int walkXIncrement = 164;
-    for (int i = 0; i < walkFrameCount; i++)
-    {
-        walkAnimation->AddFrame(knightTextureid, walkStartX + walkXIncrement * i, walkFrameY, walkFrameWidth, walkFrameHeight, walkFrameTime);
-    }
-    animation->AddAnimation(AnimationState::Walk, walkAnimation);
     
     objects.Add(player);
 }
