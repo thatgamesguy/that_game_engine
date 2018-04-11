@@ -1,6 +1,7 @@
 #include "SceneSplashScreen.hpp"
 
-SceneSplashScreen::SceneSplashScreen(WorkingDirectory& workingDir, SceneStateMachine& sceneManager, Window& window, SceneType switchToState) : sceneManager(sceneManager), workingDir(workingDir), window(window), switchToState(switchToState), currentSeconds(0.f), showForSeconds(3.f)
+SceneSplashScreen::SceneSplashScreen(WorkingDirectory& workingDir, SceneStateMachine& sceneStateMachine, Window& window)
+: sceneStateMachine(sceneStateMachine), workingDir(workingDir), window(window), switchToState(0), currentSeconds(0.f), showForSeconds(3.f)
 {
     
 }
@@ -11,7 +12,7 @@ void SceneSplashScreen::OnCreate()
     splashSprite.setTexture(splashTexture);
     
     sf::FloatRect spriteSize = splashSprite.getLocalBounds();
-    splashSprite.setOrigin(spriteSize.width * 0.5f, spriteSize.height * 0.5f);
+    splashSprite.setOrigin(spriteSize.width * 0.5f, spriteSize.height * 0.5f); /
     splashSprite.setScale(0.5f, 0.5f);
     
     sf::Vector2u windowCentre = window.GetCentre();
@@ -20,10 +21,15 @@ void SceneSplashScreen::OnCreate()
 
 void SceneSplashScreen::OnActivate()
 {
-        currentSeconds = 0.f;
+    currentSeconds = 0.f;
 }
 
 void SceneSplashScreen::OnDestroy() { }
+
+void SceneSplashScreen::SetSwitchToScene(unsigned int id)
+{
+    switchToState = id;
+}
 
 void SceneSplashScreen::Update(float deltaTime)
 {
@@ -31,7 +37,7 @@ void SceneSplashScreen::Update(float deltaTime)
     
     if(currentSeconds >= showForSeconds)
     {
-        sceneManager.SwitchTo(switchToState);
+        sceneStateMachine.SwitchTo(switchToState);
     }
 }
 
@@ -39,3 +45,4 @@ void SceneSplashScreen::Draw(Window& window)
 {
     window.Draw(splashSprite);
 }
+

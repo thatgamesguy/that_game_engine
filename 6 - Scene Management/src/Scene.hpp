@@ -3,8 +3,6 @@
 
 #include "Window.hpp"
 
-enum class SceneType { SplashScreen, MainMenu, Game, Paused, GameOver, Credits };
-
 class Scene
 {
 public:

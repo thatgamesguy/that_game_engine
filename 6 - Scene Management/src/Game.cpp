@@ -2,17 +2,19 @@
 
 Game::Game() : window("that game engine")
 {
-    std::shared_ptr<SceneSplashScreen> splashScreen = std::make_shared<SceneSplashScreen>(workingDir, sceneManager, window, SceneType::Game);
-    
-    sceneManager.Add(SceneType::SplashScreen, splashScreen);
+    std::shared_ptr<SceneSplashScreen> splashScreen = std::make_shared<SceneSplashScreen>(workingDir, sceneStateMachine, window);
     
     std::shared_ptr<SceneGame> gameScene = std::make_shared<SceneGame>(workingDir);
     
-    sceneManager.Add(SceneType::Game, gameScene);
+    unsigned int splashScreenID = sceneStateMachine.Add(splashScreen);
+    unsigned int gameSceneID = sceneStateMachine.Add(gameScene);
     
-    sceneManager.SwitchTo(SceneType::SplashScreen);
+    splashScreen->SetSwitchToScene(gameSceneID);
+    
+    sceneStateMachine.SwitchTo(splashScreenID);
     
     deltaTime = clock.restart().asSeconds();
+
 }
 
 void Game::CaptureInput()

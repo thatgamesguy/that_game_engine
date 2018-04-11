@@ -34,21 +34,34 @@ void SceneStateMachine::Draw(Window& window)
     }
 }
 
-bool SceneStateMachine::Add(SceneType type, std::shared_ptr<Scene> scene)
+unsigned int SceneStateMachine::Add(std::shared_ptr<Scene> scene)
 {
-    auto inserted = scenes.insert(std::make_pair(type, scene));
+    auto inserted = scenes.insert(std::make_pair(insertedSceneID, scene));
     
-    if(inserted.second)
-    {
-        inserted.first->second->OnCreate();
-    }
+    inserted.first->second->OnCreate();
     
-    return inserted.second;
+    return insertedSceneID++;
 }
 
-void SceneStateMachine::SwitchTo(const SceneType& type)
+void SceneStateMachine::Remove(unsigned int id)
 {
-    auto it = scenes.find(type);
+    auto it = scenes.find(id);
+    if(it != scenes.end())
+    {
+        if(curScene == it->second)
+        {
+            curScene = nullptr;
+        }
+        
+        it->second->OnDestroy();
+        
+        scenes.erase(it);
+    }
+}
+
+void SceneStateMachine::SwitchTo(unsigned int id)
+{
+    auto it = scenes.find(id);
     if(it != scenes.end())
     {
         if(curScene)
@@ -62,18 +75,4 @@ void SceneStateMachine::SwitchTo(const SceneType& type)
     }
 }
 
-void SceneStateMachine::Remove(const SceneType& type)
-{
-    auto it = scenes.find(type);
-    if(it != scenes.end())
-    {
-        if(curScene == it->second)
-        {
-            curScene = nullptr;
-        }
-        
-        it->second->OnDestroy();
-        
-        scenes.erase(it);
-    }
-}
+

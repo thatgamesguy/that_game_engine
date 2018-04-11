@@ -18,13 +18,14 @@ public:
     void LateUpdate(float deltaTime);
     void Draw(Window& window);
     
-    bool Add(SceneType type, std::shared_ptr<Scene> scene);
-    void SwitchTo(const SceneType& type);
-    void Remove(const SceneType& type);
+    unsigned int Add(std::shared_ptr<Scene> scene);
+    void SwitchTo(unsigned int id);
+    void Remove(unsigned int id);
     
 private:
-    std::unordered_map<SceneType, std::shared_ptr<Scene>, EnumHash> scenes;
+    std::unordered_map<unsigned int, std::shared_ptr<Scene>> scenes;
     std::shared_ptr<Scene> curScene;
+    unsigned int insertedSceneID;
 };
 
 #endif /* SceneStateMachine_hpp */

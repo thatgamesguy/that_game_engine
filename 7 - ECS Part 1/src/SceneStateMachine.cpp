@@ -38,11 +38,9 @@ unsigned int SceneStateMachine::Add(std::shared_ptr<Scene> scene)
 {
     auto inserted = scenes.insert(std::make_pair(insertedSceneID, scene));
     
-    insertedSceneID++;
-
     inserted.first->second->OnCreate();
     
-    return insertedSceneID - 1;
+    return insertedSceneID++;
 }
 
 void SceneStateMachine::SwitchTo(unsigned int id)
