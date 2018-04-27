@@ -21,6 +21,9 @@
 		E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4D205958CB000C8851 /* C_Sprite.cpp */; };
 		E1911E5520595F2A000C8851 /* C_Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E5320595F2A000C8851 /* C_Transform.cpp */; };
 		E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */; };
+		E1BFB566208E30E300E2AB24 /* Castle Tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = E1BFB565208E30E300E2AB24 /* Castle Tiles.png */; };
+		E1BFB56B208E312B00E2AB24 /* test_map.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1BFB56A208E312B00E2AB24 /* test_map.tmx */; };
+		E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */; };
 		E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */; };
 		E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */; };
 		E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD500D2056D4A200B96459 /* SceneGame.cpp */; };
@@ -58,6 +61,14 @@
 		E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_KeyboardMovement.cpp; sourceTree = "<group>"; };
 		E1911E57205966C1000C8851 /* C_KeyboardMovement.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_KeyboardMovement.hpp; sourceTree = "<group>"; };
 		E1A4CEE02059ABFD007C89F8 /* ResourceAllocator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceAllocator.hpp; sourceTree = "<group>"; };
+		E1BFB565208E30E300E2AB24 /* Castle Tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Castle Tiles.png"; sourceTree = "<group>"; };
+		E1BFB56A208E312B00E2AB24 /* test_map.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test_map.tmx; sourceTree = "<group>"; };
+		E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapParser.cpp; sourceTree = "<group>"; };
+		E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TileMapParser.hpp; sourceTree = "<group>"; };
+		E1BFB570208E330C00E2AB24 /* rapidxml_print.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_print.hpp; sourceTree = "<group>"; };
+		E1BFB571208E330C00E2AB24 /* rapidxml_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_utils.hpp; sourceTree = "<group>"; };
+		E1BFB572208E330C00E2AB24 /* rapidxml_iterators.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_iterators.hpp; sourceTree = "<group>"; };
+		E1BFB573208E330D00E2AB24 /* rapidxml.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rapidxml.hpp; sourceTree = "<group>"; };
 		E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectCollection.cpp; sourceTree = "<group>"; };
 		E1C9BC58205A5E8E0074A696 /* ObjectCollection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ObjectCollection.hpp; sourceTree = "<group>"; };
 		E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneSplashScreen.cpp; sourceTree = "<group>"; };
@@ -117,6 +128,8 @@
 		E16867422028AA620099B64D /* that_game_engine */ = {
 			isa = PBXGroup;
 			children = (
+				E1BFB574208E331000E2AB24 /* XML Parser */,
+				E1BFB56C208E325200E2AB24 /* Tile Map */,
 				E1911E4B20594600000C8851 /* ECS */,
 				E103660C20568CC600F3C0C9 /* Scenes */,
 				E10BAA7F2052BB7900532801 /* Bitmask.cpp */,
@@ -152,6 +165,7 @@
 		E168674A2028AA620099B64D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1BFB569208E311700E2AB24 /* Tile Maps */,
 				E168676C202B5B1C0099B64D /* Textures */,
 			);
 			name = Resources;
@@ -168,6 +182,7 @@
 		E168676C202B5B1C0099B64D /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				E1BFB565208E30E300E2AB24 /* Castle Tiles.png */,
 				E1472D22207975B800CDA651 /* knight.png */,
 				E1DD50102056DA4D00B96459 /* that_games_guy_logo.png */,
 			);
@@ -198,6 +213,34 @@
 				E1E8059120795ABB00EF4B2A /* C_Animation.hpp */,
 			);
 			name = Components;
+			sourceTree = "<group>";
+		};
+		E1BFB569208E311700E2AB24 /* Tile Maps */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFB56A208E312B00E2AB24 /* test_map.tmx */,
+			);
+			name = "Tile Maps";
+			sourceTree = "<group>";
+		};
+		E1BFB56C208E325200E2AB24 /* Tile Map */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */,
+				E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */,
+			);
+			name = "Tile Map";
+			sourceTree = "<group>";
+		};
+		E1BFB574208E331000E2AB24 /* XML Parser */ = {
+			isa = PBXGroup;
+			children = (
+				E1BFB572208E330C00E2AB24 /* rapidxml_iterators.hpp */,
+				E1BFB570208E330C00E2AB24 /* rapidxml_print.hpp */,
+				E1BFB571208E330C00E2AB24 /* rapidxml_utils.hpp */,
+				E1BFB573208E330D00E2AB24 /* rapidxml.hpp */,
+			);
+			name = "XML Parser";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +301,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1BFB56B208E312B00E2AB24 /* test_map.tmx in Resources */,
 				E1DD50112056DA4D00B96459 /* that_games_guy_logo.png in Resources */,
 				E1472D23207975B900CDA651 /* knight.png in Resources */,
+				E1BFB566208E30E300E2AB24 /* Castle Tiles.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +336,7 @@
 				E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */,
 				E1911E4720593F9D000C8851 /* Object.cpp in Sources */,
 				E103661220568D7900F3C0C9 /* SceneStateMachine.cpp in Sources */,
+				E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */,
 				E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */,
 				E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */,
 				E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */,
