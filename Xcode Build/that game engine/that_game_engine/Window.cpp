@@ -39,6 +39,16 @@ sf::Vector2u Window::GetCentre() const
     return sf::Vector2u(size.x / 2, size.y / 2);
 }
 
+sf::FloatRect Window::GetViewSpace() const
+{
+    sf::Vector2f viewCenter(window.getView().getCenter());
+    sf::Vector2f viewSize(window.getView().getSize());
+    sf::Vector2f viewSizeHalf(viewSize.x / 2, viewSize.y / 2);
+    sf::FloatRect viewSpace(viewCenter - viewSizeHalf, viewSize);
+    
+    return viewSpace;
+}
+
 bool Window::IsOpen() const
 {
     return window.isOpen();

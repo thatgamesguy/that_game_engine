@@ -10,6 +10,7 @@
 #include "ResourceAllocator.hpp"
 #include "ObjectCollection.hpp"
 #include "C_Animation.hpp"
+#include "Level.hpp"
 
 class SceneGame : public Scene
 {
@@ -29,6 +30,7 @@ private:
     Input input;
     ResourceAllocator<sf::Texture>& textureAllocator;
     ObjectCollection objects;
+    Level level;
 };
 
 #endif /* SceneGame_hpp */

@@ -15,6 +15,7 @@ public:
     void EndDraw();
     
     sf::Vector2u GetCentre() const;
+    sf::FloatRect GetViewSpace() const;
     
     bool IsOpen() const;
     

@@ -1,6 +1,6 @@
 #include "SceneGame.hpp"
 
-SceneGame::SceneGame(WorkingDirectory& workingDir, ResourceAllocator<sf::Texture>& textureAllocator) : workingDir(workingDir), textureAllocator(textureAllocator) { }
+SceneGame::SceneGame(WorkingDirectory& workingDir, ResourceAllocator<sf::Texture>& textureAllocator) : workingDir(workingDir), textureAllocator(textureAllocator), level(textureAllocator) { }
 
 void SceneGame::OnCreate()
 {
@@ -37,6 +37,8 @@ void SceneGame::OnCreate()
     animation->AddAnimation(AnimationState::Walk, walkAnimation);
     
     objects.Add(player);
+    
+    level.LoadMap(workingDir.Get() + "Test Map.tmx", sf::Vector2f(0.f, -800.f));
 }
 
 void SceneGame::OnDestroy()
@@ -64,5 +66,7 @@ void SceneGame::LateUpdate(float deltaTime)
 
 void SceneGame::Draw(Window& window)
 {
+    level.Draw(window);
     objects.Draw(window);
+
 }
