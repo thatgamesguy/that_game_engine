@@ -1,7 +1,7 @@
 #include "C_KeyboardMovement.hpp"
 #include "Object.hpp"
 
-C_KeyboardMovement::C_KeyboardMovement(Object* owner) : Component(owner), moveSpeed(100) {}
+C_KeyboardMovement::C_KeyboardMovement(Object* owner) : Component(owner), moveSpeed(200) {}
 
 void C_KeyboardMovement::Awake()
 {
