@@ -33,11 +33,9 @@ void Window::EndDraw()
     window.display();
 }
 
-sf::Vector2u Window::GetCentre() const
+sf::Vector2f Window::GetCentre() const
 {
-    sf::Vector2u size = window.getSize();
-    
-    return sf::Vector2u(size.x / 2, size.y / 2);
+    return window.getView().getCenter();
 }
 
 sf::FloatRect Window::GetViewSpace() const

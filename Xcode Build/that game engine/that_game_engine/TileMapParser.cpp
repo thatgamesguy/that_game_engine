@@ -37,17 +37,15 @@ std::vector<std::shared_ptr<Object>> TileMapParser::Parse(const std::string& fil
            
             const unsigned int tileScale = 3;
             
-            auto sprite = tileObject->AddComponent<C_Sprite>();
+     
+            
+            auto sprite = tileObject->AddComponent<C_TileSprite>();
             sprite->SetTextureAllocator(&textureAllocator);
-            sprite->Load(tileInfo->textureID);
-            sprite->SetTextureRect(tileInfo->textureRect);
-            sprite->SetScale(tileScale, tileScale);
-            
-            
+            sprite->Load(tileInfo->textureID, t->x, t->y, data.tileSize.x, tileScale, tileInfo->textureRect);
             int x = t->x * data.tileSize.x * tileScale + offset.x;
             int y = t->y * data.tileSize.y * tileScale + offset.y;
-            tileObject->transform->SetPosition(x, y);
-        
+            sprite->SetPosition(x, y);
+            
             tileObjects.emplace_back(tileObject);
         }
     }
@@ -143,7 +141,7 @@ std::pair<std::string, std::shared_ptr<Layer>> TileMapParser::BuildLayer(xml_nod
             {
                 int textureX = tileId % tileSheetData->columns - 1;
                 int textureY = tileId / tileSheetData->columns;
-                                
+                
                 std::shared_ptr<TileInfo> tileInfo = std::make_shared<TileInfo>(tileSheetData->textureId, tileId, sf::IntRect(textureX * tileSheetData->tileSize.x, textureY * tileSheetData->tileSize.y, tileSheetData->tileSize.x, tileSheetData->tileSize.y));
                 
                 itr = tileSet.insert(std::make_pair(tileId, tileInfo)).first;

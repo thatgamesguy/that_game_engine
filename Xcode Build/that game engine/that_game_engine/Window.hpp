@@ -14,7 +14,7 @@ public:
     void Draw(const sf::Drawable& drawable);
     void EndDraw();
     
-    sf::Vector2u GetCentre() const;
+    sf::Vector2f GetCentre() const;
     sf::FloatRect GetViewSpace() const;
     
     bool IsOpen() const;

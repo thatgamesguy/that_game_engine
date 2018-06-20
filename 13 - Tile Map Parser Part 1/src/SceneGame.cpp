@@ -1,6 +1,6 @@
 #include "SceneGame.hpp"
 
-SceneGame::SceneGame(WorkingDirectory& workingDir, ResourceAllocator<sf::Texture>& textureAllocator) : workingDir(workingDir), textureAllocator(textureAllocator) { }
+SceneGame::SceneGame(WorkingDirectory& workingDir, ResourceAllocator<sf::Texture>& textureAllocator) : workingDir(workingDir), textureAllocator(textureAllocator), mapParser(textureAllocator) { }
 
 void SceneGame::OnCreate()
 {
@@ -37,6 +37,13 @@ void SceneGame::OnCreate()
     animation->AddAnimation(AnimationState::Walk, walkAnimation);
     
     objects.Add(player);
+    
+    // You will need to play around with this offset until it fits the level in at your chosen resolution. This worls for 1920 * 1080.
+    // In future we will remove this hardcoded offset when we look at allowing the player to change resolutions.
+    sf::Vector2i mapOffset(-100, 128);
+    std::vector<std::shared_ptr<Object>> levelTiles = mapParser.Parse(workingDir.Get() + "Test Map 1.tmx", mapOffset);
+    
+    objects.Add(levelTiles);
 }
 
 void SceneGame::OnDestroy()

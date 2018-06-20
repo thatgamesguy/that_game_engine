@@ -11,7 +11,7 @@
 #include "Tile.h"
 #include "Utilities.h"
 #include "Object.hpp"
-#include "C_Sprite.hpp"
+#include "C_TileSprite.hpp"
 
 using namespace rapidxml;
 
