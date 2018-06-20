@@ -10,23 +10,21 @@ void Level::LoadMap(const std::string &filePath, sf::Vector2f mapOffset)
 
 void Level::Draw(Window& window)
 {
-    const unsigned int tileSize = 32;
-   // const float halfTilesize = tileSize * 0.5f;
+    const unsigned int scale = 2;
+    const unsigned int tileSize = map->tileSize.x;
     
     // Set up culling space
     sf::FloatRect viewSpace = window.GetViewSpace();
-    sf::Vector2i tileBegin(floor(viewSpace.left / tileSize), floor(viewSpace.top / tileSize));
-    sf::Vector2i tileEnd(ceil((viewSpace.left + viewSpace.width) / tileSize), ceil((viewSpace.top + viewSpace.height) / tileSize));
+    sf::Vector2i tileBegin(floor(viewSpace.left / tileSize * scale), floor(viewSpace.top / tileSize * scale));
+    sf::Vector2i tileEnd(ceil((viewSpace.left + viewSpace.width) / tileSize * scale), ceil((viewSpace.top + viewSpace.height) / tileSize * scale));
     
-    const unsigned int xMax = 100;
-    const unsigned int yMax = 40;
-    
+   
     for (int x = tileBegin.x; x <= tileEnd.x; ++x)
     {
         for (int y = tileBegin.y; y <= tileEnd.y; ++y)
         {
             if (x < 0 || y < 0 ) { continue; }
-            if (x > xMax || y > yMax) { break; }
+            if (x > map->size.x || y > map->size.y) { break; }
             
             std::vector<std::shared_ptr<Tile>> tiles = GetTiles(x, y);
             
@@ -35,8 +33,9 @@ void Level::Draw(Window& window)
             for (auto& tile : tiles)
             {
                 sf::Sprite& sprite = tile->properties->sprite;
-                sprite.setPosition(mapOffset.x + (x * tileSize), mapOffset.y + (y * tileSize));
-                sprite.setScale(1.f, 1.f);
+                sf::Vector2f pos(mapOffset.x + (x * (tileSize * scale)), mapOffset.y + (y * (tileSize * scale)));
+                sprite.setPosition(pos);
+                sprite.setScale(scale, scale);
                 window.Draw(sprite);
             }
           
@@ -48,14 +47,27 @@ std::vector<std::shared_ptr<Tile>> Level::GetTiles(unsigned int x, unsigned int 
 {
     std::vector<std::shared_ptr<Tile>> tiles;
     
-    for(const auto& layer : *map)
+    /*
+    for(auto rit = map->rbegin(); rit != map->rend(); ++rit)
     {
-        auto itr = layer.second->find(Utilities::To1DIndex(x, y, 100));
+        auto itr = rit->second->find(Utilities::To1DIndex(x, y, 100));
+        if(itr != rit->second->end())
+        {
+            tiles.emplace_back(itr->second);
+        }
+    }
+     */
+    
+    
+    for(const auto& layer : *map->tiles)
+    {
+        auto itr = layer.second->find(Utilities::To1DIndex(x, y, map->size.x));
         if(itr != layer.second->end())
         {
             tiles.emplace_back(itr->second);
         }
     }
+     
     
     return tiles;
 }

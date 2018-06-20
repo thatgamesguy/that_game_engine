@@ -1,6 +1,6 @@
 #include "SceneSplashScreen.hpp"
 
-SceneSplashScreen::SceneSplashScreen(WorkingDirectory& workingDir, SceneStateMachine& sceneStateMachine, Window& window, ResourceAllocator<sf::Texture>& textureAllocator) : sceneStateMachine(sceneStateMachine), workingDir(workingDir), window(window), switchToState(0), currentSeconds(0.f), showForSeconds(1.f), textureAllocator(textureAllocator)
+SceneSplashScreen::SceneSplashScreen(WorkingDirectory& workingDir, SceneStateMachine& sceneStateMachine, Window& window, ResourceAllocator<sf::Texture>& textureAllocator) : sceneStateMachine(sceneStateMachine), workingDir(workingDir), window(window), switchToState(0), currentSeconds(0.f), showForSeconds(3.f), textureAllocator(textureAllocator)
 {
     
 }
@@ -16,6 +16,7 @@ void SceneSplashScreen::OnCreate()
         
         sf::FloatRect spriteSize = splashSprite.getLocalBounds();
         splashSprite.setOrigin(spriteSize.width * 0.5f, spriteSize.height * 0.5f);
+        splashSprite.setScale(0.5f, 0.5f);
         
         sf::Vector2u windowCentre = window.GetCentre();
         splashSprite.setPosition(windowCentre.x, windowCentre.y);

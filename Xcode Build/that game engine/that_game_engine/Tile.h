@@ -10,7 +10,7 @@ struct TileInfo
     {
     }
     
-    TileInfo(std::shared_ptr<sf::Texture> spriteTexture , unsigned int tileID, int x, int y, int width, int height) : tileID(tileID)
+    TileInfo(std::shared_ptr<sf::Texture> spriteTexture, unsigned int tileID, int x, int y, int width, int height) : tileID(tileID)
     {
         sprite.setTexture(*spriteTexture);
         sf::IntRect tileBoundaries(x * width, y * width, width, height);

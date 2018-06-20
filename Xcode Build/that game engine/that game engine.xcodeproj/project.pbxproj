@@ -10,6 +10,8 @@
 		E103661220568D7900F3C0C9 /* SceneStateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E103661020568D7900F3C0C9 /* SceneStateMachine.cpp */; };
 		E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10BAA7F2052BB7900532801 /* Bitmask.cpp */; };
 		E14D5A2F20D8EE5500E54559 /* Viking.png in Resources */ = {isa = PBXBuildFile; fileRef = E14D5A2E20D8EE5500E54559 /* Viking.png */; };
+		E15F3FB820DA90AE00B36F8D /* Test Map 1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E15F3FB720DA90AE00B36F8D /* Test Map 1.tmx */; };
+		E15F3FBA20DA90CC00B36F8D /* Jungle Tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = E15F3FB920DA90CC00B36F8D /* Jungle Tiles.png */; };
 		E16867592028AB910099B64D /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16867582028AB910099B64D /* Main.cpp */; };
 		E168675C2028AC9C0099B64D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E168675A2028AC9C0099B64D /* Game.cpp */; };
 		E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E16867472028AA620099B64D /* WorkingDirectory.hpp */; };
@@ -21,8 +23,7 @@
 		E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4D205958CB000C8851 /* C_Sprite.cpp */; };
 		E1911E5520595F2A000C8851 /* C_Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E5320595F2A000C8851 /* C_Transform.cpp */; };
 		E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */; };
-		E1BFB566208E30E300E2AB24 /* Castle Tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = E1BFB565208E30E300E2AB24 /* Castle Tiles.png */; };
-		E1BFB56B208E312B00E2AB24 /* test_map.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1BFB56A208E312B00E2AB24 /* test_map.tmx */; };
+		E1B56A8120D935BB000A3E29 /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B56A7F20D935BB000A3E29 /* Level.cpp */; };
 		E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */; };
 		E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */; };
 		E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */; };
@@ -39,6 +40,9 @@
 		E10BAA7F2052BB7900532801 /* Bitmask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bitmask.cpp; sourceTree = "<group>"; };
 		E10BAA802052BB7900532801 /* Bitmask.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bitmask.hpp; sourceTree = "<group>"; };
 		E14D5A2E20D8EE5500E54559 /* Viking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Viking.png; sourceTree = "<group>"; };
+		E14D5A3420D92B7500E54559 /* Tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		E15F3FB720DA90AE00B36F8D /* Test Map 1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Test Map 1.tmx"; sourceTree = "<group>"; };
+		E15F3FB920DA90CC00B36F8D /* Jungle Tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jungle Tiles.png"; sourceTree = "<group>"; };
 		E16867402028AA620099B64D /* that game engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "that game engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16867442028AA620099B64D /* that game engine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "that game engine-Info.plist"; sourceTree = "<group>"; };
 		E16867472028AA620099B64D /* WorkingDirectory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WorkingDirectory.hpp; sourceTree = "<group>"; };
@@ -61,8 +65,9 @@
 		E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_KeyboardMovement.cpp; sourceTree = "<group>"; };
 		E1911E57205966C1000C8851 /* C_KeyboardMovement.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_KeyboardMovement.hpp; sourceTree = "<group>"; };
 		E1A4CEE02059ABFD007C89F8 /* ResourceAllocator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceAllocator.hpp; sourceTree = "<group>"; };
-		E1BFB565208E30E300E2AB24 /* Castle Tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Castle Tiles.png"; sourceTree = "<group>"; };
-		E1BFB56A208E312B00E2AB24 /* test_map.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test_map.tmx; sourceTree = "<group>"; };
+		E1B56A7F20D935BB000A3E29 /* Level.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Level.cpp; sourceTree = "<group>"; };
+		E1B56A8020D935BB000A3E29 /* Level.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Level.hpp; sourceTree = "<group>"; };
+		E1B56A8220D93AB1000A3E29 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapParser.cpp; sourceTree = "<group>"; };
 		E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TileMapParser.hpp; sourceTree = "<group>"; };
 		E1BFB570208E330C00E2AB24 /* rapidxml_print.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_print.hpp; sourceTree = "<group>"; };
@@ -148,6 +153,7 @@
 				E1E8058D207952B600EF4B2A /* Animation.cpp */,
 				E1E8058E207952B600EF4B2A /* Animation.hpp */,
 				E16867582028AB910099B64D /* Main.cpp */,
+				E1B56A8220D93AB1000A3E29 /* Utilities.h */,
 				E168674A2028AA620099B64D /* Resources */,
 				E16867432028AA620099B64D /* Supporting Files */,
 			);
@@ -182,8 +188,8 @@
 		E168676C202B5B1C0099B64D /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				E15F3FB920DA90CC00B36F8D /* Jungle Tiles.png */,
 				E14D5A2E20D8EE5500E54559 /* Viking.png */,
-				E1BFB565208E30E300E2AB24 /* Castle Tiles.png */,
 				E1DD50102056DA4D00B96459 /* that_games_guy_logo.png */,
 			);
 			name = Textures;
@@ -218,7 +224,7 @@
 		E1BFB569208E311700E2AB24 /* Tile Maps */ = {
 			isa = PBXGroup;
 			children = (
-				E1BFB56A208E312B00E2AB24 /* test_map.tmx */,
+				E15F3FB720DA90AE00B36F8D /* Test Map 1.tmx */,
 			);
 			name = "Tile Maps";
 			sourceTree = "<group>";
@@ -228,6 +234,9 @@
 			children = (
 				E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */,
 				E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */,
+				E14D5A3420D92B7500E54559 /* Tile.h */,
+				E1B56A7F20D935BB000A3E29 /* Level.cpp */,
+				E1B56A8020D935BB000A3E29 /* Level.hpp */,
 			);
 			name = "Tile Map";
 			sourceTree = "<group>";
@@ -301,10 +310,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1BFB56B208E312B00E2AB24 /* test_map.tmx in Resources */,
+				E15F3FBA20DA90CC00B36F8D /* Jungle Tiles.png in Resources */,
 				E14D5A2F20D8EE5500E54559 /* Viking.png in Resources */,
 				E1DD50112056DA4D00B96459 /* that_games_guy_logo.png in Resources */,
-				E1BFB566208E30E300E2AB24 /* Castle Tiles.png in Resources */,
+				E15F3FB820DA90AE00B36F8D /* Test Map 1.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +352,7 @@
 				E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */,
 				E168676B202B56EB0099B64D /* Window.cpp in Sources */,
 				E168675C2028AC9C0099B64D /* Game.cpp in Sources */,
+				E1B56A8120D935BB000A3E29 /* Level.cpp in Sources */,
 				E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */,
 				E1686768202B3CCB0099B64D /* WorkingDirectory.cpp in Sources */,
 				E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */,
