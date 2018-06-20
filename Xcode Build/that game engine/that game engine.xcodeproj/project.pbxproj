@@ -23,7 +23,6 @@
 		E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4D205958CB000C8851 /* C_Sprite.cpp */; };
 		E1911E5520595F2A000C8851 /* C_Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E5320595F2A000C8851 /* C_Transform.cpp */; };
 		E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */; };
-		E1B56A8120D935BB000A3E29 /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1B56A7F20D935BB000A3E29 /* Level.cpp */; };
 		E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */; };
 		E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */; };
 		E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */; };
@@ -65,8 +64,6 @@
 		E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_KeyboardMovement.cpp; sourceTree = "<group>"; };
 		E1911E57205966C1000C8851 /* C_KeyboardMovement.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_KeyboardMovement.hpp; sourceTree = "<group>"; };
 		E1A4CEE02059ABFD007C89F8 /* ResourceAllocator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceAllocator.hpp; sourceTree = "<group>"; };
-		E1B56A7F20D935BB000A3E29 /* Level.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Level.cpp; sourceTree = "<group>"; };
-		E1B56A8020D935BB000A3E29 /* Level.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Level.hpp; sourceTree = "<group>"; };
 		E1B56A8220D93AB1000A3E29 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapParser.cpp; sourceTree = "<group>"; };
 		E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TileMapParser.hpp; sourceTree = "<group>"; };
@@ -235,8 +232,6 @@
 				E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */,
 				E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */,
 				E14D5A3420D92B7500E54559 /* Tile.h */,
-				E1B56A7F20D935BB000A3E29 /* Level.cpp */,
-				E1B56A8020D935BB000A3E29 /* Level.hpp */,
 			);
 			name = "Tile Map";
 			sourceTree = "<group>";
@@ -352,7 +347,6 @@
 				E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */,
 				E168676B202B56EB0099B64D /* Window.cpp in Sources */,
 				E168675C2028AC9C0099B64D /* Game.cpp in Sources */,
-				E1B56A8120D935BB000A3E29 /* Level.cpp in Sources */,
 				E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */,
 				E1686768202B3CCB0099B64D /* WorkingDirectory.cpp in Sources */,
 				E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */,
