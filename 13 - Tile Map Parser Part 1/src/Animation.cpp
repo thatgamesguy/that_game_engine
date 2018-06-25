@@ -59,6 +59,7 @@ void Animation::IncrementFrame()
 void Animation::Reset()
 {
     currentFrameIndex = 0;
+    currentFrameTime = 0.f;
 }
 
 void Animation::SetDirection(FacingDirection dir)

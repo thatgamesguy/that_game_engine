@@ -35,19 +35,18 @@ void C_TileSprite::SetPosition(int x, int y)
 
 void C_TileSprite::Draw(Window& window)
 {
-    // Set up culling space
-    const sf::FloatRect viewSpace = window.GetViewSpace();
-    const sf::Vector2i viewBegin(floor(viewSpace.left / size * scale), floor(viewSpace.top / size * scale));
-    const sf::Vector2i viewEnd(ceil((viewSpace.left + viewSpace.width) / size * scale), ceil((viewSpace.top + viewSpace.height) / size * scale));
+    const int additionalToDraw = 2;
     
-    if(x > viewBegin.x  && x < viewEnd.x  &&
-       y > viewBegin.y && y < viewEnd.y)
+    // Set up culling space
+    // In future we only want to perform these calculations once for all tiles.
+    const sf::FloatRect viewSpace = window.GetViewSpace();
+    const sf::Vector2i viewBegin(floor(viewSpace.left / (size * scale)), floor(viewSpace.top / (size * scale)));
+    const sf::Vector2i viewEnd(ceil((viewSpace.left + viewSpace.width) / (size * scale)), ceil((viewSpace.top + viewSpace.height) / (size * scale)));
+    
+    if(x > viewBegin.x - additionalToDraw  && x < viewEnd.x + additionalToDraw  &&
+       y > viewBegin.y - additionalToDraw && y < viewEnd.y + additionalToDraw)
     {
         window.Draw(sprite);
-    }
-    else
-    {
-        int x;
     }
 }
 
