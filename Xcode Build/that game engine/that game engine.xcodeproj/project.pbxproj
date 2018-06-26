@@ -24,6 +24,8 @@
 		E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4D205958CB000C8851 /* C_Sprite.cpp */; };
 		E1911E5520595F2A000C8851 /* C_Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E5320595F2A000C8851 /* C_Transform.cpp */; };
 		E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */; };
+		E1A5ABDC20E15789001A90A3 /* Red Square.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A5ABDB20E15789001A90A3 /* Red Square.png */; };
+		E1A5ABDE20E2464B001A90A3 /* Test Map 2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1A5ABDD20E2464B001A90A3 /* Test Map 2.tmx */; };
 		E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */; };
 		E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */; };
 		E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */; };
@@ -67,6 +69,8 @@
 		E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_KeyboardMovement.cpp; sourceTree = "<group>"; };
 		E1911E57205966C1000C8851 /* C_KeyboardMovement.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_KeyboardMovement.hpp; sourceTree = "<group>"; };
 		E1A4CEE02059ABFD007C89F8 /* ResourceAllocator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceAllocator.hpp; sourceTree = "<group>"; };
+		E1A5ABDB20E15789001A90A3 /* Red Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red Square.png"; sourceTree = "<group>"; };
+		E1A5ABDD20E2464B001A90A3 /* Test Map 2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Test Map 2.tmx"; sourceTree = "<group>"; };
 		E1B56A8220D93AB1000A3E29 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapParser.cpp; sourceTree = "<group>"; };
 		E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TileMapParser.hpp; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 		E168676C202B5B1C0099B64D /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				E1A5ABDB20E15789001A90A3 /* Red Square.png */,
 				E15F3FB920DA90CC00B36F8D /* Jungle Tiles.png */,
 				E14D5A2E20D8EE5500E54559 /* Viking.png */,
 				E1DD50102056DA4D00B96459 /* that_games_guy_logo.png */,
@@ -227,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				E15F3FB720DA90AE00B36F8D /* Test Map 1.tmx */,
+				E1A5ABDD20E2464B001A90A3 /* Test Map 2.tmx */,
 			);
 			name = "Tile Maps";
 			sourceTree = "<group>";
@@ -310,10 +316,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A5ABDC20E15789001A90A3 /* Red Square.png in Resources */,
 				E15F3FBA20DA90CC00B36F8D /* Jungle Tiles.png in Resources */,
 				E14D5A2F20D8EE5500E54559 /* Viking.png in Resources */,
 				E1DD50112056DA4D00B96459 /* that_games_guy_logo.png in Resources */,
 				E15F3FB820DA90AE00B36F8D /* Test Map 1.tmx in Resources */,
+				E1A5ABDE20E2464B001A90A3 /* Test Map 2.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
