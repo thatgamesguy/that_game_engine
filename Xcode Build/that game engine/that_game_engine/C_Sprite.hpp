@@ -23,10 +23,14 @@ public:
     
     void SetScale(float x, float y);
     
+    void SetZ(int z);
+    int GetZ() const;
+    
 private:
     ResourceAllocator<sf::Texture>* allocator;
     sf::Sprite sprite;
     int currentTextureID;
+    int z;
 };
 
 #endif /* C_Sprite_hpp */

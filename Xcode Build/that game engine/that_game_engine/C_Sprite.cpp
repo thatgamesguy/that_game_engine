@@ -58,3 +58,13 @@ void C_Sprite::SetScale(float x, float y)
     sprite.setScale(x, y);
 }
 
+void C_Sprite::SetZ(int z)
+{
+    this->z = z;
+}
+
+int C_Sprite::GetZ() const
+{
+    return z;
+}
+

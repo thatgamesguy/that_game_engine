@@ -12,7 +12,6 @@
 		E14D5A2F20D8EE5500E54559 /* Viking.png in Resources */ = {isa = PBXBuildFile; fileRef = E14D5A2E20D8EE5500E54559 /* Viking.png */; };
 		E15F3FB820DA90AE00B36F8D /* Test Map 1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E15F3FB720DA90AE00B36F8D /* Test Map 1.tmx */; };
 		E15F3FBA20DA90CC00B36F8D /* Jungle Tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = E15F3FB920DA90CC00B36F8D /* Jungle Tiles.png */; };
-		E15F3FBD20DAB27E00B36F8D /* C_TileSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E15F3FBB20DAB27E00B36F8D /* C_TileSprite.cpp */; };
 		E16867592028AB910099B64D /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16867582028AB910099B64D /* Main.cpp */; };
 		E168675C2028AC9C0099B64D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E168675A2028AC9C0099B64D /* Game.cpp */; };
 		E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */ = {isa = PBXBuildFile; fileRef = E16867472028AA620099B64D /* WorkingDirectory.hpp */; };
@@ -45,8 +44,6 @@
 		E14D5A3420D92B7500E54559 /* Tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		E15F3FB720DA90AE00B36F8D /* Test Map 1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Test Map 1.tmx"; sourceTree = "<group>"; };
 		E15F3FB920DA90CC00B36F8D /* Jungle Tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jungle Tiles.png"; sourceTree = "<group>"; };
-		E15F3FBB20DAB27E00B36F8D /* C_TileSprite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_TileSprite.cpp; sourceTree = "<group>"; };
-		E15F3FBC20DAB27E00B36F8D /* C_TileSprite.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_TileSprite.hpp; sourceTree = "<group>"; };
 		E16867402028AA620099B64D /* that game engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "that game engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16867442028AA620099B64D /* that game engine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "that game engine-Info.plist"; sourceTree = "<group>"; };
 		E16867472028AA620099B64D /* WorkingDirectory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WorkingDirectory.hpp; sourceTree = "<group>"; };
@@ -222,8 +219,6 @@
 				E1911E57205966C1000C8851 /* C_KeyboardMovement.hpp */,
 				E1E8059020795ABB00EF4B2A /* C_Animation.cpp */,
 				E1E8059120795ABB00EF4B2A /* C_Animation.hpp */,
-				E15F3FBB20DAB27E00B36F8D /* C_TileSprite.cpp */,
-				E15F3FBC20DAB27E00B36F8D /* C_TileSprite.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -360,7 +355,6 @@
 				E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */,
 				E168676B202B56EB0099B64D /* Window.cpp in Sources */,
 				E168675C2028AC9C0099B64D /* Game.cpp in Sources */,
-				E15F3FBD20DAB27E00B36F8D /* C_TileSprite.cpp in Sources */,
 				E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */,
 				E1686768202B3CCB0099B64D /* WorkingDirectory.cpp in Sources */,
 				E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */,
@@ -464,8 +458,9 @@
 		E16867562028AA620099B64D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GSVX5LD945;
+				DEVELOPMENT_TEAM = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "$(SRCROOT)/that_game_engine/that game engine-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
@@ -482,8 +477,9 @@
 		E16867572028AA620099B64D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GSVX5LD945;
+				DEVELOPMENT_TEAM = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "$(SRCROOT)/that_game_engine/that game engine-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
