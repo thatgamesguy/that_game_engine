@@ -27,6 +27,8 @@
 		E1A5ABDE20E2464B001A90A3 /* Test Map 2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1A5ABDD20E2464B001A90A3 /* Test Map 2.tmx */; };
 		E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */; };
 		E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */; };
+		E1CC41B420EFE9410066FB67 /* S_Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CC41B220EFE9410066FB67 /* S_Drawable.cpp */; };
+		E1CC41B820EFE9750066FB67 /* C_Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CC41B620EFE9750066FB67 /* C_Drawable.cpp */; };
 		E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */; };
 		E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD500D2056D4A200B96459 /* SceneGame.cpp */; };
 		E1DD50112056DA4D00B96459 /* that_games_guy_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DD50102056DA4D00B96459 /* that_games_guy_logo.png */; };
@@ -77,6 +79,10 @@
 		E1BFB573208E330D00E2AB24 /* rapidxml.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rapidxml.hpp; sourceTree = "<group>"; };
 		E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectCollection.cpp; sourceTree = "<group>"; };
 		E1C9BC58205A5E8E0074A696 /* ObjectCollection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ObjectCollection.hpp; sourceTree = "<group>"; };
+		E1CC41B220EFE9410066FB67 /* S_Drawable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = S_Drawable.cpp; sourceTree = "<group>"; };
+		E1CC41B320EFE9410066FB67 /* S_Drawable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = S_Drawable.hpp; sourceTree = "<group>"; };
+		E1CC41B620EFE9750066FB67 /* C_Drawable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Drawable.cpp; sourceTree = "<group>"; };
+		E1CC41B720EFE9750066FB67 /* C_Drawable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Drawable.hpp; sourceTree = "<group>"; };
 		E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneSplashScreen.cpp; sourceTree = "<group>"; };
 		E1DD50092056CDB700B96459 /* SceneSplashScreen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneSplashScreen.hpp; sourceTree = "<group>"; };
 		E1DD500D2056D4A200B96459 /* SceneGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneGame.cpp; sourceTree = "<group>"; };
@@ -200,6 +206,7 @@
 		E1911E4B20594600000C8851 /* ECS */ = {
 			isa = PBXGroup;
 			children = (
+				E1CC41B520EFE9460066FB67 /* Systems */,
 				E1911E4C205946AA000C8851 /* Components */,
 				E1911E4520593F9D000C8851 /* Object.cpp */,
 				E1911E4620593F9D000C8851 /* Object.hpp */,
@@ -219,6 +226,8 @@
 				E1911E57205966C1000C8851 /* C_KeyboardMovement.hpp */,
 				E1E8059020795ABB00EF4B2A /* C_Animation.cpp */,
 				E1E8059120795ABB00EF4B2A /* C_Animation.hpp */,
+				E1CC41B620EFE9750066FB67 /* C_Drawable.cpp */,
+				E1CC41B720EFE9750066FB67 /* C_Drawable.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -251,6 +260,15 @@
 				E1BFB573208E330D00E2AB24 /* rapidxml.hpp */,
 			);
 			name = "XML Parser";
+			sourceTree = "<group>";
+		};
+		E1CC41B520EFE9460066FB67 /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				E1CC41B220EFE9410066FB67 /* S_Drawable.cpp */,
+				E1CC41B320EFE9410066FB67 /* S_Drawable.hpp */,
+			);
+			name = Systems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CC41B420EFE9410066FB67 /* S_Drawable.cpp in Sources */,
 				E1E8059220795ABB00EF4B2A /* C_Animation.cpp in Sources */,
 				E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */,
 				E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */,
@@ -353,6 +372,7 @@
 				E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */,
 				E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */,
 				E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */,
+				E1CC41B820EFE9750066FB67 /* C_Drawable.cpp in Sources */,
 				E168676B202B56EB0099B64D /* Window.cpp in Sources */,
 				E168675C2028AC9C0099B64D /* Game.cpp in Sources */,
 				E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */,
