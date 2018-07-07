@@ -25,6 +25,8 @@
 		E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */; };
 		E1A5ABDC20E15789001A90A3 /* Red Square.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A5ABDB20E15789001A90A3 /* Red Square.png */; };
 		E1A5ABDE20E2464B001A90A3 /* Test Map 2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1A5ABDD20E2464B001A90A3 /* Test Map 2.tmx */; };
+		E1A8BB0720F0BDA20009CFFB /* C_Collider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0520F0BDA20009CFFB /* C_Collider.cpp */; };
+		E1A8BB0A20F0BF9D0009CFFB /* C_BoxCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0820F0BF9D0009CFFB /* C_BoxCollider.cpp */; };
 		E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */; };
 		E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */; };
 		E1CC41B420EFE9410066FB67 /* S_Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CC41B220EFE9410066FB67 /* S_Drawable.cpp */; };
@@ -70,6 +72,10 @@
 		E1A4CEE02059ABFD007C89F8 /* ResourceAllocator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceAllocator.hpp; sourceTree = "<group>"; };
 		E1A5ABDB20E15789001A90A3 /* Red Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red Square.png"; sourceTree = "<group>"; };
 		E1A5ABDD20E2464B001A90A3 /* Test Map 2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Test Map 2.tmx"; sourceTree = "<group>"; };
+		E1A8BB0520F0BDA20009CFFB /* C_Collider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Collider.cpp; sourceTree = "<group>"; };
+		E1A8BB0620F0BDA20009CFFB /* C_Collider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Collider.hpp; sourceTree = "<group>"; };
+		E1A8BB0820F0BF9D0009CFFB /* C_BoxCollider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_BoxCollider.cpp; sourceTree = "<group>"; };
+		E1A8BB0920F0BF9D0009CFFB /* C_BoxCollider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_BoxCollider.hpp; sourceTree = "<group>"; };
 		E1B56A8220D93AB1000A3E29 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapParser.cpp; sourceTree = "<group>"; };
 		E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TileMapParser.hpp; sourceTree = "<group>"; };
@@ -159,8 +165,8 @@
 				E1C9BC58205A5E8E0074A696 /* ObjectCollection.hpp */,
 				E1E8058D207952B600EF4B2A /* Animation.cpp */,
 				E1E8058E207952B600EF4B2A /* Animation.hpp */,
-				E16867582028AB910099B64D /* Main.cpp */,
 				E1B56A8220D93AB1000A3E29 /* Utilities.h */,
+				E16867582028AB910099B64D /* Main.cpp */,
 				E168674A2028AA620099B64D /* Resources */,
 				E16867432028AA620099B64D /* Supporting Files */,
 			);
@@ -228,6 +234,10 @@
 				E1E8059120795ABB00EF4B2A /* C_Animation.hpp */,
 				E1CC41B620EFE9750066FB67 /* C_Drawable.cpp */,
 				E1CC41B720EFE9750066FB67 /* C_Drawable.hpp */,
+				E1A8BB0520F0BDA20009CFFB /* C_Collider.cpp */,
+				E1A8BB0620F0BDA20009CFFB /* C_Collider.hpp */,
+				E1A8BB0820F0BF9D0009CFFB /* C_BoxCollider.cpp */,
+				E1A8BB0920F0BF9D0009CFFB /* C_BoxCollider.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -362,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1CC41B420EFE9410066FB67 /* S_Drawable.cpp in Sources */,
+				E1A8BB0720F0BDA20009CFFB /* C_Collider.cpp in Sources */,
 				E1E8059220795ABB00EF4B2A /* C_Animation.cpp in Sources */,
 				E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */,
 				E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */,
@@ -373,6 +384,7 @@
 				E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */,
 				E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */,
 				E1CC41B820EFE9750066FB67 /* C_Drawable.cpp in Sources */,
+				E1A8BB0A20F0BF9D0009CFFB /* C_BoxCollider.cpp in Sources */,
 				E168676B202B56EB0099B64D /* Window.cpp in Sources */,
 				E168675C2028AC9C0099B64D /* Game.cpp in Sources */,
 				E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */,
