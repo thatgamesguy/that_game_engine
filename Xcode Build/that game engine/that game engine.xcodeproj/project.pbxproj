@@ -27,6 +27,8 @@
 		E1A5ABDE20E2464B001A90A3 /* Test Map 2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1A5ABDD20E2464B001A90A3 /* Test Map 2.tmx */; };
 		E1A8BB0720F0BDA20009CFFB /* C_Collider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0520F0BDA20009CFFB /* C_Collider.cpp */; };
 		E1A8BB0A20F0BF9D0009CFFB /* C_BoxCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0820F0BF9D0009CFFB /* C_BoxCollider.cpp */; };
+		E1A8BB1020F0F95D0009CFFB /* QuadTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0E20F0F95D0009CFFB /* QuadTree.cpp */; };
+		E1A8BB1320F10B230009CFFB /* C_InstanceID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB1120F10B230009CFFB /* C_InstanceID.cpp */; };
 		E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */; };
 		E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */; };
 		E1CC41B420EFE9410066FB67 /* S_Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CC41B220EFE9410066FB67 /* S_Drawable.cpp */; };
@@ -76,6 +78,10 @@
 		E1A8BB0620F0BDA20009CFFB /* C_Collider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Collider.hpp; sourceTree = "<group>"; };
 		E1A8BB0820F0BF9D0009CFFB /* C_BoxCollider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_BoxCollider.cpp; sourceTree = "<group>"; };
 		E1A8BB0920F0BF9D0009CFFB /* C_BoxCollider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_BoxCollider.hpp; sourceTree = "<group>"; };
+		E1A8BB0E20F0F95D0009CFFB /* QuadTree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuadTree.cpp; sourceTree = "<group>"; };
+		E1A8BB0F20F0F95D0009CFFB /* QuadTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QuadTree.hpp; sourceTree = "<group>"; };
+		E1A8BB1120F10B230009CFFB /* C_InstanceID.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_InstanceID.cpp; sourceTree = "<group>"; };
+		E1A8BB1220F10B230009CFFB /* C_InstanceID.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_InstanceID.hpp; sourceTree = "<group>"; };
 		E1B56A8220D93AB1000A3E29 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapParser.cpp; sourceTree = "<group>"; };
 		E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TileMapParser.hpp; sourceTree = "<group>"; };
@@ -166,6 +172,8 @@
 				E1E8058D207952B600EF4B2A /* Animation.cpp */,
 				E1E8058E207952B600EF4B2A /* Animation.hpp */,
 				E1B56A8220D93AB1000A3E29 /* Utilities.h */,
+				E1A8BB0E20F0F95D0009CFFB /* QuadTree.cpp */,
+				E1A8BB0F20F0F95D0009CFFB /* QuadTree.hpp */,
 				E16867582028AB910099B64D /* Main.cpp */,
 				E168674A2028AA620099B64D /* Resources */,
 				E16867432028AA620099B64D /* Supporting Files */,
@@ -238,6 +246,8 @@
 				E1A8BB0620F0BDA20009CFFB /* C_Collider.hpp */,
 				E1A8BB0820F0BF9D0009CFFB /* C_BoxCollider.cpp */,
 				E1A8BB0920F0BF9D0009CFFB /* C_BoxCollider.hpp */,
+				E1A8BB1120F10B230009CFFB /* C_InstanceID.cpp */,
+				E1A8BB1220F10B230009CFFB /* C_InstanceID.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -376,8 +386,10 @@
 				E1E8059220795ABB00EF4B2A /* C_Animation.cpp in Sources */,
 				E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */,
 				E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */,
+				E1A8BB1320F10B230009CFFB /* C_InstanceID.cpp in Sources */,
 				E1911E4720593F9D000C8851 /* Object.cpp in Sources */,
 				E103661220568D7900F3C0C9 /* SceneStateMachine.cpp in Sources */,
+				E1A8BB1020F0F95D0009CFFB /* QuadTree.cpp in Sources */,
 				E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */,
 				E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */,
 				E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */,
