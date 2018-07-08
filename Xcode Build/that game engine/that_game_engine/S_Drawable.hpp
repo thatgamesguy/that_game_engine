@@ -9,7 +9,7 @@
 class S_Drawable
 {
 public:
-    void Add(std::vector<std::shared_ptr<Object>>& object);
+    void Add(std::vector<std::shared_ptr<Object>>& objects);
     
     void ProcessRemovals();
     

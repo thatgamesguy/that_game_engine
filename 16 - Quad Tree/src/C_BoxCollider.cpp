@@ -1,8 +1,7 @@
 #include "C_BoxCollider.hpp"
 #include "Object.hpp"
 
-
-C_BoxCollider::C_BoxCollider(Object* owner) : Component(owner),
+C_BoxCollider::C_BoxCollider(Object* owner) : C_Collider(owner),
 origin(Origin::AbsCentre), offset(sf::Vector2f(0.f, 0.f)){}
 
 C_BoxCollider::~C_BoxCollider(){}
@@ -12,7 +11,7 @@ Manifold C_BoxCollider::Intersects(std::shared_ptr<C_Collider> other)
     Manifold m;
     m.colliding = false;
     
-    std::shared_ptr<C_BoxCollider> boxCollider = std::dynamic_pointer_cast<C_BoxCollider>(other);
+    std::shared_ptr<C_BoxCollider> boxCollider = std::dynamic_pointer_cast<C_BoxCollider>(other)b;
     if (boxCollider)
     {
         const sf::FloatRect& rect1 = GetCollidable();

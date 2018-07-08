@@ -1,6 +1,6 @@
 #include "C_Collider.hpp"
 
-C_Collider::C_Collider() : isTrigger(false), layer(CollisionLayer::Default){}
+C_Collider::C_Collider(Object* owner) : Component(owner), isTrigger(false), layer(CollisionLayer::Default){}
 
 C_Collider::~C_Collider(){}
 

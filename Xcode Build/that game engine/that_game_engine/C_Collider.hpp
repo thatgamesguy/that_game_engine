@@ -5,12 +5,13 @@
 #include <SFML/Graphics.hpp>
 
 #include "Bitmask.hpp"
+#include "Component.hpp"
 
 // enum ints used when defining collision layers
+//TODO: implement collision layers.
 enum class CollisionLayer
 {
-    Default = 0,
-    Player = 1
+    Default = 0
 };
 
 struct Manifold
@@ -19,10 +20,10 @@ struct Manifold
     sf::FloatRect other;
 };
 
-class C_Collider
+class C_Collider : public Component
 {
 public:
-    C_Collider();
+    C_Collider(Object* owner);
     ~C_Collider();
     
     virtual Manifold Intersects(std::shared_ptr<C_Collider> other) = 0;

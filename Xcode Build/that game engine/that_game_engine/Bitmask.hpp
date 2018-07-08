@@ -8,6 +8,8 @@ class Bitmask
 public:
     Bitmask();
     
+    Bitmask(uint32_t bits);
+    
     void SetMask(Bitmask& other);
     uint32_t GetMask() const;
     

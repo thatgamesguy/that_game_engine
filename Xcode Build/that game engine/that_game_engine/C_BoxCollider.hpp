@@ -8,7 +8,7 @@
 
 enum class Origin { TopLeft, AbsCentre, MidBottom };
 
-class C_BoxCollider : public Component, public C_Collider
+class C_BoxCollider : public C_Collider
 {
 public:
     C_BoxCollider(Object* owner);

@@ -29,6 +29,7 @@
 		E1A8BB0A20F0BF9D0009CFFB /* C_BoxCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0820F0BF9D0009CFFB /* C_BoxCollider.cpp */; };
 		E1A8BB1020F0F95D0009CFFB /* QuadTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0E20F0F95D0009CFFB /* QuadTree.cpp */; };
 		E1A8BB1320F10B230009CFFB /* C_InstanceID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB1120F10B230009CFFB /* C_InstanceID.cpp */; };
+		E1A8BB1920F1160D0009CFFB /* S_Collidable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB1720F1160D0009CFFB /* S_Collidable.cpp */; };
 		E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */; };
 		E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */; };
 		E1CC41B420EFE9410066FB67 /* S_Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CC41B220EFE9410066FB67 /* S_Drawable.cpp */; };
@@ -82,6 +83,8 @@
 		E1A8BB0F20F0F95D0009CFFB /* QuadTree.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = QuadTree.hpp; sourceTree = "<group>"; };
 		E1A8BB1120F10B230009CFFB /* C_InstanceID.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_InstanceID.cpp; sourceTree = "<group>"; };
 		E1A8BB1220F10B230009CFFB /* C_InstanceID.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_InstanceID.hpp; sourceTree = "<group>"; };
+		E1A8BB1720F1160D0009CFFB /* S_Collidable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = S_Collidable.cpp; sourceTree = "<group>"; };
+		E1A8BB1820F1160D0009CFFB /* S_Collidable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = S_Collidable.hpp; sourceTree = "<group>"; };
 		E1B56A8220D93AB1000A3E29 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapParser.cpp; sourceTree = "<group>"; };
 		E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TileMapParser.hpp; sourceTree = "<group>"; };
@@ -287,6 +290,8 @@
 			children = (
 				E1CC41B220EFE9410066FB67 /* S_Drawable.cpp */,
 				E1CC41B320EFE9410066FB67 /* S_Drawable.hpp */,
+				E1A8BB1720F1160D0009CFFB /* S_Collidable.cpp */,
+				E1A8BB1820F1160D0009CFFB /* S_Collidable.hpp */,
 			);
 			name = Systems;
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 				E1911E4720593F9D000C8851 /* Object.cpp in Sources */,
 				E103661220568D7900F3C0C9 /* SceneStateMachine.cpp in Sources */,
 				E1A8BB1020F0F95D0009CFFB /* QuadTree.cpp in Sources */,
+				E1A8BB1920F1160D0009CFFB /* S_Collidable.cpp in Sources */,
 				E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */,
 				E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */,
 				E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */,
