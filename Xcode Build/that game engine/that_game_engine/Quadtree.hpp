@@ -8,11 +8,11 @@
 #include "Object.hpp"
 #include "Debug.hpp"
 
-class QuadTree
+class Quadtree
 {
 public:
-    QuadTree();
-    QuadTree(int maxObjects, int maxLevels, int level, sf::FloatRect bounds, QuadTree* parent);
+    Quadtree();
+    Quadtree(int maxObjects, int maxLevels, int level, sf::FloatRect bounds, Quadtree* parent);
     
     void DrawDebug();
     
@@ -40,8 +40,8 @@ private:
     int maxObjects;
     int maxLevels;
     
-    QuadTree* parent;
-    std::shared_ptr<QuadTree> children[4];
+    Quadtree* parent;
+    std::shared_ptr<Quadtree> children[4];
     
     std::vector<std::shared_ptr<C_BoxCollider>> objects; 
     

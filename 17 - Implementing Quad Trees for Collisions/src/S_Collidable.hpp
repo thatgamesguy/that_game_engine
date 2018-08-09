@@ -6,7 +6,7 @@
 #include <set>
 
 #include "Object.hpp"
-#include "QuadTree.hpp"
+#include "Quadtree.hpp"
 #include "Bitmask.hpp"
 
 class S_Collidable
@@ -25,7 +25,7 @@ private:
     std::map<CollisionLayer, Bitmask> collisionLayers;
     std::map<CollisionLayer, std::vector<std::shared_ptr<C_BoxCollider>>> collidables;
     
-    QuadTree collisionTree;
+    Quadtree collisionTree;
 };
 
 
