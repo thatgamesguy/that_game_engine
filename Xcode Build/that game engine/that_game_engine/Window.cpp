@@ -4,6 +4,14 @@ Window::Window(const std::string& windowName) : window(sf::VideoMode(1920, 1080)
 {
     window.setVerticalSyncEnabled(true);
     window.setFramerateLimit(60);
+    
+    /*
+    sf::View v;
+    v.setSize(1920, 1080);
+    v.zoom(0.5f);
+    v.move(0, 250);
+    window.setView(v);
+     */
 }
 
 void Window::Update()
@@ -26,6 +34,11 @@ void Window::BeginDraw()
 void Window::Draw(const sf::Drawable& drawable)
 {
     window.draw(drawable);
+}
+
+void Window::Draw(const sf::Vertex* vertices, std::size_t vertexCount, sf::PrimitiveType type)
+{
+    window.draw(vertices, vertexCount, type);
 }
 
 void Window::EndDraw()

@@ -17,9 +17,9 @@ void ObjectCollection::Update(float deltaTime)
         o->Update(deltaTime);
     }
     
-    //collidables.Update();
-    collidables.UpdatePositions(objects);
-    collidables.Resolve();
+    collidables.Update();
+    //collidables.UpdatePositions(objects);
+    //collidables.Resolve();
 }
 
 void ObjectCollection::LateUpdate(float deltaTime)

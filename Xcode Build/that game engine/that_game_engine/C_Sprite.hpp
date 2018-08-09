@@ -1,6 +1,8 @@
 #ifndef C_Sprite_hpp
 #define C_Sprite_hpp
 
+#include <math.h>
+
 #include "Component.hpp"
 #include "C_Transform.hpp"
 #include "ResourceAllocator.hpp"

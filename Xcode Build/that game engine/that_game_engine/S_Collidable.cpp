@@ -6,7 +6,7 @@ S_Collidable::S_Collidable()
     defaultCollisions.SetBit((int)CollisionLayer::Default);
     collisionLayers.insert(std::make_pair(CollisionLayer::Default, defaultCollisions));
     
-    collisionLayers.insert(std::make_pair(CollisionLayer::Tile, Bitmask(0)));
+    collisionLayers.insert(std::make_pair(CollisionLayer::Tile, Bitmask(0))); 
     
     Bitmask playerCollisions;
     playerCollisions.SetBit((int) CollisionLayer::Default);
@@ -66,7 +66,7 @@ void S_Collidable::UpdatePositions(std::vector<std::shared_ptr<Object>>& objects
 {
     for (auto o : objects)
     {
-        if(!o->transform->isStatic() && o->transform->HasMovedThisFrame())
+        if(!o->transform->isStatic())
         {
             auto collider = o->GetComponent<C_BoxCollider>();
             
@@ -84,7 +84,8 @@ void S_Collidable::Resolve()
     {
         for (auto collidable : maps->second)
         {
-            if (!collidable->owner->transform->isStatic() && collisionLayers[collidable->GetLayer()].GetMask() != 0)
+            if (!collidable->owner->transform->isStatic() &&
+                collisionLayers[collidable->GetLayer()].GetMask() != 0)
             {
                 std::vector<std::shared_ptr<C_BoxCollider>> collisions = collisionTree.Search(collidable->GetCollidable());
                 
@@ -103,6 +104,8 @@ void S_Collidable::Resolve()
                         
                         if(m.colliding)
                         {
+                            Debug::DrawRect(collision->GetCollidable(), sf::Color::Red);
+                             Debug::DrawRect(collidable->GetCollidable(), sf::Color::Red);
                             if(collision->owner->transform->isStatic())
                             {
                                 collidable->ResolveOverlap(m);
@@ -111,6 +114,7 @@ void S_Collidable::Resolve()
                             {
                                 
                                 //TODO: how shall we handle collisions when both objects are not static?
+                                // We could implement rigidbodies and mass.
                                 collidable->ResolveOverlap(m);
                             }
                     
@@ -125,6 +129,8 @@ void S_Collidable::Resolve()
 
 void S_Collidable::Update()
 {
+    collisionTree.DrawDebug();
+    
     collisionTree.Clear();
     for (auto maps = collidables.begin(); maps != collidables.end(); ++maps)
     {
@@ -135,7 +141,6 @@ void S_Collidable::Update()
     }
     
     Resolve();
-
 }
 
 

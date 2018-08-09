@@ -1,11 +1,29 @@
 #include "QuadTree.hpp"
 
-QuadTree::QuadTree() : QuadTree(10, 20, 0, {0.f, 0.f, 1920, 1080}, nullptr){}
+QuadTree::QuadTree() : QuadTree(5, 5, 0, {0, 0, 1920, 1080}, nullptr){}
 
 QuadTree::QuadTree(int maxObjects, int maxLevels, int level, sf::FloatRect bounds, QuadTree* parent) : maxObjects(maxObjects), maxLevels(maxLevels), level(level), bounds(bounds), parent(parent){}
 
+void QuadTree::DrawDebug()
+{
+    if(children[0] != nullptr)
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            children[i]->DrawDebug();
+        }
+    }
+    
+    Debug::DrawRect(bounds, sf::Color::Red);
+}
+
 void QuadTree::Insert(std::shared_ptr<C_BoxCollider> object)
 {
+    if(!bounds.intersects(object->GetCollidable()))
+    {
+        return;
+    }
+    
     if(children[0] != nullptr)
     {
         int indexToPlaceObject = GetChildIndexForObject(object->GetCollidable());
@@ -33,7 +51,7 @@ void QuadTree::Insert(std::shared_ptr<C_BoxCollider> object)
             {
                 children[indexToPlaceObject]->Insert(obj);
                 objIterator = objects.erase(objIterator);
-            
+                
             }
             else
             {
@@ -113,7 +131,7 @@ void QuadTree::UpdatePosition(std::shared_ptr<C_BoxCollider> object)
                     quadTree->Insert(object);
                 }
             }
-
+            
             break;
         }
     }
@@ -133,7 +151,7 @@ std::vector<std::shared_ptr<C_BoxCollider>> QuadTree::Search(const sf::FloatRect
             returnList.emplace_back(collider);
         }
     }
-
+    
     return returnList;
 }
 
@@ -142,11 +160,11 @@ void QuadTree::Search(const sf::FloatRect& area,
 {
     overlappingObjects.insert(overlappingObjects.end(), objects.begin(), objects.end());
     
-    int index = GetChildIndexForObject(area);
-    
-    if(index == thisTree || children[0] == nullptr)
+    if(children[0] != nullptr)
     {
-        if(children[0] != nullptr)
+        int index = GetChildIndexForObject(area);
+        
+        if(index == thisTree)
         {
             for(int i = 0; i < 4; i++)
             {
@@ -156,10 +174,10 @@ void QuadTree::Search(const sf::FloatRect& area,
                 }
             }
         }
-    }
-    else if(children[index] != nullptr)
-    {
-        children[index]->Search(area, overlappingObjects);
+        else
+        {
+            children[index]->Search(area, overlappingObjects);
+        }
     }
 }
 

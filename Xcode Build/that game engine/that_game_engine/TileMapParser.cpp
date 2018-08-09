@@ -107,6 +107,8 @@ std::shared_ptr<TileSheets> TileMapParser::BuildTileSheetData(xml_node<> *rootNo
         
     }
     
+    //TODO: we should ensure tilesets are sorted by id ascending.
+    
     return std::make_shared<TileSheets>(tileSheets);
 }
 

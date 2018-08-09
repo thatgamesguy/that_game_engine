@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E103661220568D7900F3C0C9 /* SceneStateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E103661020568D7900F3C0C9 /* SceneStateMachine.cpp */; };
 		E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10BAA7F2052BB7900532801 /* Bitmask.cpp */; };
+		E134531320F3BB11003B6C27 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E134531120F3BB11003B6C27 /* Debug.cpp */; };
 		E14D5A2F20D8EE5500E54559 /* Viking.png in Resources */ = {isa = PBXBuildFile; fileRef = E14D5A2E20D8EE5500E54559 /* Viking.png */; };
 		E15F3FB820DA90AE00B36F8D /* Test Map 1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E15F3FB720DA90AE00B36F8D /* Test Map 1.tmx */; };
 		E15F3FBA20DA90CC00B36F8D /* Jungle Tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = E15F3FB920DA90CC00B36F8D /* Jungle Tiles.png */; };
@@ -47,6 +48,8 @@
 		E103661120568D7900F3C0C9 /* SceneStateMachine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneStateMachine.hpp; sourceTree = "<group>"; };
 		E10BAA7F2052BB7900532801 /* Bitmask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bitmask.cpp; sourceTree = "<group>"; };
 		E10BAA802052BB7900532801 /* Bitmask.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bitmask.hpp; sourceTree = "<group>"; };
+		E134531120F3BB11003B6C27 /* Debug.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = "<group>"; };
+		E134531220F3BB11003B6C27 /* Debug.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Debug.hpp; sourceTree = "<group>"; };
 		E14D5A2E20D8EE5500E54559 /* Viking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Viking.png; sourceTree = "<group>"; };
 		E14D5A3420D92B7500E54559 /* Tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		E15F3FB720DA90AE00B36F8D /* Test Map 1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Test Map 1.tmx"; sourceTree = "<group>"; };
@@ -177,6 +180,8 @@
 				E1B56A8220D93AB1000A3E29 /* Utilities.h */,
 				E1A8BB0E20F0F95D0009CFFB /* QuadTree.cpp */,
 				E1A8BB0F20F0F95D0009CFFB /* QuadTree.hpp */,
+				E134531120F3BB11003B6C27 /* Debug.cpp */,
+				E134531220F3BB11003B6C27 /* Debug.hpp */,
 				E16867582028AB910099B64D /* Main.cpp */,
 				E168674A2028AA620099B64D /* Resources */,
 				E16867432028AA620099B64D /* Supporting Files */,
@@ -387,6 +392,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1CC41B420EFE9410066FB67 /* S_Drawable.cpp in Sources */,
+				E134531320F3BB11003B6C27 /* Debug.cpp in Sources */,
 				E1A8BB0720F0BDA20009CFFB /* C_Collider.cpp in Sources */,
 				E1E8059220795ABB00EF4B2A /* C_Animation.cpp in Sources */,
 				E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */,

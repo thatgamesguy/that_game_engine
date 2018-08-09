@@ -35,7 +35,10 @@ void C_Sprite::Load(const std::string& filePath)
 
 void C_Sprite::LateUpdate(float deltaTime)
 {
-    sprite.setPosition(owner->transform->GetPosition());
+    sf::Vector2f pos = owner->transform->GetPosition();
+    const sf::IntRect& spriteBounds = sprite.getTextureRect();
+    const sf::Vector2f& spriteScale = sprite.getScale();
+    sprite.setPosition(pos.x - (fabs(spriteBounds.width) / 2 * spriteScale.x), pos.y - (spriteBounds.height / 2) * spriteScale.y);
 }
 
 void C_Sprite::Draw(Window& window)

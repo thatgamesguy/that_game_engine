@@ -25,7 +25,6 @@ public:
     const sf::Vector2f& GetPosition() const;
     const sf::Vector2f& GetPreviousFramePosition() const;
     
-    bool HasMovedThisFrame() const;
     
     void SetStatic(bool isStatic);
     bool isStatic() const;

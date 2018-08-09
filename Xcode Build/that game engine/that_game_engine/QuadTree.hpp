@@ -6,6 +6,7 @@
 
 #include "C_BoxCollider.hpp"
 #include "Object.hpp"
+#include "Debug.hpp"
 
 class QuadTree
 {
@@ -13,17 +14,20 @@ public:
     QuadTree();
     QuadTree(int maxObjects, int maxLevels, int level, sf::FloatRect bounds, QuadTree* parent);
     
+    void DrawDebug();
+    
     void Insert(std::shared_ptr<C_BoxCollider> object);
     void Remove(std::shared_ptr<C_BoxCollider> object);
     void Clear();
     void UpdatePosition(std::shared_ptr<C_BoxCollider> object);
     
     std::vector<std::shared_ptr<C_BoxCollider>> Search(const sf::FloatRect& area);
-    void Search(const sf::FloatRect& area, std::vector<std::shared_ptr<C_BoxCollider>>& overlappingObjects);
-    
+   
     const sf::FloatRect& GetBounds() const;
     
 private:
+    void Search(const sf::FloatRect& area, std::vector<std::shared_ptr<C_BoxCollider>>& overlappingObjects);
+    
     int GetChildIndexForObject(const sf::FloatRect& objectBounds);
     void Split();
     

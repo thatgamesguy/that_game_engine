@@ -6,8 +6,6 @@
 #include "Component.hpp"
 #include "C_Collider.hpp"
 
-enum class Origin { TopLeft, AbsCentre, MidBottom };
-
 class C_BoxCollider : public C_Collider
 {
 public:
@@ -22,14 +20,16 @@ public:
     
     sf::FloatRect GetPreviousFrameCollidable() const;
     
-    void SetOrigin(const Origin& origin);
+    void SetOffset(const sf::Vector2f& offset);
+    void SetOffset(float x, float y);
+    
+    void SetSize(const sf::Vector2f& size);
+    void SetSize(float width, float height);
     
 private:
     void SetPosition();
     
-private:
     sf::FloatRect AABB;
-    Origin origin;
     sf::Vector2f offset;
 };
 
