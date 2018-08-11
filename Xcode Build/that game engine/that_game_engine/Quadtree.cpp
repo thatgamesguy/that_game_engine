@@ -225,9 +225,10 @@ int Quadtree::GetChildIndexForObject(const sf::FloatRect& objectBounds)
 
 void Quadtree::Split()
 {
-    int childWidth = bounds.width / 2;
-    int childHeight = bounds.height / 2;
+    const int childWidth = bounds.width / 2;
+    const int childHeight = bounds.height / 2;
     
+    //TODO: instantiate using loop.
     children[childNE] = std::make_shared<Quadtree>(maxObjects, maxLevels, level + 1, sf::FloatRect(bounds.left + childWidth, bounds.top, childWidth, childHeight), this);
     children[childNW] = std::make_shared<Quadtree>(maxObjects, maxLevels, level + 1, sf::FloatRect(bounds.left, bounds.top, childWidth, childHeight), this);
     children[childSW] = std::make_shared<Quadtree>(maxObjects, maxLevels, level + 1, sf::FloatRect(bounds.left, bounds.top + childHeight, childWidth, childHeight), this);

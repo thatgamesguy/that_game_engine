@@ -31,6 +31,7 @@ private:
     int GetChildIndexForObject(const sf::FloatRect& objectBounds);
     void Split();
     
+    //TODO: is there a better way to store this data? enum?
     static const int thisTree = -1;
     static const int childNE = 0;
     static const int childNW = 1;

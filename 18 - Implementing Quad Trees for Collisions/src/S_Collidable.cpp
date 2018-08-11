@@ -80,42 +80,54 @@ void S_Collidable::Resolve()
 {
     for (auto maps = collidables.begin(); maps != collidables.end(); ++maps)
     {
+        // If this layer collides with nothing then no need to perform any furter checks.
+        if(collisionLayers[maps->first].GetMask() == 0)
+        {
+            continue;
+        }
+        
         for (auto collidable : maps->second)
         {
-            if (!collidable->owner->transform->isStatic() && collisionLayers[collidable->GetLayer()].GetMask() != 0)
+            // If this collidable is static then no need to check if its colliding with other objects.
+            if (collidable->owner->transform->isStatic())
             {
-                std::vector<std::shared_ptr<C_BoxCollider>> collisions = collisionTree.Search(collidable->GetCollidable());
-                
-                for (auto collision : collisions)
+                continue;
+            }
+            
+            std::vector<std::shared_ptr<C_BoxCollider>> collisions = collisionTree.Search(collidable->GetCollidable());
+            
+            for (auto collision : collisions)
+            {
+                // Make sure we do not resolve collisions between the the same object.
+                if (collidable->owner->instanceID->Get() == collision->owner->instanceID->Get())
                 {
-                    if (collidable->owner->instanceID->Get() == collision->owner->instanceID->Get())
-                    {
-                        continue;
-                    }
-                                        
-                    bool layersCollide = collisionLayers[collidable->GetLayer()].GetBit(((int)collision->GetLayer()));
+                    continue;
+                }
+                
+                bool layersCollide = collisionLayers[collidable->GetLayer()].GetBit(((int)collision->GetLayer()));
+                
+                if(layersCollide)
+                {
+                    Manifold m = collidable->Intersects(collision);
                     
-                    if(layersCollide)
+                    if(m.colliding)
                     {
-                        Manifold m = collidable->Intersects(collision);
-                        
-                        if(m.colliding)
+                        if(collision->owner->transform->isStatic())
                         {
-                            if(collision->owner->transform->isStatic())
-                            {
-                                collidable->ResolveOverlap(m);
-                            }
-                            else
-                            {
-                                
-                                //TODO: how shall we handle collisions when both objects are not static?
-                                collidable->ResolveOverlap(m);
-                            }
-                    
+                            collidable->ResolveOverlap(m);
                         }
+                        else
+                        {
+                            
+                            //TODO: how shall we handle collisions when both objects are not static?
+                            // We could implement rigidbodies and mass.
+                            collidable->ResolveOverlap(m);
+                        }
+                        
                     }
                 }
             }
+            
         }
     }
 }
