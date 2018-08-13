@@ -35,6 +35,7 @@
 		E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */; };
 		E1CC41B420EFE9410066FB67 /* S_Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CC41B220EFE9410066FB67 /* S_Drawable.cpp */; };
 		E1CC41B820EFE9750066FB67 /* C_Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CC41B620EFE9750066FB67 /* C_Drawable.cpp */; };
+		E1CEC85F21218A440018BA16 /* C_Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CEC85D21218A440018BA16 /* C_Camera.cpp */; };
 		E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */; };
 		E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1DD500D2056D4A200B96459 /* SceneGame.cpp */; };
 		E1DD50112056DA4D00B96459 /* that_games_guy_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DD50102056DA4D00B96459 /* that_games_guy_logo.png */; };
@@ -101,6 +102,8 @@
 		E1CC41B320EFE9410066FB67 /* S_Drawable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = S_Drawable.hpp; sourceTree = "<group>"; };
 		E1CC41B620EFE9750066FB67 /* C_Drawable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Drawable.cpp; sourceTree = "<group>"; };
 		E1CC41B720EFE9750066FB67 /* C_Drawable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Drawable.hpp; sourceTree = "<group>"; };
+		E1CEC85D21218A440018BA16 /* C_Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Camera.cpp; sourceTree = "<group>"; };
+		E1CEC85E21218A440018BA16 /* C_Camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Camera.hpp; sourceTree = "<group>"; };
 		E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneSplashScreen.cpp; sourceTree = "<group>"; };
 		E1DD50092056CDB700B96459 /* SceneSplashScreen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneSplashScreen.hpp; sourceTree = "<group>"; };
 		E1DD500D2056D4A200B96459 /* SceneGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneGame.cpp; sourceTree = "<group>"; };
@@ -256,6 +259,8 @@
 				E1A8BB0920F0BF9D0009CFFB /* C_BoxCollider.hpp */,
 				E1A8BB1120F10B230009CFFB /* C_InstanceID.cpp */,
 				E1A8BB1220F10B230009CFFB /* C_InstanceID.hpp */,
+				E1CEC85D21218A440018BA16 /* C_Camera.cpp */,
+				E1CEC85E21218A440018BA16 /* C_Camera.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 				E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */,
 				E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */,
 				E1CC41B820EFE9750066FB67 /* C_Drawable.cpp in Sources */,
+				E1CEC85F21218A440018BA16 /* C_Camera.cpp in Sources */,
 				E1A8BB0A20F0BF9D0009CFFB /* C_BoxCollider.cpp in Sources */,
 				E168676B202B56EB0099B64D /* Window.cpp in Sources */,
 				E168675C2028AC9C0099B64D /* Game.cpp in Sources */,
