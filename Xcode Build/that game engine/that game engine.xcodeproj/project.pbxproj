@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E103661220568D7900F3C0C9 /* SceneStateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E103661020568D7900F3C0C9 /* SceneStateMachine.cpp */; };
+		E104F98B2123702B0002EA95 /* magecity.png in Resources */ = {isa = PBXBuildFile; fileRef = E104F98A2123702B0002EA95 /* magecity.png */; };
 		E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10BAA7F2052BB7900532801 /* Bitmask.cpp */; };
 		E134531320F3BB11003B6C27 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E134531120F3BB11003B6C27 /* Debug.cpp */; };
-		E14D5A2F20D8EE5500E54559 /* Viking.png in Resources */ = {isa = PBXBuildFile; fileRef = E14D5A2E20D8EE5500E54559 /* Viking.png */; };
-		E15F3FB820DA90AE00B36F8D /* Test Map 1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E15F3FB720DA90AE00B36F8D /* Test Map 1.tmx */; };
-		E15F3FBA20DA90CC00B36F8D /* Jungle Tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = E15F3FB920DA90CC00B36F8D /* Jungle Tiles.png */; };
 		E16839092121E1140051E440 /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = E16839082121E1130051E440 /* Player.png */; };
 		E16867592028AB910099B64D /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16867582028AB910099B64D /* Main.cpp */; };
 		E168675C2028AC9C0099B64D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E168675A2028AC9C0099B64D /* Game.cpp */; };
@@ -26,14 +24,20 @@
 		E1911E5520595F2A000C8851 /* C_Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E5320595F2A000C8851 /* C_Transform.cpp */; };
 		E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */; };
 		E1A5ABDC20E15789001A90A3 /* Red Square.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A5ABDB20E15789001A90A3 /* Red Square.png */; };
-		E1A5ABDE20E2464B001A90A3 /* Test Map 2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1A5ABDD20E2464B001A90A3 /* Test Map 2.tmx */; };
 		E1A8BB0720F0BDA20009CFFB /* C_Collider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0520F0BDA20009CFFB /* C_Collider.cpp */; };
 		E1A8BB0A20F0BF9D0009CFFB /* C_BoxCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0820F0BF9D0009CFFB /* C_BoxCollider.cpp */; };
 		E1A8BB1020F0F95D0009CFFB /* Quadtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0E20F0F95D0009CFFB /* Quadtree.cpp */; };
 		E1A8BB1320F10B230009CFFB /* C_InstanceID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB1120F10B230009CFFB /* C_InstanceID.cpp */; };
 		E1A8BB1920F1160D0009CFFB /* S_Collidable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB1720F1160D0009CFFB /* S_Collidable.cpp */; };
+		E1B2245B21236FC5009F19C1 /* Test Map 1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245521236FC4009F19C1 /* Test Map 1.tmx */; };
+		E1B2245C21236FC5009F19C1 /* Path.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245621236FC4009F19C1 /* Path.tmx */; };
+		E1B2245D21236FC5009F19C1 /* Test Map 2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245721236FC5009F19C1 /* Test Map 2.tmx */; };
+		E1B2245E21236FC5009F19C1 /* City.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245821236FC5009F19C1 /* City.tmx */; };
+		E1B2245F21236FC5009F19C1 /* House Exterior.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245921236FC5009F19C1 /* House Exterior.tmx */; };
+		E1B2246021236FC5009F19C1 /* House Interior.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245A21236FC5009F19C1 /* House Interior.tmx */; };
 		E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */; };
 		E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */; };
+		E1CAFF232122E72300617A9E /* LPC in Resources */ = {isa = PBXBuildFile; fileRef = E1CAFF222122E72200617A9E /* LPC */; };
 		E1CC41B420EFE9410066FB67 /* S_Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CC41B220EFE9410066FB67 /* S_Drawable.cpp */; };
 		E1CC41B820EFE9750066FB67 /* C_Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CC41B620EFE9750066FB67 /* C_Drawable.cpp */; };
 		E1CEC85F21218A440018BA16 /* C_Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CEC85D21218A440018BA16 /* C_Camera.cpp */; };
@@ -48,14 +52,12 @@
 		E103660E20568CD900F3C0C9 /* Scene.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
 		E103661020568D7900F3C0C9 /* SceneStateMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneStateMachine.cpp; sourceTree = "<group>"; };
 		E103661120568D7900F3C0C9 /* SceneStateMachine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneStateMachine.hpp; sourceTree = "<group>"; };
+		E104F98A2123702B0002EA95 /* magecity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magecity.png; sourceTree = "<group>"; };
 		E10BAA7F2052BB7900532801 /* Bitmask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bitmask.cpp; sourceTree = "<group>"; };
 		E10BAA802052BB7900532801 /* Bitmask.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bitmask.hpp; sourceTree = "<group>"; };
 		E134531120F3BB11003B6C27 /* Debug.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = "<group>"; };
 		E134531220F3BB11003B6C27 /* Debug.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Debug.hpp; sourceTree = "<group>"; };
-		E14D5A2E20D8EE5500E54559 /* Viking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Viking.png; sourceTree = "<group>"; };
 		E14D5A3420D92B7500E54559 /* Tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
-		E15F3FB720DA90AE00B36F8D /* Test Map 1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Test Map 1.tmx"; sourceTree = "<group>"; };
-		E15F3FB920DA90CC00B36F8D /* Jungle Tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jungle Tiles.png"; sourceTree = "<group>"; };
 		E16839082121E1130051E440 /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
 		E16867402028AA620099B64D /* that game engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "that game engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16867442028AA620099B64D /* that game engine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "that game engine-Info.plist"; sourceTree = "<group>"; };
@@ -80,7 +82,6 @@
 		E1911E57205966C1000C8851 /* C_KeyboardMovement.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_KeyboardMovement.hpp; sourceTree = "<group>"; };
 		E1A4CEE02059ABFD007C89F8 /* ResourceAllocator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceAllocator.hpp; sourceTree = "<group>"; };
 		E1A5ABDB20E15789001A90A3 /* Red Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red Square.png"; sourceTree = "<group>"; };
-		E1A5ABDD20E2464B001A90A3 /* Test Map 2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Test Map 2.tmx"; sourceTree = "<group>"; };
 		E1A8BB0520F0BDA20009CFFB /* C_Collider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Collider.cpp; sourceTree = "<group>"; };
 		E1A8BB0620F0BDA20009CFFB /* C_Collider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Collider.hpp; sourceTree = "<group>"; };
 		E1A8BB0820F0BF9D0009CFFB /* C_BoxCollider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_BoxCollider.cpp; sourceTree = "<group>"; };
@@ -91,6 +92,12 @@
 		E1A8BB1220F10B230009CFFB /* C_InstanceID.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_InstanceID.hpp; sourceTree = "<group>"; };
 		E1A8BB1720F1160D0009CFFB /* S_Collidable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = S_Collidable.cpp; sourceTree = "<group>"; };
 		E1A8BB1820F1160D0009CFFB /* S_Collidable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = S_Collidable.hpp; sourceTree = "<group>"; };
+		E1B2245521236FC4009F19C1 /* Test Map 1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Test Map 1.tmx"; sourceTree = "<group>"; };
+		E1B2245621236FC4009F19C1 /* Path.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Path.tmx; sourceTree = "<group>"; };
+		E1B2245721236FC5009F19C1 /* Test Map 2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Test Map 2.tmx"; sourceTree = "<group>"; };
+		E1B2245821236FC5009F19C1 /* City.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = City.tmx; sourceTree = "<group>"; };
+		E1B2245921236FC5009F19C1 /* House Exterior.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "House Exterior.tmx"; sourceTree = "<group>"; };
+		E1B2245A21236FC5009F19C1 /* House Interior.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "House Interior.tmx"; sourceTree = "<group>"; };
 		E1B56A8220D93AB1000A3E29 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapParser.cpp; sourceTree = "<group>"; };
 		E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TileMapParser.hpp; sourceTree = "<group>"; };
@@ -100,6 +107,7 @@
 		E1BFB573208E330D00E2AB24 /* rapidxml.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rapidxml.hpp; sourceTree = "<group>"; };
 		E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectCollection.cpp; sourceTree = "<group>"; };
 		E1C9BC58205A5E8E0074A696 /* ObjectCollection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ObjectCollection.hpp; sourceTree = "<group>"; };
+		E1CAFF222122E72200617A9E /* LPC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LPC; sourceTree = "<group>"; };
 		E1CC41B220EFE9410066FB67 /* S_Drawable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = S_Drawable.cpp; sourceTree = "<group>"; };
 		E1CC41B320EFE9410066FB67 /* S_Drawable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = S_Drawable.hpp; sourceTree = "<group>"; };
 		E1CC41B620EFE9750066FB67 /* C_Drawable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Drawable.cpp; sourceTree = "<group>"; };
@@ -222,10 +230,10 @@
 		E168676C202B5B1C0099B64D /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				E104F98A2123702B0002EA95 /* magecity.png */,
+				E1CAFF222122E72200617A9E /* LPC */,
 				E16839082121E1130051E440 /* Player.png */,
 				E1A5ABDB20E15789001A90A3 /* Red Square.png */,
-				E15F3FB920DA90CC00B36F8D /* Jungle Tiles.png */,
-				E14D5A2E20D8EE5500E54559 /* Viking.png */,
 				E1DD50102056DA4D00B96459 /* that_games_guy_logo.png */,
 			);
 			name = Textures;
@@ -271,8 +279,12 @@
 		E1BFB569208E311700E2AB24 /* Tile Maps */ = {
 			isa = PBXGroup;
 			children = (
-				E15F3FB720DA90AE00B36F8D /* Test Map 1.tmx */,
-				E1A5ABDD20E2464B001A90A3 /* Test Map 2.tmx */,
+				E1B2245821236FC5009F19C1 /* City.tmx */,
+				E1B2245921236FC5009F19C1 /* House Exterior.tmx */,
+				E1B2245A21236FC5009F19C1 /* House Interior.tmx */,
+				E1B2245621236FC4009F19C1 /* Path.tmx */,
+				E1B2245521236FC4009F19C1 /* Test Map 1.tmx */,
+				E1B2245721236FC5009F19C1 /* Test Map 2.tmx */,
 			);
 			name = "Tile Maps";
 			sourceTree = "<group>";
@@ -367,13 +379,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CAFF232122E72300617A9E /* LPC in Resources */,
+				E1B2245D21236FC5009F19C1 /* Test Map 2.tmx in Resources */,
+				E1B2245E21236FC5009F19C1 /* City.tmx in Resources */,
+				E1B2245C21236FC5009F19C1 /* Path.tmx in Resources */,
 				E1A5ABDC20E15789001A90A3 /* Red Square.png in Resources */,
-				E15F3FBA20DA90CC00B36F8D /* Jungle Tiles.png in Resources */,
+				E1B2245B21236FC5009F19C1 /* Test Map 1.tmx in Resources */,
+				E104F98B2123702B0002EA95 /* magecity.png in Resources */,
+				E1B2246021236FC5009F19C1 /* House Interior.tmx in Resources */,
 				E16839092121E1140051E440 /* Player.png in Resources */,
-				E14D5A2F20D8EE5500E54559 /* Viking.png in Resources */,
 				E1DD50112056DA4D00B96459 /* that_games_guy_logo.png in Resources */,
-				E15F3FB820DA90AE00B36F8D /* Test Map 1.tmx in Resources */,
-				E1A5ABDE20E2464B001A90A3 /* Test Map 2.tmx in Resources */,
+				E1B2245F21236FC5009F19C1 /* House Exterior.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
