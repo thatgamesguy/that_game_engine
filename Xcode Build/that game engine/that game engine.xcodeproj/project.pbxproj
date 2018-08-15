@@ -171,12 +171,11 @@
 		E16867422028AA620099B64D /* that_game_engine */ = {
 			isa = PBXGroup;
 			children = (
+				E1A117CC21243C750066F582 /* Data Structures */,
 				E1BFB574208E331000E2AB24 /* XML Parser */,
 				E1BFB56C208E325200E2AB24 /* Tile Map */,
 				E1911E4B20594600000C8851 /* ECS */,
 				E103660C20568CC600F3C0C9 /* Scenes */,
-				E10BAA7F2052BB7900532801 /* Bitmask.cpp */,
-				E10BAA802052BB7900532801 /* Bitmask.hpp */,
 				E16867472028AA620099B64D /* WorkingDirectory.hpp */,
 				E1686767202B3CCB0099B64D /* WorkingDirectory.cpp */,
 				E168675A2028AC9C0099B64D /* Game.cpp */,
@@ -191,8 +190,6 @@
 				E1E8058D207952B600EF4B2A /* Animation.cpp */,
 				E1E8058E207952B600EF4B2A /* Animation.hpp */,
 				E1B56A8220D93AB1000A3E29 /* Utilities.h */,
-				E1A8BB0E20F0F95D0009CFFB /* Quadtree.cpp */,
-				E1A8BB0F20F0F95D0009CFFB /* Quadtree.hpp */,
 				E134531120F3BB11003B6C27 /* Debug.cpp */,
 				E134531220F3BB11003B6C27 /* Debug.hpp */,
 				E16867582028AB910099B64D /* Main.cpp */,
@@ -274,6 +271,17 @@
 				E1CEC85E21218A440018BA16 /* C_Camera.hpp */,
 			);
 			name = Components;
+			sourceTree = "<group>";
+		};
+		E1A117CC21243C750066F582 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				E1A8BB0E20F0F95D0009CFFB /* Quadtree.cpp */,
+				E1A8BB0F20F0F95D0009CFFB /* Quadtree.hpp */,
+				E10BAA7F2052BB7900532801 /* Bitmask.cpp */,
+				E10BAA802052BB7900532801 /* Bitmask.hpp */,
+			);
+			name = "Data Structures";
 			sourceTree = "<group>";
 		};
 		E1BFB569208E311700E2AB24 /* Tile Maps */ = {

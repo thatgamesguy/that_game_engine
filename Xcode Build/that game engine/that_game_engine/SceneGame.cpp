@@ -102,7 +102,7 @@ void SceneGame::OnCreate()
     // In future we will remove this hardcoded offset when we look at allowing the player to change resolutions.
     sf::Vector2i mapOffset(0, 180);
     //sf::Vector2i mapOffset(128, 128);
-    std::vector<std::shared_ptr<Object>> levelTiles = mapParser.Parse(workingDir.Get() + "City.tmx", mapOffset);
+    std::vector<std::shared_ptr<Object>> levelTiles = mapParser.Parse(workingDir.Get() + "House Exterior.tmx", mapOffset);
     
     objects.Add(levelTiles);
 }

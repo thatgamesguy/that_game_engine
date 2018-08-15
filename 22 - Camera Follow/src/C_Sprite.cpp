@@ -38,7 +38,7 @@ void C_Sprite::LateUpdate(float deltaTime)
     sf::Vector2f pos = owner->transform->GetPosition();
     const sf::IntRect& spriteBounds = sprite.getTextureRect();
     const sf::Vector2f& spriteScale = sprite.getScale();
-    sprite.setPosition(pos.x - (fabs(spriteBounds.width) / 2 * spriteScale.x), pos.y - (spriteBounds.height / 2) * spriteScale.y);
+    sprite.setPosition(pos.x - ((abs(spriteBounds.width) * 0.5f) * spriteScale.x), pos.y - (abs(spriteBounds.height) * 0.5f) * spriteScale.y);
 }
 
 void C_Sprite::Draw(Window& window)
