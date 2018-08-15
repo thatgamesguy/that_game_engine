@@ -16,6 +16,8 @@ void ObjectCollection::Update(float deltaTime)
     {
         o->Update(deltaTime);
     }
+    
+    collidables.Update();
 }
 
 void ObjectCollection::LateUpdate(float deltaTime)
@@ -48,6 +50,7 @@ void ObjectCollection::ProcessNewObjects()
         objects.insert(objects.end(), newObjects.begin(), newObjects.end());
         
         drawables.Add(newObjects);
+        collidables.Add(newObjects);
         
         newObjects.clear();
     }
@@ -75,5 +78,6 @@ void ObjectCollection::ProcessRemovals()
     if(removed)
     {
         drawables.ProcessRemovals();
+        collidables.ProcessRemovals();
     }
 }

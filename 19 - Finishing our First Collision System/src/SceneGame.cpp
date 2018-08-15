@@ -71,7 +71,12 @@ void SceneGame::OnCreate()
     walkAnimation->AddFrame(vikingTextureID, 200, 435, frameWidth, frameHeight, walkAnimFrameSeconds);
     walkAnimation->AddFrame(vikingTextureID, 400, 435, frameWidth, frameHeight, walkAnimFrameSeconds);
     animation->AddAnimation(AnimationState::Walk, walkAnimation);
-        
+    
+
+    auto collider = player->AddComponent<C_BoxCollider>();
+    collider->SetCollidable(sf::FloatRect(0, 0, frameWidth, frameHeight));
+    collider->SetLayer(CollisionLayer::Player);
+    
     objects.Add(player);
     
     // You will need to play around with this offset until it fits the level in at your chosen resolution. This worls for 1920 * 1080.

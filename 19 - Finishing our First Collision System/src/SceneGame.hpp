@@ -11,6 +11,7 @@
 #include "ObjectCollection.hpp"
 #include "TileMapParser.hpp"
 #include "C_Animation.hpp"
+#include "C_BoxCollider.hpp"
 
 class SceneGame : public Scene
 {
