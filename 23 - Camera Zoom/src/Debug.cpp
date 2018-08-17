@@ -65,5 +65,4 @@ void Debug::LogWarning(const std::string& msg)
 void Debug::LogError(const std::string& msg)
 {
     std::cout << "ERROR: " << msg << std::endl;
-    raise(SIGTRAP); 
 }

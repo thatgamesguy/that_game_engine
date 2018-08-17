@@ -4,7 +4,6 @@
 #include <array>
 #include <iostream>
 #include <functional>
-#include <signal.h>
 #include <SFML/Graphics.hpp>
 
 #include "Window.hpp"
