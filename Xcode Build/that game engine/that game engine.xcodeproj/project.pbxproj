@@ -36,6 +36,7 @@
 		E1B2245F21236FC5009F19C1 /* House Exterior.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245921236FC5009F19C1 /* House Exterior.tmx */; };
 		E1B2246021236FC5009F19C1 /* House Interior.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245A21236FC5009F19C1 /* House Interior.tmx */; };
 		E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */; };
+		E1C29B1021349E630067816E /* C_ProjectileAttack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C29B0E21349E630067816E /* C_ProjectileAttack.cpp */; };
 		E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */; };
 		E1CAFF232122E72300617A9E /* LPC in Resources */ = {isa = PBXBuildFile; fileRef = E1CAFF222122E72200617A9E /* LPC */; };
 		E1CC41B420EFE9410066FB67 /* S_Drawable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1CC41B220EFE9410066FB67 /* S_Drawable.cpp */; };
@@ -105,6 +106,8 @@
 		E1BFB571208E330C00E2AB24 /* rapidxml_utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_utils.hpp; sourceTree = "<group>"; };
 		E1BFB572208E330C00E2AB24 /* rapidxml_iterators.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_iterators.hpp; sourceTree = "<group>"; };
 		E1BFB573208E330D00E2AB24 /* rapidxml.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rapidxml.hpp; sourceTree = "<group>"; };
+		E1C29B0E21349E630067816E /* C_ProjectileAttack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_ProjectileAttack.cpp; sourceTree = "<group>"; };
+		E1C29B0F21349E630067816E /* C_ProjectileAttack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_ProjectileAttack.hpp; sourceTree = "<group>"; };
 		E1C9BC57205A5E8E0074A696 /* ObjectCollection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectCollection.cpp; sourceTree = "<group>"; };
 		E1C9BC58205A5E8E0074A696 /* ObjectCollection.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ObjectCollection.hpp; sourceTree = "<group>"; };
 		E1CAFF222122E72200617A9E /* LPC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LPC; sourceTree = "<group>"; };
@@ -269,6 +272,8 @@
 				E1A8BB1220F10B230009CFFB /* C_InstanceID.hpp */,
 				E1CEC85D21218A440018BA16 /* C_Camera.cpp */,
 				E1CEC85E21218A440018BA16 /* C_Camera.hpp */,
+				E1C29B0E21349E630067816E /* C_ProjectileAttack.cpp */,
+				E1C29B0F21349E630067816E /* C_ProjectileAttack.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -438,6 +443,7 @@
 				E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */,
 				E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */,
 				E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */,
+				E1C29B1021349E630067816E /* C_ProjectileAttack.cpp in Sources */,
 				E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */,
 				E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */,
 				E1CC41B820EFE9750066FB67 /* C_Drawable.cpp in Sources */,

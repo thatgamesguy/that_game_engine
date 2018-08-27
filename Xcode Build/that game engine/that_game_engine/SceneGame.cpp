@@ -19,35 +19,33 @@ void SceneGame::OnCreate()
     
     int playerTextureID = textureAllocator.Add(workingDir.Get() + "Player.png");
 
-    const int frameWidth =  64;
-    const int frameHeight = 64;
-    const int upYFramePos = 512;
-    const int leftYFramePos = 576;
-    const int downYFramePos = 640;
-    const int rightYFramePos = 704;
+    const unsigned int frameWidth =  64;
+    const unsigned int frameHeight = 64;
+
+    
+    const FacingDirection directions[4] = {FacingDirection::Up, FacingDirection::Left, FacingDirection::Down, FacingDirection::Right};
+    
     
     /*******************
      * Idle Animations *
      *******************/
+    unsigned int idleYFramePos = 512;
+    
     std::map<FacingDirection, std::shared_ptr<Animation>> idleAnimations;
     
-    std::shared_ptr<Animation> idleUpAnimation = std::make_shared<Animation>();
-    idleUpAnimation->AddFrame(playerTextureID, 0, upYFramePos, frameWidth, frameHeight, 0.f);
-    idleAnimations.insert(std::make_pair(FacingDirection::Up, idleUpAnimation));
+    for (int i = 0; i < 4; i++)
+    {
+        std::shared_ptr<Animation> idleAnimation = std::make_shared<Animation>();
+        
+        idleAnimation->AddFrame(playerTextureID, 0, idleYFramePos, frameWidth, frameHeight, 0.f);
+        
+        idleAnimations.insert(std::make_pair(directions[i], idleAnimation));
+        
+        idleYFramePos += frameHeight;
+    }
     
-    std::shared_ptr<Animation> idleLeftAnimation = std::make_shared<Animation>();
-    idleLeftAnimation->AddFrame(playerTextureID, 0, leftYFramePos, frameWidth, frameHeight, 0.f);
-    idleAnimations.insert(std::make_pair(FacingDirection::Left, idleLeftAnimation));
-    
-    std::shared_ptr<Animation> idleDownAnimation = std::make_shared<Animation>();
-    idleDownAnimation->AddFrame(playerTextureID, 0, downYFramePos, frameWidth, frameHeight, 0.f);
-    idleAnimations.insert(std::make_pair(FacingDirection::Down, idleDownAnimation));
-    
-    std::shared_ptr<Animation> idleRightAnimation = std::make_shared<Animation>();
-    idleRightAnimation->AddFrame(playerTextureID, 0, rightYFramePos, frameWidth, frameHeight, 0.f);
-    idleAnimations.insert(std::make_pair(FacingDirection::Right, idleRightAnimation));
-
     animation->AddAnimation(AnimationState::Idle, idleAnimations);
+    
     
     /**********************
      * Walking Animations *
@@ -55,38 +53,50 @@ void SceneGame::OnCreate()
     const int walkingFrameCount = 9;
     const float delayBetweenWalkingFramesSecs = 0.1f;
     
+    unsigned int walkingYFramePos = 512;
+    
     std::map<FacingDirection, std::shared_ptr<Animation>> walkingAnimations;
     
-    std::shared_ptr<Animation> walkUpAnimation = std::make_shared<Animation>();
-    for (int i = 0; i < walkingFrameCount; i++)
+    for (int i = 0; i < 4; i++)
     {
-         walkUpAnimation->AddFrame(playerTextureID, i * frameWidth, upYFramePos, frameWidth, frameHeight, delayBetweenWalkingFramesSecs);
+        std::shared_ptr<Animation> walkingAnimation = std::make_shared<Animation>();
+        for (int i = 0; i < walkingFrameCount; i++)
+        {
+            walkingAnimation->AddFrame(playerTextureID, i * frameWidth, walkingYFramePos, frameWidth, frameHeight, delayBetweenWalkingFramesSecs);
+        }
+        
+        walkingAnimations.insert(std::make_pair(directions[i], walkingAnimation));
+        
+        walkingYFramePos += frameHeight;
     }
-    walkingAnimations.insert(std::make_pair(FacingDirection::Up, walkUpAnimation));
     
-    std::shared_ptr<Animation> walkLeftAnimation = std::make_shared<Animation>();
-    for (int i = 0; i < walkingFrameCount; i++)
+    animation->AddAnimation(AnimationState::Walk, walkingAnimations);
+    
+    
+    /*************************
+     * Projectile Animations *
+     *************************/
+    const int projectileFrameCount = 10;
+    const float delayBetweenProjectileFramesSecs = 0.1f;
+
+    std::map<FacingDirection, std::shared_ptr<Animation>> projectileAnimations;
+    
+    unsigned int projFrameYPos = 1024;
+    
+    for (int i = 0; i < 4; i++)
     {
-        walkLeftAnimation->AddFrame(playerTextureID, i * frameWidth, leftYFramePos, frameWidth, frameHeight, delayBetweenWalkingFramesSecs);
+        std::shared_ptr<Animation> projAnimation = std::make_shared<Animation>();
+        for (int i = 0; i < projectileFrameCount; i++)
+        {
+            projAnimation->AddFrame(playerTextureID, i * frameWidth, projFrameYPos, frameWidth, frameHeight, delayBetweenProjectileFramesSecs);
+        }
+        projectileAnimations.insert(std::make_pair(directions[i], projAnimation));
+        
+        projFrameYPos += frameHeight;
     }
-    walkingAnimations.insert(std::make_pair(FacingDirection::Left, walkLeftAnimation));
     
-    std::shared_ptr<Animation> walkDownAnimation = std::make_shared<Animation>();
-    for (int i = 0; i < walkingFrameCount; i++)
-    {
-        walkDownAnimation->AddFrame(playerTextureID, i * frameWidth, downYFramePos, frameWidth, frameHeight, delayBetweenWalkingFramesSecs);
-    }
-    walkingAnimations.insert(std::make_pair(FacingDirection::Down, walkDownAnimation));
-    
-    std::shared_ptr<Animation> walkRightAnimation = std::make_shared<Animation>();
-    for (int i = 0; i < walkingFrameCount; i++)
-    {
-        walkRightAnimation->AddFrame(playerTextureID, i * frameWidth, rightYFramePos, frameWidth, frameHeight, delayBetweenWalkingFramesSecs);
-    }
-    walkingAnimations.insert(std::make_pair(FacingDirection::Right, walkRightAnimation));
-    
-    
-     animation->AddAnimation(AnimationState::Walk, walkingAnimations);
+    animation->AddAnimation(AnimationState::Projectile, projectileAnimations);
+
     
     auto collider = player->AddComponent<C_BoxCollider>();
     collider->SetSize(frameWidth * 0.4f, frameHeight * 0.5f);
@@ -95,6 +105,9 @@ void SceneGame::OnCreate()
     
     auto camera = player->AddComponent<C_Camera>();
     camera->SetWindow(&window);
+    
+    auto projectileAttack = player->AddComponent<C_ProjectileAttack>();
+    projectileAttack->SetInput(&input);
     
     objects.Add(player);
     

@@ -21,6 +21,8 @@ void Input::Update()
     thisFrameKeys.SetBit((int)Key::LBracket, sf::Keyboard::isKeyPressed(sf::Keyboard::LBracket));
     
     thisFrameKeys.SetBit((int)Key::RBracket, sf::Keyboard::isKeyPressed(sf::Keyboard::RBracket));
+    
+    thisFrameKeys.SetBit((int)Key::E, sf::Keyboard::isKeyPressed(sf::Keyboard::E));
 }
 
 bool Input::IsKeyDown(Key keycode)

@@ -14,6 +14,7 @@
 #include "C_BoxCollider.hpp"
 #include "Debug.hpp"
 #include "C_Camera.hpp"
+#include "C_ProjectileAttack.hpp"
 
 class SceneGame : public Scene
 {

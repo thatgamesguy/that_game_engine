@@ -16,7 +16,8 @@ public:
         Down = 4,
         Esc = 5,
         LBracket = 6,
-        RBracket = 7
+        RBracket = 7,
+        E = 8
     };
     
     void Update();

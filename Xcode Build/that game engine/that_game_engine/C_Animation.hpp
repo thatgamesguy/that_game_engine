@@ -9,7 +9,8 @@ enum class AnimationState
 {
     None,
     Idle,
-    Walk
+    Walk,
+    Projectile
 };
 
 using AnimationList = std::map<FacingDirection, std::shared_ptr<Animation>>;
