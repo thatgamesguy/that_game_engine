@@ -58,6 +58,7 @@
 		E104F98A2123702B0002EA95 /* magecity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magecity.png; sourceTree = "<group>"; };
 		E10BAA7F2052BB7900532801 /* Bitmask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bitmask.cpp; sourceTree = "<group>"; };
 		E10BAA802052BB7900532801 /* Bitmask.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bitmask.hpp; sourceTree = "<group>"; };
+		E11921D72135953600A031A3 /* SharedContext.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SharedContext.hpp; sourceTree = "<group>"; };
 		E134531120F3BB11003B6C27 /* Debug.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = "<group>"; };
 		E134531220F3BB11003B6C27 /* Debug.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Debug.hpp; sourceTree = "<group>"; };
 		E14D5A3420D92B7500E54559 /* Tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
@@ -248,6 +249,7 @@
 		E1911E4B20594600000C8851 /* ECS */ = {
 			isa = PBXGroup;
 			children = (
+				E11921D72135953600A031A3 /* SharedContext.hpp */,
 				E1CC41B520EFE9460066FB67 /* Systems */,
 				E1911E4C205946AA000C8851 /* Components */,
 				E1911E4520593F9D000C8851 /* Object.cpp */,
