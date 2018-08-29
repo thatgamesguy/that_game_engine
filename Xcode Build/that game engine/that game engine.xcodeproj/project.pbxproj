@@ -19,6 +19,7 @@
 		E1686768202B3CCB0099B64D /* WorkingDirectory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1686767202B3CCB0099B64D /* WorkingDirectory.cpp */; };
 		E168676B202B56EB0099B64D /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1686769202B56EB0099B64D /* Window.cpp */; };
 		E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1712FAF202CC85E0087F4B1 /* Input.cpp */; };
+		E18C756A2136A3D4003997B1 /* C_Direction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18C75682136A3D4003997B1 /* C_Direction.cpp */; };
 		E1911E4720593F9D000C8851 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4520593F9D000C8851 /* Object.cpp */; };
 		E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4D205958CB000C8851 /* C_Sprite.cpp */; };
 		E1911E5520595F2A000C8851 /* C_Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E5320595F2A000C8851 /* C_Transform.cpp */; };
@@ -75,6 +76,8 @@
 		E168676A202B56EB0099B64D /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
 		E1712FAF202CC85E0087F4B1 /* Input.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
 		E1712FB0202CC85E0087F4B1 /* Input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
+		E18C75682136A3D4003997B1 /* C_Direction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Direction.cpp; sourceTree = "<group>"; };
+		E18C75692136A3D4003997B1 /* C_Direction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Direction.hpp; sourceTree = "<group>"; };
 		E1911E4520593F9D000C8851 /* Object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
 		E1911E4620593F9D000C8851 /* Object.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
 		E1911E492059424C000C8851 /* Component.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Component.hpp; sourceTree = "<group>"; };
@@ -249,12 +252,12 @@
 		E1911E4B20594600000C8851 /* ECS */ = {
 			isa = PBXGroup;
 			children = (
-				E11921D72135953600A031A3 /* SharedContext.hpp */,
 				E1CC41B520EFE9460066FB67 /* Systems */,
 				E1911E4C205946AA000C8851 /* Components */,
 				E1911E4520593F9D000C8851 /* Object.cpp */,
 				E1911E4620593F9D000C8851 /* Object.hpp */,
 				E1911E492059424C000C8851 /* Component.hpp */,
+				E11921D72135953600A031A3 /* SharedContext.hpp */,
 			);
 			name = ECS;
 			sourceTree = "<group>";
@@ -286,6 +289,8 @@
 				E1C29B122134A6760067816E /* C_Velocity.hpp */,
 				E1C29B142134ADA70067816E /* C_MovementAnimation.cpp */,
 				E1C29B152134ADA70067816E /* C_MovementAnimation.hpp */,
+				E18C75682136A3D4003997B1 /* C_Direction.cpp */,
+				E18C75692136A3D4003997B1 /* C_Direction.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -458,6 +463,7 @@
 				E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */,
 				E1C29B1021349E630067816E /* C_ProjectileAttack.cpp in Sources */,
 				E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */,
+				E18C756A2136A3D4003997B1 /* C_Direction.cpp in Sources */,
 				E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */,
 				E1CC41B820EFE9750066FB67 /* C_Drawable.cpp in Sources */,
 				E1C29B162134ADA70067816E /* C_MovementAnimation.cpp in Sources */,
