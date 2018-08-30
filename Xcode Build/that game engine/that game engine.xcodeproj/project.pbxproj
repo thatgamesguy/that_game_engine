@@ -64,6 +64,7 @@
 		E134531220F3BB11003B6C27 /* Debug.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Debug.hpp; sourceTree = "<group>"; };
 		E14D5A3420D92B7500E54559 /* Tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		E151B2342137EAA900BFE27A /* EnumClassHash.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EnumClassHash.hpp; sourceTree = "<group>"; };
+		E151B2372138007600BFE27A /* C_Collidable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Collidable.hpp; sourceTree = "<group>"; };
 		E16839082121E1130051E440 /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
 		E16867402028AA620099B64D /* that game engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "that game engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16867442028AA620099B64D /* that game engine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "that game engine-Info.plist"; sourceTree = "<group>"; };
@@ -293,6 +294,7 @@
 				E1C29B152134ADA70067816E /* C_MovementAnimation.hpp */,
 				E18C75682136A3D4003997B1 /* C_Direction.cpp */,
 				E18C75692136A3D4003997B1 /* C_Direction.hpp */,
+				E151B2372138007600BFE27A /* C_Collidable.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
