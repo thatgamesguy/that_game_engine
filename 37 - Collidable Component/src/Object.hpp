@@ -23,9 +23,9 @@ public:
     void LateUpdate(float deltaTime);
     void Draw(Window& window);
     
-    void OnCollisionEnter(std::shared_ptr<Object> other);
-    void OnCollisionStay(std::shared_ptr<Object> other);
-    void OnCollisionExit(std::shared_ptr<Object> other);
+    void OnCollisionEnter(std::shared_ptr<C_BoxCollider> other);
+    void OnCollisionStay(std::shared_ptr<C_BoxCollider> other);
+    void OnCollisionExit(std::shared_ptr<C_BoxCollider> other);
     
     template <typename T> std::shared_ptr<T> AddComponent()
     {

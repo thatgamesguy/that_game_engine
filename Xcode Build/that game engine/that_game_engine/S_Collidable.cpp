@@ -118,6 +118,14 @@ void S_Collidable::Resolve()
                     
                     if(m.colliding)
                     {
+                        auto collisionPair = objectsColliding.emplace(std::make_pair(collidable, collision));
+                        
+                        if(collisionPair.second)
+                        {
+                            collidable->owner->OnCollisionEnter(collision);
+                            collision->owner->OnCollisionEnter(collidable);
+                        }
+                    
                         Debug::DrawRect(collision->GetCollidable(), sf::Color::Red);
                         Debug::DrawRect(collidable->GetCollidable(), sf::Color::Red);
                         
@@ -136,11 +144,9 @@ void S_Collidable::Resolve()
                     }
                 }
             }
-            
         }
     }
 }
-
 
 void S_Collidable::Update()
 {
