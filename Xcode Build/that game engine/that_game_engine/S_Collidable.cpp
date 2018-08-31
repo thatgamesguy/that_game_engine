@@ -35,13 +35,8 @@ void S_Collidable::Add(std::vector<std::shared_ptr<Object>>& objects)
             }
             else
             {
-                std::vector<std::shared_ptr<C_BoxCollider>> objs;
-                objs.push_back(collider);
-                
-                collidables.insert(std::make_pair(layer, objs));
+                collidables.insert(std::make_pair(layer,  std::vector<std::shared_ptr<C_BoxCollider>>{collider}));
             }
-            
-            collisionTree.Insert(collider);
         }
     }
 }

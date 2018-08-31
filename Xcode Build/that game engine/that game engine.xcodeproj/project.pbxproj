@@ -11,6 +11,7 @@
 		E104F98B2123702B0002EA95 /* magecity.png in Resources */ = {isa = PBXBuildFile; fileRef = E104F98A2123702B0002EA95 /* magecity.png */; };
 		E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10BAA7F2052BB7900532801 /* Bitmask.cpp */; };
 		E134531320F3BB11003B6C27 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E134531120F3BB11003B6C27 /* Debug.cpp */; };
+		E163250E2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E163250C2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.cpp */; };
 		E16839092121E1140051E440 /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = E16839082121E1130051E440 /* Player.png */; };
 		E16867592028AB910099B64D /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16867582028AB910099B64D /* Main.cpp */; };
 		E168675C2028AC9C0099B64D /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E168675A2028AC9C0099B64D /* Game.cpp */; };
@@ -66,6 +67,8 @@
 		E151B2342137EAA900BFE27A /* EnumClassHash.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EnumClassHash.hpp; sourceTree = "<group>"; };
 		E151B2372138007600BFE27A /* C_Collidable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Collidable.hpp; sourceTree = "<group>"; };
 		E163250A213826AB00A31AA3 /* ComponentPairHash.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ComponentPairHash.hpp; sourceTree = "<group>"; };
+		E163250C2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_RemoveObjectOnCollisionEnter.cpp; sourceTree = "<group>"; };
+		E163250D2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_RemoveObjectOnCollisionEnter.hpp; sourceTree = "<group>"; };
 		E16839082121E1130051E440 /* Player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Player.png; sourceTree = "<group>"; };
 		E16867402028AA620099B64D /* that game engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "that game engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E16867442028AA620099B64D /* that game engine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "that game engine-Info.plist"; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				E18C75682136A3D4003997B1 /* C_Direction.cpp */,
 				E18C75692136A3D4003997B1 /* C_Direction.hpp */,
 				E151B2372138007600BFE27A /* C_Collidable.hpp */,
+				E163250C2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.cpp */,
+				E163250D2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 				E1A8BB0720F0BDA20009CFFB /* C_Collider.cpp in Sources */,
 				E1E8059220795ABB00EF4B2A /* C_Animation.cpp in Sources */,
 				E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */,
+				E163250E2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.cpp in Sources */,
 				E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */,
 				E1C29B132134A6760067816E /* C_Velocity.cpp in Sources */,
 				E1A8BB1320F10B230009CFFB /* C_InstanceID.cpp in Sources */,

@@ -5,7 +5,7 @@ std::unordered_map<FacingDirection, sf::IntRect, EnumClassHash> C_ProjectileAtta
 std::unordered_map<FacingDirection, sf::Vector2f, EnumClassHash> C_ProjectileAttack::offsetDirectionBindings = {};
 std::unordered_map<FacingDirection, sf::Vector2f, EnumClassHash> C_ProjectileAttack::velocityDirectionBindings = {};
 
-C_ProjectileAttack::C_ProjectileAttack(Object* owner) : Component(owner), projectileVelocity(500.f) {}
+C_ProjectileAttack::C_ProjectileAttack(Object* owner) : Component(owner), projectileVelocity(100.f) {}
 
 void C_ProjectileAttack::Awake()
 {
@@ -73,6 +73,8 @@ void C_ProjectileAttack::SpawnProjectile()
     auto collider = projectile->AddComponent<C_BoxCollider>();
     collider->SetSize(32, 32);
     collider->SetLayer(CollisionLayer::Projectile);
+    
+    projectile->AddComponent<C_RemoveObjectOnCollisionEnter>();
  
     owner->context->objects->Add(projectile);
 }

@@ -7,6 +7,7 @@
 #include "C_Animation.hpp"
 #include "ObjectCollection.hpp"
 #include "EnumClassHash.hpp"
+#include "C_RemoveObjectOnCollisionEnter.hpp"
 
 class C_ProjectileAttack : public Component
 {
