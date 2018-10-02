@@ -43,7 +43,7 @@ void S_Collidable::Add(std::vector<std::shared_ptr<Object>>& objects)
 
 void S_Collidable::ProcessRemovals()
 {
-    for (auto layer : collidables)
+    for (auto& layer : collidables)
     {
         auto itr = layer.second.begin();
         while (itr != layer.second.end())

@@ -83,7 +83,7 @@ void SceneGame::OnCreate()
      *************************/
     const bool projectileAnimationLooped = true;
     const int projectileFrameCount = 10;
-    const float delayBetweenProjectileFramesSecs = 0.1f;
+    const float delayBetweenProjectileFramesSecs = 0.08f;
 
     std::unordered_map<FacingDirection, std::shared_ptr<Animation>, EnumClassHash> projectileAnimations;
     
