@@ -59,8 +59,6 @@ void C_ProjectileAttack::SpawnProjectile()
     projectile->transform->SetPosition(owner->transform->GetPosition() +
                                        offsetDirectionBindings.at(faceDir));
  
-    FacingDirection currentDir = direction->Get();
-    
     auto projSprite = projectile->AddComponent<C_Sprite>();
     projSprite->Load(projectileTextureID);
     projSprite->SetDrawLayer(DrawLayer::Entities);

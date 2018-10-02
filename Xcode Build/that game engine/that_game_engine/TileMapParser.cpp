@@ -22,16 +22,14 @@ std::vector<std::shared_ptr<Object>> TileMapParser::Parse(const std::string& fil
     
     int tileSizeX = std::atoi(rootNode->first_attribute("tilewidth")->value());
     int tileSizeY = std::atoi(rootNode->first_attribute("tileheight")->value());
-    int mapsizeX = std::atoi(rootNode->first_attribute("width")->value());
-    int mapsizeY = std::atoi(rootNode->first_attribute("height")->value());
     
     std::vector<std::shared_ptr<Object>> tileObjects;
     
-    int layerCount = map->size() - 1;
+    unsigned int layerCount = (unsigned int)map->size() - 1;
     
-    for (const auto layer : *map)
+    for (const auto& layer : *map)
     {
-        for (const auto tile : layer.second->tiles)
+        for (const auto& tile : layer.second->tiles)
         {
             std::shared_ptr<TileInfo> tileInfo = tile->properties;
             
@@ -133,7 +131,6 @@ std::pair<std::string, std::shared_ptr<Layer>> TileMapParser::BuildLayer(xml_nod
     std::shared_ptr<Layer> layer = std::make_shared<Layer>();
     
     int width = std::atoi(layerNode->first_attribute("width")->value());
-    int height = std::atoi(layerNode->first_attribute("height")->value());
     
     xml_node<>* dataNode = layerNode->first_node("data");
     char* mapIndices = dataNode->value();

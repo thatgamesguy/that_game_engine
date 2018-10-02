@@ -24,7 +24,7 @@ void Object::Start()
 
 void Object::Update(float timeDelta)
 {
-    for (const auto component : components)
+    for (const auto& component : components)
     {
         component->Update(timeDelta);
     }
@@ -32,7 +32,7 @@ void Object::Update(float timeDelta)
 
 void Object::LateUpdate(float timeDelta)
 {
-    for (const auto component : components)
+    for (const auto& component : components)
     {
         component->LateUpdate(timeDelta);
     }
