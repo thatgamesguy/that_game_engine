@@ -28,6 +28,7 @@ const FrameData* Animation::GetCurrentFrame() const
 
 bool Animation::UpdateFrame(float deltaTime)
 {
+    //TODO: A bit cumbersome. Is there another way to do this?
     if(releaseFirstFrame)
     {
         RunActionForCurrentFrame();

@@ -27,7 +27,7 @@ const FrameData* Animation::GetCurrentFrame() const
 
 bool Animation::UpdateFrame(float deltaTime)
 {
-    if(frames.size() > 1)
+    if(frames.size() > 0)
     {
         currentFrameTime += deltaTime;
         
