@@ -31,9 +31,7 @@
 		E1A8BB1020F0F95D0009CFFB /* Quadtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0E20F0F95D0009CFFB /* Quadtree.cpp */; };
 		E1A8BB1320F10B230009CFFB /* C_InstanceID.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB1120F10B230009CFFB /* C_InstanceID.cpp */; };
 		E1A8BB1920F1160D0009CFFB /* S_Collidable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB1720F1160D0009CFFB /* S_Collidable.cpp */; };
-		E1B2245B21236FC5009F19C1 /* Test Map 1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245521236FC4009F19C1 /* Test Map 1.tmx */; };
 		E1B2245C21236FC5009F19C1 /* Path.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245621236FC4009F19C1 /* Path.tmx */; };
-		E1B2245D21236FC5009F19C1 /* Test Map 2.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245721236FC5009F19C1 /* Test Map 2.tmx */; };
 		E1B2245E21236FC5009F19C1 /* City.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245821236FC5009F19C1 /* City.tmx */; };
 		E1B2245F21236FC5009F19C1 /* House Exterior.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245921236FC5009F19C1 /* House Exterior.tmx */; };
 		E1B2246021236FC5009F19C1 /* House Interior.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245A21236FC5009F19C1 /* House Interior.tmx */; };
@@ -105,9 +103,7 @@
 		E1A8BB1220F10B230009CFFB /* C_InstanceID.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_InstanceID.hpp; sourceTree = "<group>"; };
 		E1A8BB1720F1160D0009CFFB /* S_Collidable.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = S_Collidable.cpp; sourceTree = "<group>"; };
 		E1A8BB1820F1160D0009CFFB /* S_Collidable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = S_Collidable.hpp; sourceTree = "<group>"; };
-		E1B2245521236FC4009F19C1 /* Test Map 1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Test Map 1.tmx"; sourceTree = "<group>"; };
 		E1B2245621236FC4009F19C1 /* Path.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Path.tmx; sourceTree = "<group>"; };
-		E1B2245721236FC5009F19C1 /* Test Map 2.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Test Map 2.tmx"; sourceTree = "<group>"; };
 		E1B2245821236FC5009F19C1 /* City.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = City.tmx; sourceTree = "<group>"; };
 		E1B2245921236FC5009F19C1 /* House Exterior.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "House Exterior.tmx"; sourceTree = "<group>"; };
 		E1B2245A21236FC5009F19C1 /* House Interior.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "House Interior.tmx"; sourceTree = "<group>"; };
@@ -332,8 +328,6 @@
 				E1B2245921236FC5009F19C1 /* House Exterior.tmx */,
 				E1B2245A21236FC5009F19C1 /* House Interior.tmx */,
 				E1B2245621236FC4009F19C1 /* Path.tmx */,
-				E1B2245521236FC4009F19C1 /* Test Map 1.tmx */,
-				E1B2245721236FC5009F19C1 /* Test Map 2.tmx */,
 			);
 			name = "Tile Maps";
 			sourceTree = "<group>";
@@ -429,11 +423,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1CAFF232122E72300617A9E /* LPC in Resources */,
-				E1B2245D21236FC5009F19C1 /* Test Map 2.tmx in Resources */,
 				E1B2245E21236FC5009F19C1 /* City.tmx in Resources */,
 				E1B2245C21236FC5009F19C1 /* Path.tmx in Resources */,
 				E1A5ABDC20E15789001A90A3 /* Red Square.png in Resources */,
-				E1B2245B21236FC5009F19C1 /* Test Map 1.tmx in Resources */,
 				E104F98B2123702B0002EA95 /* magecity.png in Resources */,
 				E1B2246021236FC5009F19C1 /* House Interior.tmx in Resources */,
 				E16839092121E1140051E440 /* Player.png in Resources */,
