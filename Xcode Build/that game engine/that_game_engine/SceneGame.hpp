@@ -33,6 +33,9 @@ public:
     void Draw(Window& window) override;
     
 private:
+    void CreatePlayer();
+    void CreateFriend();
+    
     WorkingDirectory& workingDir;
     Input input;
     ResourceAllocator<sf::Texture>& textureAllocator;
