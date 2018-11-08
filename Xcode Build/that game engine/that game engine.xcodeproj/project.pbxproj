@@ -35,6 +35,7 @@
 		E1B2245E21236FC5009F19C1 /* City.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245821236FC5009F19C1 /* City.tmx */; };
 		E1B2245F21236FC5009F19C1 /* House Exterior.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245921236FC5009F19C1 /* House Exterior.tmx */; };
 		E1B2246021236FC5009F19C1 /* House Interior.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E1B2245A21236FC5009F19C1 /* House Interior.tmx */; };
+		E1B72BC92194DD91004D58D9 /* Skeleton.png in Resources */ = {isa = PBXBuildFile; fileRef = E1B72BC82194DD91004D58D9 /* Skeleton.png */; };
 		E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */; };
 		E1C29B1021349E630067816E /* C_ProjectileAttack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C29B0E21349E630067816E /* C_ProjectileAttack.cpp */; };
 		E1C29B132134A6760067816E /* C_Velocity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1C29B112134A6760067816E /* C_Velocity.cpp */; };
@@ -108,6 +109,7 @@
 		E1B2245921236FC5009F19C1 /* House Exterior.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "House Exterior.tmx"; sourceTree = "<group>"; };
 		E1B2245A21236FC5009F19C1 /* House Interior.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "House Interior.tmx"; sourceTree = "<group>"; };
 		E1B56A8220D93AB1000A3E29 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		E1B72BC82194DD91004D58D9 /* Skeleton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Skeleton.png; sourceTree = "<group>"; };
 		E1BFB56D208E327500E2AB24 /* TileMapParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapParser.cpp; sourceTree = "<group>"; };
 		E1BFB56E208E327500E2AB24 /* TileMapParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TileMapParser.hpp; sourceTree = "<group>"; };
 		E1BFB570208E330C00E2AB24 /* rapidxml_print.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_print.hpp; sourceTree = "<group>"; };
@@ -129,7 +131,6 @@
 		E1CC41B720EFE9750066FB67 /* C_Drawable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Drawable.hpp; sourceTree = "<group>"; };
 		E1CEC85D21218A440018BA16 /* C_Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Camera.cpp; sourceTree = "<group>"; };
 		E1CEC85E21218A440018BA16 /* C_Camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Camera.hpp; sourceTree = "<group>"; };
-		E1D30E812194D1F900136D2A /* Skeleton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Skeleton.png; sourceTree = "<group>"; };
 		E1DD50082056CDB700B96459 /* SceneSplashScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneSplashScreen.cpp; sourceTree = "<group>"; };
 		E1DD50092056CDB700B96459 /* SceneSplashScreen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneSplashScreen.hpp; sourceTree = "<group>"; };
 		E1DD500D2056D4A200B96459 /* SceneGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneGame.cpp; sourceTree = "<group>"; };
@@ -236,6 +237,7 @@
 		E168674A2028AA620099B64D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1B72BC82194DD91004D58D9 /* Skeleton.png */,
 				E1BFB569208E311700E2AB24 /* Tile Maps */,
 				E168676C202B5B1C0099B64D /* Textures */,
 			);
@@ -253,7 +255,6 @@
 		E168676C202B5B1C0099B64D /* Textures */ = {
 			isa = PBXGroup;
 			children = (
-				E1D30E812194D1F900136D2A /* Skeleton.png */,
 				E104F98A2123702B0002EA95 /* magecity.png */,
 				E1CAFF222122E72200617A9E /* LPC */,
 				E16839082121E1130051E440 /* Player.png */,
@@ -436,6 +437,7 @@
 				E1B2245E21236FC5009F19C1 /* City.tmx in Resources */,
 				E1B2245C21236FC5009F19C1 /* Path.tmx in Resources */,
 				E1A5ABDC20E15789001A90A3 /* Red Square.png in Resources */,
+				E1B72BC92194DD91004D58D9 /* Skeleton.png in Resources */,
 				E104F98B2123702B0002EA95 /* magecity.png in Resources */,
 				E1B2246021236FC5009F19C1 /* House Interior.tmx in Resources */,
 				E16839092121E1140051E440 /* Player.png in Resources */,
