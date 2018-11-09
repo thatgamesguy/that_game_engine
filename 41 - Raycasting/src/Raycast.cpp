@@ -6,6 +6,7 @@ RaycastResult Raycast::Cast(const sf::Vector2f& from, const sf::Vector2f& to)
 {
     // Build empty raycast result
     RaycastResult result;
+    result.collision = nullptr;
     
     // Check if from and to are the same, if true return empty result
     if(from == to)
