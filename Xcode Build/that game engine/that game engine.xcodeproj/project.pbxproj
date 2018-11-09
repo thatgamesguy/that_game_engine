@@ -11,6 +11,7 @@
 		E104F98B2123702B0002EA95 /* magecity.png in Resources */ = {isa = PBXBuildFile; fileRef = E104F98A2123702B0002EA95 /* magecity.png */; };
 		E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10BAA7F2052BB7900532801 /* Bitmask.cpp */; };
 		E134531320F3BB11003B6C27 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E134531120F3BB11003B6C27 /* Debug.cpp */; };
+		E150AC462195A41600FF847D /* C_InteractWithObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E150AC442195A41600FF847D /* C_InteractWithObjects.cpp */; };
 		E163250E2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E163250C2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.cpp */; };
 		E16839092121E1140051E440 /* Player.png in Resources */ = {isa = PBXBuildFile; fileRef = E16839082121E1130051E440 /* Player.png */; };
 		E16867592028AB910099B64D /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16867582028AB910099B64D /* Main.cpp */; };
@@ -64,6 +65,8 @@
 		E134531120F3BB11003B6C27 /* Debug.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = "<group>"; };
 		E134531220F3BB11003B6C27 /* Debug.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Debug.hpp; sourceTree = "<group>"; };
 		E14D5A3420D92B7500E54559 /* Tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		E150AC442195A41600FF847D /* C_InteractWithObjects.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_InteractWithObjects.cpp; sourceTree = "<group>"; };
+		E150AC452195A41600FF847D /* C_InteractWithObjects.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_InteractWithObjects.hpp; sourceTree = "<group>"; };
 		E151B2342137EAA900BFE27A /* EnumClassHash.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EnumClassHash.hpp; sourceTree = "<group>"; };
 		E151B2372138007600BFE27A /* C_Collidable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Collidable.hpp; sourceTree = "<group>"; };
 		E163250A213826AB00A31AA3 /* ComponentPairHash.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ComponentPairHash.hpp; sourceTree = "<group>"; };
@@ -314,6 +317,8 @@
 				E151B2372138007600BFE27A /* C_Collidable.hpp */,
 				E163250C2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.cpp */,
 				E163250D2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.hpp */,
+				E150AC442195A41600FF847D /* C_InteractWithObjects.cpp */,
+				E150AC452195A41600FF847D /* C_InteractWithObjects.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -474,6 +479,7 @@
 				E163250E2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.cpp in Sources */,
 				E16867612028B66C0099B64D /* WorkingDirectory.hpp in Sources */,
 				E1C29B132134A6760067816E /* C_Velocity.cpp in Sources */,
+				E150AC462195A41600FF847D /* C_InteractWithObjects.cpp in Sources */,
 				E1A8BB1320F10B230009CFFB /* C_InstanceID.cpp in Sources */,
 				E1911E4720593F9D000C8851 /* Object.cpp in Sources */,
 				E103661220568D7900F3C0C9 /* SceneStateMachine.cpp in Sources */,
