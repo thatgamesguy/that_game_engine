@@ -27,6 +27,7 @@
 		E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4D205958CB000C8851 /* C_Sprite.cpp */; };
 		E1911E5520595F2A000C8851 /* C_Transform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E5320595F2A000C8851 /* C_Transform.cpp */; };
 		E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */; };
+		E19279202195EDEF001F2D61 /* C_InteractableTalking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E192791E2195EDEF001F2D61 /* C_InteractableTalking.cpp */; };
 		E1A5ABDC20E15789001A90A3 /* Red Square.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A5ABDB20E15789001A90A3 /* Red Square.png */; };
 		E1A8BB0720F0BDA20009CFFB /* C_Collider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0520F0BDA20009CFFB /* C_Collider.cpp */; };
 		E1A8BB0A20F0BF9D0009CFFB /* C_BoxCollider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1A8BB0820F0BF9D0009CFFB /* C_BoxCollider.cpp */; };
@@ -98,6 +99,9 @@
 		E1911E5420595F2A000C8851 /* C_Transform.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Transform.hpp; sourceTree = "<group>"; };
 		E1911E56205966C1000C8851 /* C_KeyboardMovement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_KeyboardMovement.cpp; sourceTree = "<group>"; };
 		E1911E57205966C1000C8851 /* C_KeyboardMovement.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_KeyboardMovement.hpp; sourceTree = "<group>"; };
+		E192791C2195ED34001F2D61 /* C_Interactable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Interactable.hpp; sourceTree = "<group>"; };
+		E192791E2195EDEF001F2D61 /* C_InteractableTalking.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_InteractableTalking.cpp; sourceTree = "<group>"; };
+		E192791F2195EDEF001F2D61 /* C_InteractableTalking.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_InteractableTalking.hpp; sourceTree = "<group>"; };
 		E1A4CEE02059ABFD007C89F8 /* ResourceAllocator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourceAllocator.hpp; sourceTree = "<group>"; };
 		E1A5ABDB20E15789001A90A3 /* Red Square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Red Square.png"; sourceTree = "<group>"; };
 		E1A8BB0520F0BDA20009CFFB /* C_Collider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Collider.cpp; sourceTree = "<group>"; };
@@ -319,6 +323,9 @@
 				E163250D2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.hpp */,
 				E150AC442195A41600FF847D /* C_InteractWithObjects.cpp */,
 				E150AC452195A41600FF847D /* C_InteractWithObjects.hpp */,
+				E192791C2195ED34001F2D61 /* C_Interactable.hpp */,
+				E192791E2195EDEF001F2D61 /* C_InteractableTalking.cpp */,
+				E192791F2195EDEF001F2D61 /* C_InteractableTalking.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -473,6 +480,7 @@
 			files = (
 				E1CC41B420EFE9410066FB67 /* S_Drawable.cpp in Sources */,
 				E134531320F3BB11003B6C27 /* Debug.cpp in Sources */,
+				E19279202195EDEF001F2D61 /* C_InteractableTalking.cpp in Sources */,
 				E1A8BB0720F0BDA20009CFFB /* C_Collider.cpp in Sources */,
 				E1E8059220795ABB00EF4B2A /* C_Animation.cpp in Sources */,
 				E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */,
