@@ -20,6 +20,7 @@
 		E1686768202B3CCB0099B64D /* WorkingDirectory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1686767202B3CCB0099B64D /* WorkingDirectory.cpp */; };
 		E168676B202B56EB0099B64D /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1686769202B56EB0099B64D /* Window.cpp */; };
 		E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1712FAF202CC85E0087F4B1 /* Input.cpp */; };
+		E180CD3B2195871B00CBE7E4 /* Raycast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E180CD392195871B00CBE7E4 /* Raycast.cpp */; };
 		E18C756A2136A3D4003997B1 /* C_Direction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18C75682136A3D4003997B1 /* C_Direction.cpp */; };
 		E1911E4720593F9D000C8851 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4520593F9D000C8851 /* Object.cpp */; };
 		E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4D205958CB000C8851 /* C_Sprite.cpp */; };
@@ -81,6 +82,8 @@
 		E168676A202B56EB0099B64D /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
 		E1712FAF202CC85E0087F4B1 /* Input.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
 		E1712FB0202CC85E0087F4B1 /* Input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
+		E180CD392195871B00CBE7E4 /* Raycast.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Raycast.cpp; sourceTree = "<group>"; };
+		E180CD3A2195871B00CBE7E4 /* Raycast.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Raycast.hpp; sourceTree = "<group>"; };
 		E18C75682136A3D4003997B1 /* C_Direction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Direction.cpp; sourceTree = "<group>"; };
 		E18C75692136A3D4003997B1 /* C_Direction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Direction.hpp; sourceTree = "<group>"; };
 		E1911E4520593F9D000C8851 /* Object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
@@ -219,6 +222,8 @@
 				E1B56A8220D93AB1000A3E29 /* Utilities.h */,
 				E134531120F3BB11003B6C27 /* Debug.cpp */,
 				E134531220F3BB11003B6C27 /* Debug.hpp */,
+				E180CD392195871B00CBE7E4 /* Raycast.cpp */,
+				E180CD3A2195871B00CBE7E4 /* Raycast.hpp */,
 				E16867582028AB910099B64D /* Main.cpp */,
 				E168674A2028AA620099B64D /* Resources */,
 				E16867432028AA620099B64D /* Supporting Files */,
@@ -280,7 +285,6 @@
 		E1911E4C205946AA000C8851 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E1D30E802194CB0D00136D2A /* UI */,
 				E1911E4D205958CB000C8851 /* C_Sprite.cpp */,
 				E1911E4E205958CB000C8851 /* C_Sprite.hpp */,
 				E1911E5320595F2A000C8851 /* C_Transform.cpp */,
@@ -366,13 +370,6 @@
 				E1A8BB1820F1160D0009CFFB /* S_Collidable.hpp */,
 			);
 			name = Systems;
-			sourceTree = "<group>";
-		};
-		E1D30E802194CB0D00136D2A /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,6 +482,7 @@
 				E1BFB56F208E327500E2AB24 /* TileMapParser.cpp in Sources */,
 				E1DD500A2056CDB700B96459 /* SceneSplashScreen.cpp in Sources */,
 				E1DD500F2056D4A200B96459 /* SceneGame.cpp in Sources */,
+				E180CD3B2195871B00CBE7E4 /* Raycast.cpp in Sources */,
 				E1C29B1021349E630067816E /* C_ProjectileAttack.cpp in Sources */,
 				E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */,
 				E18C756A2136A3D4003997B1 /* C_Direction.cpp in Sources */,
