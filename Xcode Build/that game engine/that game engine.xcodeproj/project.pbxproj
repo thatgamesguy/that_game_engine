@@ -53,6 +53,7 @@
 		E1DD50112056DA4D00B96459 /* that_games_guy_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DD50102056DA4D00B96459 /* that_games_guy_logo.png */; };
 		E1E8058F207952B600EF4B2A /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1E8058D207952B600EF4B2A /* Animation.cpp */; };
 		E1E8059220795ABB00EF4B2A /* C_Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1E8059020795ABB00EF4B2A /* C_Animation.cpp */; };
+		E1EB7A2A2196DD24000F64AA /* C_UILabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1EB7A282196DD24000F64AA /* C_UILabel.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,9 @@
 		E1E8058E207952B600EF4B2A /* Animation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Animation.hpp; sourceTree = "<group>"; };
 		E1E8059020795ABB00EF4B2A /* C_Animation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Animation.cpp; sourceTree = "<group>"; };
 		E1E8059120795ABB00EF4B2A /* C_Animation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_Animation.hpp; sourceTree = "<group>"; };
+		E1EB7A282196DD24000F64AA /* C_UILabel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_UILabel.cpp; sourceTree = "<group>"; };
+		E1EB7A292196DD24000F64AA /* C_UILabel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_UILabel.hpp; sourceTree = "<group>"; };
+		E1EB7A2C2196F842000F64AA /* Joystix Monospace.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Joystix Monospace.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,7 +253,7 @@
 		E168674A2028AA620099B64D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E1B72BC82194DD91004D58D9 /* Skeleton.png */,
+				E1EB7A2B2196F767000F64AA /* Fonts */,
 				E1BFB569208E311700E2AB24 /* Tile Maps */,
 				E168676C202B5B1C0099B64D /* Textures */,
 			);
@@ -267,6 +271,7 @@
 		E168676C202B5B1C0099B64D /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				E1B72BC82194DD91004D58D9 /* Skeleton.png */,
 				E104F98A2123702B0002EA95 /* magecity.png */,
 				E1CAFF222122E72200617A9E /* LPC */,
 				E16839082121E1130051E440 /* Player.png */,
@@ -326,6 +331,8 @@
 				E192791C2195ED34001F2D61 /* C_Interactable.hpp */,
 				E192791E2195EDEF001F2D61 /* C_InteractableTalking.cpp */,
 				E192791F2195EDEF001F2D61 /* C_InteractableTalking.hpp */,
+				E1EB7A282196DD24000F64AA /* C_UILabel.cpp */,
+				E1EB7A292196DD24000F64AA /* C_UILabel.hpp */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -382,6 +389,14 @@
 				E1A8BB1820F1160D0009CFFB /* S_Collidable.hpp */,
 			);
 			name = Systems;
+			sourceTree = "<group>";
+		};
+		E1EB7A2B2196F767000F64AA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E1EB7A2C2196F842000F64AA /* Joystix Monospace.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +515,7 @@
 				E1C29B1021349E630067816E /* C_ProjectileAttack.cpp in Sources */,
 				E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */,
 				E18C756A2136A3D4003997B1 /* C_Direction.cpp in Sources */,
+				E1EB7A2A2196DD24000F64AA /* C_UILabel.cpp in Sources */,
 				E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */,
 				E1CC41B820EFE9750066FB67 /* C_Drawable.cpp in Sources */,
 				E1C29B162134ADA70067816E /* C_MovementAnimation.cpp in Sources */,

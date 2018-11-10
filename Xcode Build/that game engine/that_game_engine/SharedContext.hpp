@@ -17,6 +17,7 @@ struct SharedContext
     ResourceAllocator<sf::Texture>* textureAllocator;
     Window* window;
     Raycast* raycast;
+    ResourceAllocator<sf::Font>* fontAllocator;
 };
 
 #endif /* SharedContext_hpp */

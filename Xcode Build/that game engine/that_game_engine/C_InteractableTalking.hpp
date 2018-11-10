@@ -4,6 +4,8 @@
 #include "Component.hpp"
 #include "C_Interactable.hpp"
 #include "Debug.hpp"
+#include "C_UILabel.hpp"
+#include "ObjectCollection.hpp"
 
 class C_InteractableTalking : public Component, public C_Interactable
 {

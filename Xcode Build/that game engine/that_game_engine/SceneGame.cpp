@@ -1,6 +1,6 @@
 #include "SceneGame.hpp"
 
-SceneGame::SceneGame(WorkingDirectory& workingDir, ResourceAllocator<sf::Texture>& textureAllocator, Window& window) : workingDir(workingDir), textureAllocator(textureAllocator), mapParser(textureAllocator, context), window(window), objects(drawbleSystem, collisionSystem), collisionTree(5, 5, 0, {0, 0, 4200, 1080}, nullptr), collisionSystem(collisionTree), raycast(collisionTree) { }
+SceneGame::SceneGame(WorkingDirectory& workingDir, ResourceAllocator<sf::Texture>& textureAllocator, Window& window, ResourceAllocator<sf::Font>& fontAllocator) : workingDir(workingDir), textureAllocator(textureAllocator), mapParser(textureAllocator, context), window(window), objects(drawbleSystem, collisionSystem), collisionTree(5, 5, 0, {0, 0, 4200, 1080}, nullptr), collisionSystem(collisionTree), raycast(collisionTree), fontAllocator(fontAllocator) { }
 
 void SceneGame::OnCreate()
 {
@@ -10,6 +10,7 @@ void SceneGame::OnCreate()
     context.textureAllocator = &textureAllocator;
     context.window = &window;
     context.raycast = &raycast;
+    context.fontAllocator = &fontAllocator;
         
     CreatePlayer();
     CreateFriend();

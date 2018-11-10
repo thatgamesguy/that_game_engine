@@ -31,6 +31,7 @@ private:
     
     SceneStateMachine sceneStateMachine;
     ResourceAllocator<sf::Texture> textureAllocator;
+    ResourceAllocator<sf::Font> fontAllocator;
 };
 
 #endif /* Game_hpp */

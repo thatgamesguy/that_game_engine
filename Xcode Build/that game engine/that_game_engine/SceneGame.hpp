@@ -25,7 +25,7 @@
 class SceneGame : public Scene
 {
 public:
-    SceneGame(WorkingDirectory& workingDir, ResourceAllocator<sf::Texture>& textureAllocator, Window& window);
+    SceneGame(WorkingDirectory& workingDir, ResourceAllocator<sf::Texture>& textureAllocator, Window& window, ResourceAllocator<sf::Font>& fontAllocator);
     
     void OnCreate() override;
     void OnDestroy() override;
@@ -52,6 +52,7 @@ private:
     S_Collidable collisionSystem;
     Quadtree collisionTree;
     Raycast raycast;
+    ResourceAllocator<sf::Font>& fontAllocator;
 };
 
 #endif /* SceneGame_hpp */
