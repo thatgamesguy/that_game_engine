@@ -1,13 +1,13 @@
-#ifndef C_UILabel_hpp
-#define C_UILabel_hpp
+#ifndef C_UIWorldLabel_hpp
+#define C_UIWorldLabel_hpp
 
 #include "Component.hpp"
 #include "C_Drawable.hpp"
 
-class C_UILabel : public Component, public C_Drawable
+class C_UIWorldLabel : public Component, public C_Drawable
 {
 public:
-    C_UILabel(Object* owner);
+    C_UIWorldLabel(Object* owner);
     
     void Start() override;
     
@@ -28,4 +28,4 @@ private:
     
 };
 
-#endif /* C_UILabel_hpp */
+#endif /* C_UIWorldLabel_hpp */
