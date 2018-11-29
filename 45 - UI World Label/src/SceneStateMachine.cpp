@@ -1,6 +1,6 @@
 #include "SceneStateMachine.hpp"
 
-SceneStateMachine::SceneStateMachine() : scenes(0), curScene(0), insertedSceneID(0) { }
+SceneStateMachine::SceneStateMachine() : scenes(0), curScene(0) { }
 
 void SceneStateMachine::ProcessInput()
 {
