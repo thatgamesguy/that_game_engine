@@ -23,7 +23,7 @@
 		E168676B202B56EB0099B64D /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1686769202B56EB0099B64D /* Window.cpp */; };
 		E16C1BD321B137C200DBCE20 /* C_WalkInLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E16C1BD121B137C200DBCE20 /* C_WalkInLine.cpp */; };
 		E1712FB1202CC85E0087F4B1 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1712FAF202CC85E0087F4B1 /* Input.cpp */; };
-		E17FA64F21CD957600436FAD /* Arena.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E17FA64E21CD957600436FAD /* Arena.tmx */; };
+		E17FA64F21CD957600436FAD /* Dungeon.tmx in Resources */ = {isa = PBXBuildFile; fileRef = E17FA64E21CD957600436FAD /* Dungeon.tmx */; };
 		E180CD3B2195871B00CBE7E4 /* Raycast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E180CD392195871B00CBE7E4 /* Raycast.cpp */; };
 		E18C756A2136A3D4003997B1 /* C_Direction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E18C75682136A3D4003997B1 /* C_Direction.cpp */; };
 		E1911E4720593F9D000C8851 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1911E4520593F9D000C8851 /* Object.cpp */; };
@@ -92,7 +92,7 @@
 		E16C1BD221B137C200DBCE20 /* C_WalkInLine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_WalkInLine.hpp; sourceTree = "<group>"; };
 		E1712FAF202CC85E0087F4B1 /* Input.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
 		E1712FB0202CC85E0087F4B1 /* Input.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Input.hpp; sourceTree = "<group>"; };
-		E17FA64E21CD957600436FAD /* Arena.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Arena.tmx; sourceTree = "<group>"; };
+		E17FA64E21CD957600436FAD /* Dungeon.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Dungeon.tmx; sourceTree = "<group>"; };
 		E180CD392195871B00CBE7E4 /* Raycast.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Raycast.cpp; sourceTree = "<group>"; };
 		E180CD3A2195871B00CBE7E4 /* Raycast.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Raycast.hpp; sourceTree = "<group>"; };
 		E18C75682136A3D4003997B1 /* C_Direction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_Direction.cpp; sourceTree = "<group>"; };
@@ -359,7 +359,7 @@
 		E1BFB569208E311700E2AB24 /* Tile Maps */ = {
 			isa = PBXGroup;
 			children = (
-				E17FA64E21CD957600436FAD /* Arena.tmx */,
+				E17FA64E21CD957600436FAD /* Dungeon.tmx */,
 				E1B2245821236FC5009F19C1 /* City.tmx */,
 				E1B2245921236FC5009F19C1 /* House Exterior.tmx */,
 				E1B2245A21236FC5009F19C1 /* House Interior.tmx */,
@@ -477,7 +477,7 @@
 				E16839092121E1140051E440 /* Player.png in Resources */,
 				E1DD50112056DA4D00B96459 /* that_games_guy_logo.png in Resources */,
 				E1B2245F21236FC5009F19C1 /* House Exterior.tmx in Resources */,
-				E17FA64F21CD957600436FAD /* Arena.tmx in Resources */,
+				E17FA64F21CD957600436FAD /* Dungeon.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

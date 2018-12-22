@@ -18,7 +18,7 @@ void SceneGame::OnCreate()
     // You will need to play around with this offset until the level is in a suitable position based on the current window size.
     // This works for 1920 * 1080. In future we will remove this hardcoded offset when we add the ability to change resolutions.
     sf::Vector2i mapOffset(-1200, 0);
-    std::vector<std::shared_ptr<Object>> levelTiles = mapParser.Parse(workingDir.Get() + "Arena.tmx", mapOffset);
+    std::vector<std::shared_ptr<Object>> levelTiles = mapParser.Parse(workingDir.Get() + "Dungeon.tmx", mapOffset);
     objects.Add(levelTiles);
 }
 
