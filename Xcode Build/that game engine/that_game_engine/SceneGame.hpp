@@ -39,6 +39,7 @@ public:
 private:
     void CreatePlayer();
     void CreateFriend();
+    void CreateFoe();
     
     void AddAnimationComponent(std::shared_ptr<Object> object, const int textureID);
     

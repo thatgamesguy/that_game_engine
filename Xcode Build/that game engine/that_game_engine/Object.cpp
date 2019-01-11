@@ -4,6 +4,7 @@ Object::Object(SharedContext* context) : context(context),  queuedForRemoval(fal
 {
     transform = AddComponent<C_Transform>();
     instanceID = AddComponent<C_InstanceID>();
+    tag = AddComponent<C_Tag>();
 }
 
 void Object::Awake()

@@ -8,6 +8,7 @@
 
 class ObjectCollection;
 class Raycast;
+class Quadtree;
 
 struct SharedContext
 {
@@ -18,6 +19,7 @@ struct SharedContext
     Window* window;
     Raycast* raycast;
     ResourceAllocator<sf::Font>* fontAllocator;
+    Quadtree* collisionTree;
 };
 
 #endif /* SharedContext_hpp */

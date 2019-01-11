@@ -15,10 +15,10 @@ void C_ProjectileAttack::Start()
 {
     projectileTextureID = owner->context->textureAllocator->Add(owner->context->workingDir->Get() + "LPC/Weapons/arrow.png");
     
-    textureDirectionBindings.emplace(FacingDirection::Up, sf::FloatRect(0, 0, 64, 64));
-    textureDirectionBindings.emplace(FacingDirection::Left, sf::FloatRect(64, 0, 64, 64));
-    textureDirectionBindings.emplace(FacingDirection::Down, sf::FloatRect(128, 0, 64, 64));
-    textureDirectionBindings.emplace(FacingDirection::Right, sf::FloatRect(192, 0, 64, 64));
+    textureDirectionBindings.emplace(FacingDirection::Up, sf::IntRect(0, 0, 64, 64));
+    textureDirectionBindings.emplace(FacingDirection::Left, sf::IntRect(64, 0, 64, 64));
+    textureDirectionBindings.emplace(FacingDirection::Down, sf::IntRect(128, 0, 64, 64));
+    textureDirectionBindings.emplace(FacingDirection::Right, sf::IntRect(192, 0, 64, 64));
 }
 
 void C_ProjectileAttack::Update(float deltaTime)

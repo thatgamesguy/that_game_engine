@@ -10,6 +10,7 @@
 #include "C_InstanceID.hpp"
 #include "SharedContext.hpp"
 #include "C_Collidable.hpp"
+#include "C_Tag.hpp"
 
 //TODO: look into replacing object hierarchy with std::function - https://probablydance.com/2012/12/16/the-importance-of-stdfunction/
 class Object
@@ -93,6 +94,7 @@ public:
     
     std::shared_ptr<C_Transform> transform;
     std::shared_ptr<C_InstanceID> instanceID;
+    std::shared_ptr<C_Tag> tag;
     
     SharedContext* context;
     

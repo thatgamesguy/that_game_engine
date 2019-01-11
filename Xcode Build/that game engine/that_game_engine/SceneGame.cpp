@@ -11,9 +11,11 @@ void SceneGame::OnCreate()
     context.window = &window;
     context.raycast = &raycast;
     context.fontAllocator = &fontAllocator;
+    context.collisionTree = &collisionTree;
         
     CreatePlayer();
-    CreateFriend();
+    //CreateFriend();
+    CreateFoe();
     
     // You will need to play around with this offset until the level is in a suitable position based on the current window size.
     // This works for 1920 * 1080. In future we will remove this hardcoded offset when we add the ability to change resolutions.
@@ -80,6 +82,31 @@ void SceneGame::CreateFriend()
     npc->AddComponent<C_Direction>();
     npc->AddComponent<C_InteractableTalking>();
     npc->AddComponent<C_WalkInLine>();
+    
+    objects.Add(npc);
+}
+
+void SceneGame::CreateFoe()
+{
+    std::shared_ptr<Object> npc = std::make_shared<Object>(&context);
+    
+    npc->transform->SetPosition(160, 700);
+    
+    auto sprite = npc->AddComponent<C_Sprite>();
+    sprite->SetDrawLayer(DrawLayer::Entities);
+    
+    const int textureID = textureAllocator.Add(workingDir.Get() + "Orc.png");
+    
+    AddAnimationComponent(npc, textureID);
+    
+    auto collider = npc->AddComponent<C_BoxCollider>();
+    collider->SetSize(64 * 0.4f, 64 * 0.5f);
+    collider->SetOffset(0.f, 14.f);
+    collider->SetLayer(CollisionLayer::NPC);
+    
+    npc->AddComponent<C_Velocity>();
+    npc->AddComponent<C_MovementAnimation>();
+    npc->AddComponent<C_Direction>();
     
     objects.Add(npc);
 }
