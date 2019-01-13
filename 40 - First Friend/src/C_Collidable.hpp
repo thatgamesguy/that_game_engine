@@ -5,8 +5,6 @@
 
 #include "C_BoxCollider.hpp"
 
-class Object;
-
 class C_Collidable
 {
 public:
