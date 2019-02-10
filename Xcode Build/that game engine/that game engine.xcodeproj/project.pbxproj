@@ -12,6 +12,9 @@
 		E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E10BAA7F2052BB7900532801 /* Bitmask.cpp */; };
 		E11E094521CE8543001B318D /* C_SteeringBehaviour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E11E094321CE8543001B318D /* C_SteeringBehaviour.cpp */; };
 		E134531320F3BB11003B6C27 /* Debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E134531120F3BB11003B6C27 /* Debug.cpp */; };
+		E1427D7122105357002A3817 /* C_SteeringBehaviourChase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1427D6F22105357002A3817 /* C_SteeringBehaviourChase.cpp */; };
+		E1427D74221062EB002A3817 /* C_BehaviourApplier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1427D72221062EB002A3817 /* C_BehaviourApplier.cpp */; };
+		E1427D77221070F3002A3817 /* C_SteeringBehaviourWallAvoidance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1427D75221070F3002A3817 /* C_SteeringBehaviourWallAvoidance.cpp */; };
 		E150AC462195A41600FF847D /* C_InteractWithObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E150AC442195A41600FF847D /* C_InteractWithObjects.cpp */; };
 		E15CF99621B04A8500A83CF4 /* Joystix Monospace.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1EB7A2C2196F842000F64AA /* Joystix Monospace.ttf */; };
 		E163250E2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E163250C2138601000A31AA3 /* C_RemoveObjectOnCollisionEnter.cpp */; };
@@ -74,6 +77,12 @@
 		E11E094421CE8543001B318D /* C_SteeringBehaviour.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_SteeringBehaviour.hpp; sourceTree = "<group>"; };
 		E134531120F3BB11003B6C27 /* Debug.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Debug.cpp; sourceTree = "<group>"; };
 		E134531220F3BB11003B6C27 /* Debug.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Debug.hpp; sourceTree = "<group>"; };
+		E1427D6F22105357002A3817 /* C_SteeringBehaviourChase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_SteeringBehaviourChase.cpp; sourceTree = "<group>"; };
+		E1427D7022105357002A3817 /* C_SteeringBehaviourChase.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_SteeringBehaviourChase.hpp; sourceTree = "<group>"; };
+		E1427D72221062EB002A3817 /* C_BehaviourApplier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = C_BehaviourApplier.cpp; sourceTree = "<group>"; };
+		E1427D73221062EB002A3817 /* C_BehaviourApplier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = C_BehaviourApplier.hpp; sourceTree = "<group>"; };
+		E1427D75221070F3002A3817 /* C_SteeringBehaviourWallAvoidance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_SteeringBehaviourWallAvoidance.cpp; sourceTree = "<group>"; };
+		E1427D76221070F3002A3817 /* C_SteeringBehaviourWallAvoidance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_SteeringBehaviourWallAvoidance.hpp; sourceTree = "<group>"; };
 		E14D5A3420D92B7500E54559 /* Tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		E150AC442195A41600FF847D /* C_InteractWithObjects.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_InteractWithObjects.cpp; sourceTree = "<group>"; };
 		E150AC452195A41600FF847D /* C_InteractWithObjects.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_InteractWithObjects.hpp; sourceTree = "<group>"; };
@@ -199,8 +208,14 @@
 		E11E094221CE852D001B318D /* Steering Behaviour */ = {
 			isa = PBXGroup;
 			children = (
+				E1427D72221062EB002A3817 /* C_BehaviourApplier.cpp */,
+				E1427D75221070F3002A3817 /* C_SteeringBehaviourWallAvoidance.cpp */,
+				E1427D76221070F3002A3817 /* C_SteeringBehaviourWallAvoidance.hpp */,
+				E1427D73221062EB002A3817 /* C_BehaviourApplier.hpp */,
 				E11E094321CE8543001B318D /* C_SteeringBehaviour.cpp */,
 				E11E094421CE8543001B318D /* C_SteeringBehaviour.hpp */,
+				E1427D6F22105357002A3817 /* C_SteeringBehaviourChase.cpp */,
+				E1427D7022105357002A3817 /* C_SteeringBehaviourChase.hpp */,
 			);
 			name = "Steering Behaviour";
 			sourceTree = "<group>";
@@ -550,15 +565,18 @@
 				E1C29B1021349E630067816E /* C_ProjectileAttack.cpp in Sources */,
 				E1911E4F205958CB000C8851 /* C_Sprite.cpp in Sources */,
 				E18C756A2136A3D4003997B1 /* C_Direction.cpp in Sources */,
+				E1427D74221062EB002A3817 /* C_BehaviourApplier.cpp in Sources */,
 				E1EB7A2A2196DD24000F64AA /* C_UIWorldLabel.cpp in Sources */,
 				E1911E58205966C1000C8851 /* C_KeyboardMovement.cpp in Sources */,
 				E1CC41B820EFE9750066FB67 /* C_Drawable.cpp in Sources */,
 				E1C29B162134ADA70067816E /* C_MovementAnimation.cpp in Sources */,
 				E1CEC85F21218A440018BA16 /* C_Camera.cpp in Sources */,
+				E1427D7122105357002A3817 /* C_SteeringBehaviourChase.cpp in Sources */,
 				E1A8BB0A20F0BF9D0009CFFB /* C_BoxCollider.cpp in Sources */,
 				E168676B202B56EB0099B64D /* Window.cpp in Sources */,
 				E11E094521CE8543001B318D /* C_SteeringBehaviour.cpp in Sources */,
 				E168675C2028AC9C0099B64D /* Game.cpp in Sources */,
+				E1427D77221070F3002A3817 /* C_SteeringBehaviourWallAvoidance.cpp in Sources */,
 				E1C9BC59205A5E8E0074A696 /* ObjectCollection.cpp in Sources */,
 				E1686768202B3CCB0099B64D /* WorkingDirectory.cpp in Sources */,
 				E10BAA812052BB7900532801 /* Bitmask.cpp in Sources */,

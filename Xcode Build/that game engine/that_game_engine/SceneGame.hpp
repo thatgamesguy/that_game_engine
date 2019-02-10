@@ -22,6 +22,9 @@
 #include "C_InteractWithObjects.hpp"
 #include "C_InteractableTalking.hpp"
 #include "C_WalkInLine.hpp"
+#include "C_BehaviourApplier.hpp"
+#include "C_SteeringBehaviourChase.hpp"
+#include "C_SteeringBehaviourWallAvoidance.hpp"
 
 class SceneGame : public Scene
 {

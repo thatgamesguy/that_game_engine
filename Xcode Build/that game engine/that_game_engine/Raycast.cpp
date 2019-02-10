@@ -18,7 +18,7 @@ RaycastResult Raycast::Cast(const sf::Vector2f& from, const sf::Vector2f& to, in
     // Create sf::rect that encompasses line
     sf::FloatRect collisionArea = BuildRect(from, to);
     
-    //Debug::DrawRect(collisionArea, sf::Color::Red);
+    Debug::DrawRect(collisionArea, sf::Color::Red);
     
     // Retrieve entities from collision system within the raycast area
     std::vector<std::shared_ptr<C_BoxCollider>> entities = collisions.Search(collisionArea);

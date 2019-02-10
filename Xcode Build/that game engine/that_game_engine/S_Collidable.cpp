@@ -13,11 +13,15 @@ S_Collidable::S_Collidable(Quadtree& collisionTree) : collisionTree(collisionTre
     playerCollisions.SetBit((int) CollisionLayer::Tile);
     playerCollisions.SetBit((int) CollisionLayer::NPC);
     collisionLayers.insert(std::make_pair(CollisionLayer::Player, playerCollisions));
-    
+
     Bitmask projectileCollisions;
     projectileCollisions.SetBit((int) CollisionLayer::Tile);
     projectileCollisions.SetBit((int) CollisionLayer::NPC);
     collisionLayers.insert(std::make_pair(CollisionLayer::Projectile, projectileCollisions));
+    
+    Bitmask npcCollisions;
+    npcCollisions.SetBit((int) CollisionLayer::Tile);
+    collisionLayers.insert(std::make_pair(CollisionLayer::NPC, npcCollisions));
 }
 
 void S_Collidable::Add(std::vector<std::shared_ptr<Object>>& objects)
