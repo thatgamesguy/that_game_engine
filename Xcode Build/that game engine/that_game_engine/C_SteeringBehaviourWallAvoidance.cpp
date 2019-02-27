@@ -1,6 +1,6 @@
 #include "C_SteeringBehaviourWallAvoidance.hpp"
 
-C_SteeringBehaviourWallAvoidance::C_SteeringBehaviourWallAvoidance(Object* owner) : C_SteeringBehaviour(owner), lookDistance(100.f) {}
+C_SteeringBehaviourWallAvoidance::C_SteeringBehaviourWallAvoidance(Object* owner) : C_SteeringBehaviour(owner), lookDistance(800.f) {}
 
 void C_SteeringBehaviourWallAvoidance::Awake()
 {
@@ -19,19 +19,31 @@ const sf::Vector2f C_SteeringBehaviourWallAvoidance::GetForce()
         return force;
     }
     
-    const sf::Vector2f& velNorm = Normalise(vel);
+    const sf::Vector2f& velNorm = Mathf::Normalise(vel);
     
     // Front Ray
     auto frontResult = owner->context->raycast->Cast(pos, pos + (velNorm * lookDistance), CollisionLayer::Tile);
     
     if (frontResult.collision != nullptr)
     {
-        Debug::DrawLine(pos, pos + (velNorm * lookDistance), sf::Color::Red);
+        //Debug::DrawLine(pos, pos + (velNorm * lookDistance), sf::Color::Red);
+        
+        const sf::Vector2f normal = Mathf::Normalise(pos - frontResult.point);
+        
+        float distanceFromWall = 50.f;
+        
+        sf::Vector2f targetPos = frontResult.point + normal * distanceFromWall;
+        
+        //sf::Vector2f cross =
+        
+        Debug::DrawLine(pos, frontResult.point, sf::Color::Red);
     }
     else
     {
         Debug::DrawLine(pos, pos + (velNorm * lookDistance));
     }
+    
+    return force;
     
     // Convert from radians to degrees
     const float angle = 30.f / 57.2958f;

@@ -83,6 +83,7 @@
 		E1427D73221062EB002A3817 /* C_BehaviourApplier.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = C_BehaviourApplier.hpp; sourceTree = "<group>"; };
 		E1427D75221070F3002A3817 /* C_SteeringBehaviourWallAvoidance.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_SteeringBehaviourWallAvoidance.cpp; sourceTree = "<group>"; };
 		E1427D76221070F3002A3817 /* C_SteeringBehaviourWallAvoidance.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_SteeringBehaviourWallAvoidance.hpp; sourceTree = "<group>"; };
+		E1427D792210D09E002A3817 /* Math.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Math.hpp; sourceTree = "<group>"; };
 		E14D5A3420D92B7500E54559 /* Tile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		E150AC442195A41600FF847D /* C_InteractWithObjects.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = C_InteractWithObjects.cpp; sourceTree = "<group>"; };
 		E150AC452195A41600FF847D /* C_InteractWithObjects.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = C_InteractWithObjects.hpp; sourceTree = "<group>"; };
@@ -273,6 +274,7 @@
 				E134531220F3BB11003B6C27 /* Debug.hpp */,
 				E180CD392195871B00CBE7E4 /* Raycast.cpp */,
 				E180CD3A2195871B00CBE7E4 /* Raycast.hpp */,
+				E1427D792210D09E002A3817 /* Math.hpp */,
 				E16867582028AB910099B64D /* Main.cpp */,
 				E168674A2028AA620099B64D /* Resources */,
 				E16867432028AA620099B64D /* Supporting Files */,

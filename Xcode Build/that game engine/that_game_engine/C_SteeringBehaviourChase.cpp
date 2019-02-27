@@ -1,6 +1,6 @@
 #include "C_SteeringBehaviourChase.hpp"
 
-C_SteeringBehaviourChase::C_SteeringBehaviourChase(Object* owner) : C_SteeringBehaviour(owner), targetTag(Tag::Default), sightRadius(500.f), chaseSpeed(70.f) {}
+C_SteeringBehaviourChase::C_SteeringBehaviourChase(Object* owner) : C_SteeringBehaviour(owner), targetTag(Tag::Default), sightRadius(2000.f), chaseSpeed(100.f) {}
 
 const sf::Vector2f C_SteeringBehaviourChase::GetForce()
 {
@@ -15,7 +15,7 @@ const sf::Vector2f C_SteeringBehaviourChase::GetForce()
         
         const sf::Vector2f toTarget = targetPos - pos;
      
-        force = Normalise(toTarget) * chaseSpeed;
+        force = Mathf::Normalise(toTarget) * chaseSpeed;
     }
     
     return force;

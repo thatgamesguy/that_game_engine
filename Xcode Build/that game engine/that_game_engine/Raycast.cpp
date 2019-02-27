@@ -9,6 +9,7 @@ RaycastResult Raycast::Cast(const sf::Vector2f& from, const sf::Vector2f& to, in
     RaycastResult result;
     result.collision = nullptr;
     result.layer = CollisionLayer::Default;
+    result.point = sf::Vector2f();
     
     // Check if from and to are the same, if true return empty result
     if(from == to)
@@ -49,6 +50,7 @@ RaycastResult Raycast::Cast(const sf::Vector2f& from, const sf::Vector2f& to, in
             {
                 result.collision = e->owner;
                 result.layer = e->GetLayer();
+                result.point = p;
                 return result;
             }
         }
@@ -63,6 +65,7 @@ RaycastResult Raycast::Cast(const sf::Vector2f& from, const sf::Vector2f& to, Co
     RaycastResult result;
     result.collision = nullptr;
     result.layer = CollisionLayer::Default;
+    result.point = sf::Vector2f();
     
     if(from == to)
     {
@@ -73,32 +76,121 @@ RaycastResult Raycast::Cast(const sf::Vector2f& from, const sf::Vector2f& to, Co
     
     std::vector<std::shared_ptr<C_BoxCollider>> entities = collisions.Search(collisionArea);
     
+    Debug::DrawRect(collisionArea, sf::Color::Red);
+    
     if(entities.size() == 0)
     {
         return result;
     }
     
-    std::vector<sf::Vector2f> linePoints = BuildLinePoints(from, to);
+    sf::Vector2f rayDir = to - from;
+    rayDir.x = 1.f / rayDir.x;
+    rayDir.y = 1.f / rayDir.y;
     
-    for (auto& p : linePoints)
+    if (entities.size() > 2)
     {
-        for (auto& e : entities)
-        {
-            // If its not on the collision layer we're not interested
-            if(e->GetLayer() != layer)
-            {
-                continue;
-            }
-            
-            sf::FloatRect entityRect = e->GetCollidable();
-            if(entityRect.contains(p))
-            {
-                result.collision = e->owner;
-                result.layer = e->GetLayer();
-                return result;
-            }
-        }
+         printf("here");
     }
+    
+    //std::vector<sf::Vector2f> linePoints = BuildLinePoints(from, to);
+    
+    //for (auto& p : linePoints)
+    //{
+    for (auto& e : entities)
+    {
+        sf::FloatRect entityRect1 = e->GetCollidable();
+        Debug::DrawRect(entityRect1, sf::Color::Red);
+        
+        // If its not on the collision layer we're not interested
+        if(e->GetLayer() != layer)
+        {
+            continue;
+        }
+        
+        sf::FloatRect entityRect = e->GetCollidable();
+        const sf::Vector2f topLeft = sf::Vector2f(entityRect.left, entityRect.top);
+        const sf::Vector2f bottomRight = sf::Vector2f(entityRect.left + entityRect.width, entityRect.top + entityRect.height);
+        
+        
+        
+        //https://gamedev.stackexchange.com/questions/18436/most-efficient-aabb-vs-ray-collision-algorithms/18459#18459
+        
+        float t1 = (bottomRight.x - from.x) * rayDir.x;
+        float t2 = (topLeft.x - from.x) * rayDir.x;
+        float t3 = (bottomRight.y - from.y) * rayDir.y;
+        float t4 = (topLeft.y - from.y) * rayDir.y;
+        
+        float tmin = std::max(std::min(t1, t2), std::min(t3, t4));
+        float tmax = std::min(std::max(t1, t2), std::max(t3, t4));
+        
+        float t;
+        // if tmax < 0, ray (line) is intersecting AABB, but the whole AABB is behind us
+        if (tmax < 0)
+        {
+            //printf("Behind");
+            t = tmax;
+            //   return false;
+        }
+        // if tmin > tmax, ray doesn't intersect AABB
+        else if (tmin > tmax)
+        {
+            // printf("no intersection");
+            t = tmax;
+            // return false;
+        }
+        else
+        {
+            t = tmin;
+            
+            result.collision = e->owner;
+            result.layer = e->GetLayer();
+            HOW DO WE CALCULATE POINT?
+            HPW DO WE CALCULATE WHICH SHAPE WAS HIT FIRST?
+            //result.point = sf::Vector2f(to.x * t, to.y * t);
+            
+            /*
+             if (t == t1) printf("right");
+             else if (t == t2) printf("left");
+             else if (t == t3) printf("bottom");
+             else if (t == t4) printf("top");
+             */
+        }
+        
+        //return true;
+        
+        
+        
+        //            if(entityRect.contains(p))
+        //            {
+        //                result.collision = e->owner;
+        //                result.layer = e->GetLayer();
+        //                result.point = p;
+        
+        
+        
+        
+        
+        
+        // Get direction to start
+        // move point towards start until it aligns with rect edge
+        
+        
+        
+        // Find two closest points in rect i.e. top left, bottom left
+        // rotate by 90 degrees
+        
+        //dx=x2-x1 and dy=y2-y1, then the normals are (-dy, dx) and (dy, -dx).
+        
+        /*
+         float dx = bottomLeft.x - topLeft.x;
+         float dy = bottomLeft.y - topLeft.y;
+         result.normal = Mathf::Normalise(sf::Vector2f(-dy, dx));
+         */
+        
+        //                return result;
+        //            }
+    }
+    //}
     
     return result;
 }
@@ -109,7 +201,7 @@ sf::FloatRect Raycast::BuildRect(const sf::Vector2f& lineOne, const sf::Vector2f
     float top = (lineOne.y < lineTwo.y) ? lineOne.y : lineTwo.y;
     float width = fabs(lineOne.x - lineTwo.x);
     float height = fabs(lineOne.y - lineTwo.y);
-
+    
     return sf::FloatRect(left, top, width, height);
 }
 

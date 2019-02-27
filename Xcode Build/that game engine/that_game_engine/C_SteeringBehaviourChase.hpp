@@ -2,6 +2,7 @@
 #define C_SteeringBehaviourChase_hpp
 
 #include "C_SteeringBehaviour.hpp"
+#include "Math.hpp"
 
 class C_SteeringBehaviourChase : public C_SteeringBehaviour
 {

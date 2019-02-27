@@ -4,6 +4,7 @@
 #include "C_SteeringBehaviour.hpp"
 #include "Raycast.hpp"
 #include "C_Velocity.hpp"
+#include "Math.hpp"
 
 class C_SteeringBehaviourWallAvoidance : public C_SteeringBehaviour
 {

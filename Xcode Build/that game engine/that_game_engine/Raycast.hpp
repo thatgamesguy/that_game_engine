@@ -8,6 +8,8 @@ struct RaycastResult
 {
     Object* collision;
     CollisionLayer layer;
+    sf::Vector2f point;
+    sf::Vector2f normal;
 };
 
 class Raycast

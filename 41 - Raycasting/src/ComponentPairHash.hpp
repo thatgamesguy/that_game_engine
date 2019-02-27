@@ -9,7 +9,7 @@ struct ComponentPairHash
         std::size_t x = t.first->owner->instanceID->Get();
         std::size_t y = t.second->owner->instanceID->Get();
         
-        return (x >= y) ? (x * x + x + y) : (y * y + x);
+        return (x >= y) ? (x * x + x + y) : (y * y + y + x);
     }
 };
 
