@@ -87,11 +87,6 @@ RaycastResult Raycast::Cast(const sf::Vector2f& from, const sf::Vector2f& to, Co
     rayDir.x = 1.f / rayDir.x;
     rayDir.y = 1.f / rayDir.y;
     
-    if (entities.size() > 2)
-    {
-         printf("here");
-    }
-    
     //std::vector<sf::Vector2f> linePoints = BuildLinePoints(from, to);
     
     //for (auto& p : linePoints)
@@ -144,53 +139,18 @@ RaycastResult Raycast::Cast(const sf::Vector2f& from, const sf::Vector2f& to, Co
             
             result.collision = e->owner;
             result.layer = e->GetLayer();
-            HOW DO WE CALCULATE POINT?
-            HPW DO WE CALCULATE WHICH SHAPE WAS HIT FIRST?
+            result.point = {tmin, tmax};
+//            HOW DO WE CALCULATE POINT?
+//            HPW DO WE CALCULATE WHICH SHAPE WAS HIT FIRST?
             //result.point = sf::Vector2f(to.x * t, to.y * t);
             
-            /*
              if (t == t1) printf("right");
              else if (t == t2) printf("left");
              else if (t == t3) printf("bottom");
              else if (t == t4) printf("top");
-             */
         }
-        
-        //return true;
-        
-        
-        
-        //            if(entityRect.contains(p))
-        //            {
-        //                result.collision = e->owner;
-        //                result.layer = e->GetLayer();
-        //                result.point = p;
-        
-        
-        
-        
-        
-        
-        // Get direction to start
-        // move point towards start until it aligns with rect edge
-        
-        
-        
-        // Find two closest points in rect i.e. top left, bottom left
-        // rotate by 90 degrees
-        
-        //dx=x2-x1 and dy=y2-y1, then the normals are (-dy, dx) and (dy, -dx).
-        
-        /*
-         float dx = bottomLeft.x - topLeft.x;
-         float dy = bottomLeft.y - topLeft.y;
-         result.normal = Mathf::Normalise(sf::Vector2f(-dy, dx));
-         */
-        
-        //                return result;
-        //            }
+
     }
-    //}
     
     return result;
 }

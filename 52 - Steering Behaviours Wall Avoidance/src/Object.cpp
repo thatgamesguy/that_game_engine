@@ -9,17 +9,17 @@ Object::Object(SharedContext* context) : context(context),  queuedForRemoval(fal
 
 void Object::Awake()
 {
-    for (auto c : components)
+    for (const auto& component : components)
     {
-        c->Awake();
+        component->Awake();
     }
 }
 
 void Object::Start()
 {
-    for (auto c : components)
+    for (const auto& component : components)
     {
-        c->Start();
+        component->Start();
     }
 }
 

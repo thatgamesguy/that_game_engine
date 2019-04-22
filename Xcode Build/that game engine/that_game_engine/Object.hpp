@@ -29,7 +29,8 @@ public:
     void OnCollisionStay(std::shared_ptr<C_BoxCollider> other);
     void OnCollisionExit(std::shared_ptr<C_BoxCollider> other);
     
-    template <typename T> std::shared_ptr<T> AddComponent()
+    template <typename T>
+    std::shared_ptr<T> AddComponent()
     {
         static_assert(std::is_base_of<Component, T>::value, "T must derive from Component");
         
