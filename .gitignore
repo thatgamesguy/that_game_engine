@@ -10,6 +10,7 @@
 xcuserdata/
 *.xcscmblueprint
 *.xccheckout
+.vscode/
 
 # Compiled Object files
 *.slo
@@ -40,3 +41,6 @@ xcuserdata/
 *.exe
 *.out
 *.app
+build/
+
+
