@@ -1,6 +1,7 @@
 #ifndef Object_hpp
 #define Object_hpp
 
+#include <memory>
 #include <vector>
 
 #include "Window.hpp"
