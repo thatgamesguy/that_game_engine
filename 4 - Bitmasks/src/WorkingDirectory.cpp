@@ -2,7 +2,7 @@
 
 WorkingDirectory::WorkingDirectory()
 {
-    path = "./";
+    path = "./resources/";
     
 #ifdef MACOS
     

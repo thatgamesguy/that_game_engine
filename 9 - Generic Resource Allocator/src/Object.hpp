@@ -2,6 +2,7 @@
 #define Object_hpp
 
 #include <vector>
+#include <memory>
 
 #include "Window.hpp"
 #include "Component.hpp"
