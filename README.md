@@ -1,6 +1,6 @@
 # that game engine
 
-Contains the source code for the SFML game engine tutorial series, hosted on thatgamesguy.co.uk. Find the first tutorial at http://thatgamesguy.co.uk/2018/03/06/game-engine-dev-0/
+Contains the source code for the SFML game engine tutorial series, hosted on thatgamesguy.co.uk. Find the first tutorial at https://thatgamesguy.co.uk/game-engine-dev/
 
 Important
 The code is cross-platform and will compile on Windows, MacOS, and Linux. However if you are building for MacOS then there are a couple of additional steps you need to do before it will compile.
